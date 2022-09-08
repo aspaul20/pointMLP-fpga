@@ -14,10 +14,12 @@ The analysis folder contains some additional information useful for the hardware
 
 ## Training
 
-1. Install the conda environment using pmlp.yml.
+1. Install the conda environment using pmlp.yml
 2. Activate the environment with conda activate pmlp
-3. Navigate to software/classification_ModelNet40, and run the following command
-   
+3. Navigate to /software/classification_ModelNet40/models
+4. Choose whichever implementation you would like, and change it's filename to "pointmlp.py"
+5. Navigate to /software/classification_ModelNet40, and run the following command
+
    $ python3 main.py --model pointMLPElite --seed 404 --workers 4 --learning_rate 0.1 --min_lr 0.005 --weight_decay 0.0002 --num_points 512 --epoch 1000 --checkpoint your_checkpoint_path --batch_size 32
    
 4. Logs and checkpoints will be saved each epoch in your specified checkpoint path.
