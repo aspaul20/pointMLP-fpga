@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="bnn-library.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/bnn-library.h"/>
+    <originFiles name="config.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/config.h"/>
+    <originFiles name="conv1d.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/conv1d.h"/>
+    <originFiles name="convlayer.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/convlayer.h"/>
+    <originFiles name="dma.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/dma.h"/>
+    <originFiles name="grouperPE.hpp" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/grouperPE.hpp"/>
+    <originFiles name="input_conv.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/input_conv.txt"/>
+    <originFiles name="input_embedding.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/input_embedding.txt"/>
+    <originFiles name="input_embedding_NCHW.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/input_embedding_NCHW.txt"/>
+    <originFiles name="into_conv.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/into_conv.txt"/>
+    <originFiles name="into_emb.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/into_emb.txt"/>
+    <originFiles name="memdata2-0.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/memdata2-0.h"/>
+    <originFiles name="memdata-0.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/memdata-0.h"/>
+    <originFiles name="out_conv.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/out_conv.txt"/>
+    <originFiles name="out_emb.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/out_emb.txt"/>
+    <originFiles name="output_conv.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/output_conv.txt"/>
+    <originFiles name="output_embedding.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/output_embedding.txt"/>
+    <originFiles name="output_embedding_NCHW.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/output_embedding_NCHW.txt"/>
+    <originFiles name="output_relu.txt" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/output_relu.txt"/>
+    <originFiles name="streamtools.h" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/streamtools.h"/>
+    <originFiles name="top.cpp" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/top.cpp"/>
+    <originFiles name="utils.hpp" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/utils.hpp"/>
+    <originFiles name="weights.hpp" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/weights.hpp"/>
+    <originFiles name="activations.hpp" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/activations.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="my_tb.cpp" path="/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/my_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

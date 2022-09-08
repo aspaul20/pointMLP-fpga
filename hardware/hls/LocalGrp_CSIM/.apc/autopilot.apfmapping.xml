@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="grouper.cpp" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/grouper.cpp"/>
+    <originFiles name="grouper.h" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/grouper.h"/>
+  </source>
+  <testbench>
+    <originFiles name="distance.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/distance.txt"/>
+    <originFiles name="dst.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/dst.txt"/>
+    <originFiles name="grouper_tb.cpp" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/grouper_tb.cpp"/>
+    <originFiles name="indexed_points.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/indexed_points.txt"/>
+    <originFiles name="knnIdx.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/knnIdx.txt"/>
+    <originFiles name="PC_FM_OUT_#0.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/PC_FM_OUT_#0.txt"/>
+    <originFiles name="sampled_points.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/sampled_points.txt"/>
+    <originFiles name="sampled_points_new.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/sampled_points_new.txt"/>
+    <originFiles name="sampled_points_new_repeated.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/sampled_points_new_repeated.txt"/>
+    <originFiles name="samples4.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/samples4.txt"/>
+    <originFiles name="src.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/src.txt"/>
+    <originFiles name="x_into_#04.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/x_into_#04.txt"/>
+    <originFiles name="x_non_perm#04.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/x_non_perm#04.txt"/>
+    <originFiles name="xyz_into_#04.txt" path="/net/user/r1/unix/amur/Desktop/LocalGrp_CSIM/xyz_into_#04.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

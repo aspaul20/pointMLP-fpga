@@ -1,0 +1,11 @@
+checkpoint:	 checkpoints/pointMLPElite-20220818181825-404
+msg:	 None
+batch_size:	 32
+model:	 pointMLPElite
+epoch:	 500
+num_points:	 512
+learning_rate:	 0.1
+min_lr:	 0.005
+weight_decay:	 0.0002
+seed:	 404
+workers:	 4

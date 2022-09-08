@@ -1,0 +1,923 @@
+==============================================================
+File generated on Mon Sep 05 10:10:12 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:10:58 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:11:30 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:11:48 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:15:43 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:18:13 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:19:01 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Sep 05 10:20:34 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/top.cpp:4:
+PointMLPElite/conv1d.h:27:24: error: default initialization of an object of const type 'const unsigned int'
+    const unsigned int max;
+                       ^
+PointMLPElite/conv1d.h:194:24: error: default initialization of an object of const type 'const unsigned int'
+    const unsigned int max;
+                       ^
+In file included from PointMLPElite/top.cpp:1:
+PointMLPElite/top.cpp:26:19: error: use of undeclared identifier 'holdMyStream'
+  grouperIn.write(holdMyStream);
+                  ^
+PointMLPElite/top.cpp:27:15: error: use of undeclared identifier 'holdMyStream'
+  input.write(holdMyStream);
+              ^
+In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/top.cpp:4:
+PointMLPElite/conv1d.h:724:32: error: use of overloaded operator '<<' is ambiguous (with operand types 'basic_ostream<char, std::char_traits<char> >' and 'Input_t' (aka 'ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>'))
+         std::cout << "data: " << data << " weight: " << weight << " mul: " << mul << std::endl;
+         ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+PointMLPElite/top.cpp:31:3: note: in instantiation of function template specialization 'Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8, 1, 8, 1, 8, 1, 8, 1, 8, 1, 8, 1, FixedPointWeights<1, ap_fixed<8, 1, 1, 3, 0>, 1, 96>, FixedPointWeights<1, ap_fixed<8, 1, 1, 3, 0>, 1, 96>, Identity>' requested here
+  Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8,1,8,1,8,1,8,1,8,1,8,1,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,Identity>(conv1, conv2, weights0);
+  ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:166:7: note: candidate function
+      operator<<(long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:170:7: note: candidate function
+      operator<<(unsigned long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:174:7: note: candidate function
+      operator<<(bool __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:178:7: note: candidate function
+      operator<<(short __n);
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:181:7: note: candidate function
+      operator<<(unsigned short __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:189:7: note: candidate function
+      operator<<(int __n);
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:192:7: note: candidate function
+      operator<<(unsigned int __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:201:7: note: candidate function
+      operator<<(long long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:205:7: note: candidate function
+      operator<<(unsigned long long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:210:7: note: candidate function
+      operator<<(double __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:214:7: note: candidate function
+      operator<<(float __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:222:7: note: candidate function
+      operator<<(long double __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:461:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:467:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:472:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    ^
+5 errors generated.
+==============================================================
+File generated on Mon Sep 05 10:21:18 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/top.cpp:4:
+PointMLPElite/conv1d.h:27:24: error: default initialization of an object of const type 'const unsigned int'
+    const unsigned int max;
+                       ^
+PointMLPElite/conv1d.h:194:24: error: default initialization of an object of const type 'const unsigned int'
+    const unsigned int max;
+                       ^
+PointMLPElite/conv1d.h:724:32: error: use of overloaded operator '<<' is ambiguous (with operand types 'basic_ostream<char, std::char_traits<char> >' and 'Input_t' (aka 'ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>'))
+         std::cout << "data: " << data << " weight: " << weight << " mul: " << mul << std::endl;
+         ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+PointMLPElite/top.cpp:31:3: note: in instantiation of function template specialization 'Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8, 1, 8, 1, 8, 1, 8, 1, 8, 1, 8, 1, FixedPointWeights<1, ap_fixed<8, 1, 1, 3, 0>, 1, 96>, FixedPointWeights<1, ap_fixed<8, 1, 1, 3, 0>, 1, 96>, Identity>' requested here
+  Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8,1,8,1,8,1,8,1,8,1,8,1,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,Identity>(conv1, conv2, weights0);
+  ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:166:7: note: candidate function
+      operator<<(long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:170:7: note: candidate function
+      operator<<(unsigned long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:174:7: note: candidate function
+      operator<<(bool __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:178:7: note: candidate function
+      operator<<(short __n);
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:181:7: note: candidate function
+      operator<<(unsigned short __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:189:7: note: candidate function
+      operator<<(int __n);
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:192:7: note: candidate function
+      operator<<(unsigned int __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:201:7: note: candidate function
+      operator<<(long long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:205:7: note: candidate function
+      operator<<(unsigned long long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:210:7: note: candidate function
+      operator<<(double __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:214:7: note: candidate function
+      operator<<(float __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:222:7: note: candidate function
+      operator<<(long double __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:461:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:467:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:472:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    ^
+3 errors generated.
+==============================================================
+File generated on Mon Sep 05 10:21:39 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/top.cpp:4:
+PointMLPElite/conv1d.h:194:24: error: default initialization of an object of const type 'const unsigned int'
+    const unsigned int max;
+                       ^
+PointMLPElite/conv1d.h:724:32: error: use of overloaded operator '<<' is ambiguous (with operand types 'basic_ostream<char, std::char_traits<char> >' and 'Input_t' (aka 'ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>'))
+         std::cout << "data: " << data << " weight: " << weight << " mul: " << mul << std::endl;
+         ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+PointMLPElite/top.cpp:31:3: note: in instantiation of function template specialization 'Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8, 1, 8, 1, 8, 1, 8, 1, 8, 1, 8, 1, FixedPointWeights<1, ap_fixed<8, 1, 1, 3, 0>, 1, 96>, FixedPointWeights<1, ap_fixed<8, 1, 1, 3, 0>, 1, 96>, Identity>' requested here
+  Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8,1,8,1,8,1,8,1,8,1,8,1,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,Identity>(conv1, conv2, weights0);
+  ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:166:7: note: candidate function
+      operator<<(long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:170:7: note: candidate function
+      operator<<(unsigned long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:174:7: note: candidate function
+      operator<<(bool __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:178:7: note: candidate function
+      operator<<(short __n);
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:181:7: note: candidate function
+      operator<<(unsigned short __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:189:7: note: candidate function
+      operator<<(int __n);
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:192:7: note: candidate function
+      operator<<(unsigned int __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:201:7: note: candidate function
+      operator<<(long long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:205:7: note: candidate function
+      operator<<(unsigned long long __n)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:210:7: note: candidate function
+      operator<<(double __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:214:7: note: candidate function
+      operator<<(float __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:222:7: note: candidate function
+      operator<<(long double __f)
+      ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:461:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:467:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+    ^
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:472:5: note: candidate function [with _Traits = std::char_traits<char>]
+    operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+    ^
+2 errors generated.
+==============================================================
+File generated on Mon Sep 05 10:22:52 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+WARNING: [HLS 214-111] Streams will behave like static variables inside a dataflow region: PointMLPElite/top.cpp:10:11
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file PointMLPElite/top.cpp
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_2P' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=BRAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=URAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=LUTRAM' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70]==============================================================
+File generated on Mon Sep 05 10:28:01 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+WARNING: [HLS 214-111] Streams will behave like static variables inside a dataflow region: PointMLPElite/top.cpp:10:11
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file PointMLPElite/top.cpp
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_2P' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=BRAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=URAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=LUTRAM' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70]==============================================================
+File generated on Mon Sep 05 10:30:26 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+WARNING: [HLS 214-111] Streams will behave like static variables inside a dataflow region: PointMLPElite/top.cpp:10:11
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file PointMLPElite/top.cpp
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_2P' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=BRAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=URAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=LUTRAM' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70]==============================================================
+File generated on Mon Sep 05 10:31:30 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+WARNING: [HLS 214-111] Streams will behave like static variables inside a dataflow region: PointMLPElite/top.cpp:10:11
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file PointMLPElite/top.cpp
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_2P' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=BRAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=URAM' is not a valid pragma.
+ERROR: [HLS 200-70] '#pragma HLS BIND_STORAGE variable=&inputBuf type=RAM_S2P impl=LUTRAM' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70] '#pragma HLS pipeline style=flp II=1' is not a valid pragma.
+ERROR: [HLS 200-70] pragma 'pipeline style=flp II=1' has unknown option 'style'
+ERROR: [HLS 200-70]==============================================================
+File generated on Mon Sep 05 10:34:34 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/bnn-library.h:53:
+PointMLPElite/streamtools.h:790:14: error: use of undeclared identifier 'MultiChanData'
+ hls::stream<MultiChanData<NumVecs, InWidth> > & in,
+             ^
+PointMLPElite/streamtools.h:790:14: error: use of undeclared identifier 'MultiChanData'
+PointMLPElite/streamtools.h:790:46: error: expected ')'
+ hls::stream<MultiChanData<NumVecs, InWidth> > & in,
+                                             ^
+PointMLPElite/streamtools.h:789:39: note: to match this '('
+void MultiChanDataWidthConverter_Batch(
+                                      ^
+PointMLPElite/streamtools.h:797:59: error: use of undeclared identifier 'numReps'
+  const unsigned int totalIters = NumInWords * outPerIn * numReps;
+                                                          ^
+PointMLPElite/streamtools.h:799:3: error: use of undeclared identifier 'MultiChanData'
+  MultiChanData<NumVecs, InWidth> ei;
+  ^
+PointMLPElite/streamtools.h:799:35: error: use of undeclared identifier 'ei'
+  MultiChanData<NumVecs, InWidth> ei;
+                                  ^
+PointMLPElite/streamtools.h:804:5: error: use of undeclared identifier 'ei'
+    ei = in.read();
+    ^
+PointMLPElite/streamtools.h:804:10: error: use of undeclared identifier 'in'
+    ei = in.read();
+         ^
+PointMLPElite/streamtools.h:806:4: error: use of undeclared identifier 'MultiChanData'
+   MultiChanData<NumVecs, OutWidth> eo;
+   ^
+PointMLPElite/streamtools.h:806:37: error: use of undeclared identifier 'eo'
+   MultiChanData<NumVecs, OutWidth> eo;
+                                    ^
+PointMLPElite/streamtools.h:809:2: error: use of undeclared identifier 'eo'
+ eo.data[v] = (ei.data[v])(OutWidth - 1, 0);
+ ^
+PointMLPElite/streamtools.h:809:16: error: use of undeclared identifier 'ei'
+ eo.data[v] = (ei.data[v])(OutWidth - 1, 0);
+               ^
+PointMLPElite/streamtools.h:811:5: error: use of undeclared identifier 'ei'
+    ei.data[v] = ei.data[v] >> OutWidth;
+    ^
+PointMLPElite/streamtools.h:811:18: error: use of undeclared identifier 'ei'
+    ei.data[v] = ei.data[v] >> OutWidth;
+                 ^
+PointMLPElite/streamtools.h:813:4: error: use of undeclared identifier 'out'
+   out.write(eo);
+   ^
+PointMLPElite/streamtools.h:813:14: error: use of undeclared identifier 'eo'
+   out.write(eo);
+             ^
+PointMLPElite/streamtools.h:823:45: error: use of undeclared identifier 'numReps'
+  for (unsigned int i = 0; i < NumInWords * numReps; i++) {
+                                            ^
+PointMLPElite/streamtools.h:825:2: error: use of undeclared identifier 'MultiChanData'
+ MultiChanData<NumVecs, InWidth> e = in.read();
+ ^
+PointMLPElite/streamtools.h:825:34: error: use of undeclared identifier 'e'
+ MultiChanData<NumVecs, InWidth> e = in.read();
+                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+==============================================================
+File generated on Mon Sep 05 10:35:23 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from PointMLPElite/top.cpp:1:
+In file included from PointMLPElite/top.cpp:3:
+PointMLPElite/memdata2-0.h:115:8: error: unknown type name 'ThresholdsActivation'
+static ThresholdsActivation<32,1,128,ap_fixed<8, 1>,ap_fixed<8, 7, AP_RND_ZERO, AP_WRAP>,-1> threshs0 = {
+       ^
+PointMLPElite/memdata2-0.h:115:28: error: expected unqualified-id
+static ThresholdsActivation<32,1,128,ap_fixed<8, 1>,ap_fixed<8, 7, AP_RND_ZERO, AP_WRAP>,-1> threshs0 = {
+                           ^
+In file included from PointMLPElite/top.cpp:1:
+PointMLPElite/top.cpp:31:199: error: no template named 'Identity'; did you mean 'std::_Identity'?
+  Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8,1,8,1,8,1,8,1,8,1,8,1,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,Identity>(conv1, conv2, weights0);
+                                                                                                                                                                                                      ^~~~~~~~
+                                                                                                                                                                                                      std::_Identity
+/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/stl_function.h:474:12: note: 'std::_Identity' declared here
+    struct _Identity : public unary_function<_Tp,_Tp>
+           ^
+In file included from PointMLPElite/top.cpp:1:
+PointMLPElite/top.cpp:31:3: error: no matching function for call to 'Conv1DMac_new'
+  Conv1DMac_new<1, 3, 512, 1, 0, 32, 512, 1, 1, 8,1,8,1,8,1,8,1,8,1,8,1,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,FixedPointWeights<1,ap_fixed<8, 1, AP_RND_ZERO, AP_WRAP>,1,96>,Identity>(conv1, conv2, weights0);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PointMLPElite/conv1d.h:655:6: note: candidate template ignored: invalid explicitly-specified argument for template parameter 'R'
+void Conv1DMac_new(hls::stream<ap_uint<SIMDWidth * InputPrecision> > & in,
+     ^
+4 errors generated.
+==============================================================
+File generated on Mon Sep 05 10:36:25 CEST 2022
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+WARNING: [HLS 214-111] Streams will behave like static variables inside a dataflow region: PointMLPElite/top.cpp:10:11
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file PointMLPElite/top.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 528.848 ; gain = 3.004 ; free physical = 46603 ; free virtual = 140774
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 528.848 ; gain = 3.004 ; free physical = 46603 ; free virtual = 140774
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'loop_init' (PointMLPElite/conv1d.h:686) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'loop_pe' (PointMLPElite/conv1d.h:700) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'loop_simd' (PointMLPElite/conv1d.h:706) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.2' (PointMLPElite/conv1d.h:751) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'loop_simd' (PointMLPElite/conv1d.h:816) in function 'void Relu1D<(unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::shift_pixels_up' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:116).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::insert_bottom_row' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:117).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:136).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:135).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:134).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:129).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::shift_pixels_up' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:189).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::insert_bottom_row' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:190).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:208).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:198).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 917.516 ; gain = 391.672 ; free physical = 46297 ; free virtual = 140524
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'shift_lfsr' into 'get_random' (PointMLPElite/grouperPE.hpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_random' into 'randomGen' (PointMLPElite/grouperPE.hpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'init_lfsrs' into 'LFSR' (PointMLPElite/grouperPE.hpp:64) automatically.
+INFO: [XFORM 203-602] Inlining function 'randomGen' into 'LFSR' (PointMLPElite/grouperPE.hpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:224) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:226) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:228) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:230) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:234) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:236) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:333) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:372) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:374) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:640) automatically.
+INFO: [XFORM 203-602] Inlining function 'LFSR' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:137) automatically.
+WARNING: [SYNCHK 200-23] PointMLPElite/grouperPE.hpp:137: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1045.516 ; gain = 519.672 ; free physical = 46134 ; free virtual = 140382
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' (PointMLPElite/grouperPE.hpp:112) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3' (PointMLPElite/grouperPE.hpp:122) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-4' (PointMLPElite/grouperPE.hpp:141) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-10' (PointMLPElite/grouperPE.hpp:215) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (/software/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 511.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (PointMLPElite/grouperPE.hpp:131) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 512.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1' (PointMLPElite/grouperPE.hpp:143) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 512.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1.1' (PointMLPElite/grouperPE.hpp:145) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 511.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1' (/software/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 511.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1' (PointMLPElite/grouperPE.hpp:218) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1.1' (PointMLPElite/grouperPE.hpp:219) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1.2' (PointMLPElite/grouperPE.hpp:223) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 32.
+INFO: [XFORM 203-102] Partitioning array 'inputBuf.V' (PointMLPElite/conv1d.h:135) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights0.m_weights.V' in dimension 1 automatically.
+WARNING: [XFORM 203-104] Completely partitioning array 'inputPC.val.V' (PointMLPElite/grouperPE.hpp:82) accessed through non-constant indices on dimension 1 (PointMLPElite/grouperPE.hpp:129:18), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'inputPC.val.V' (PointMLPElite/grouperPE.hpp:82) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'featurePC.val.V' (PointMLPElite/grouperPE.hpp:83) accessed through non-constant indices on dimension 1 (PointMLPElite/grouperPE.hpp:208:39), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.

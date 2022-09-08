@@ -1,0 +1,130 @@
+=========================================================================================================
+Layer (type:depth-idx)                                  Output Shape              Param #
+=========================================================================================================
+├─QuantIdentity: 1-1                                    [-1, 3, 1024]             --
+|    └─ActQuantProxyFromInjector: 2-1                   [-1, 3, 1024]             --
+|    └─ActQuantProxyFromInjector: 2-2                   [-1, 3, 1024]             --
+|    |    └─FusedActivationQuantProxy: 3-1              [-1, 3, 1024]             1
+├─ConvBNReLU1D: 1-2                                     [-1, 32, 1024]            --
+|    └─Sequential: 2-3                                  [-1, 32, 1024]            --
+|    |    └─QuantConv1d: 3-2                            [-1, 32, 1024]            128
+|    |    └─BatchNorm1d: 3-3                            [-1, 32, 1024]            64
+|    └─QuantReLU: 2-4                                   [-1, 32, 1024]            --
+|    └─Sequential: 2                                    []                        --
+|    |    └─QuantReLU: 3-4                              [-1, 32, 1024]            (recursive)
+|    └─QuantReLU: 2                                     []                        --
+|    |    └─ActQuantProxyFromInjector: 3-5              [-1, 32, 1024]            --
+|    |    └─ActQuantProxyFromInjector: 3-6              [-1, 32, 1024]            1
+├─QuantIdentity: 1-3                                    [-1, 32, 1024]            --
+|    └─ActQuantProxyFromInjector: 2-5                   [-1, 32, 1024]            --
+|    └─ActQuantProxyFromInjector: 2-6                   [-1, 32, 1024]            --
+├─ModuleList: 1                                         []                        --
+|    └─LocalGrouper: 2-7                                [-1, 256, 3]              --
+├─ModuleList: 1                                         []                        --
+|    └─PreExtraction: 2-8                               [-1, 64, 256]             --
+|    |    └─ConvBNReLU1D: 3-7                           [-1, 64, 16]              4,289
+|    |    └─Sequential: 3-8                             [-1, 64, 16]              8,577
+├─ModuleList: 1                                         []                        --
+|    └─PosExtraction: 2-9                               [-1, 64, 256]             --
+|    |    └─Sequential: 3-9                             [-1, 64, 256]             8,577
+├─QuantIdentity: 1-4                                    [-1, 64, 256]             --
+|    └─ActQuantProxyFromInjector: 2-10                  [-1, 64, 256]             --
+|    └─ActQuantProxyFromInjector: 2-11                  [-1, 64, 256]             --
+├─ModuleList: 1                                         []                        --
+|    └─LocalGrouper: 2-12                               [-1, 128, 3]              --
+├─ModuleList: 1                                         []                        --
+|    └─PreExtraction: 2-13                              [-1, 128, 128]            --
+|    |    └─ConvBNReLU1D: 3-10                          [-1, 128, 16]             16,769
+|    |    └─Sequential: 3-11                            [-1, 128, 16]             33,537
+├─ModuleList: 1                                         []                        --
+|    └─PosExtraction: 2-14                              [-1, 128, 128]            --
+|    |    └─Sequential: 3-12                            [-1, 128, 128]            33,537
+├─QuantIdentity: 1-5                                    [-1, 128, 128]            --
+|    └─ActQuantProxyFromInjector: 2-15                  [-1, 128, 128]            --
+|    └─ActQuantProxyFromInjector: 2-16                  [-1, 128, 128]            --
+├─ModuleList: 1                                         []                        --
+|    └─LocalGrouper: 2-17                               [-1, 64, 3]               --
+├─ModuleList: 1                                         []                        --
+|    └─PreExtraction: 2-18                              [-1, 256, 64]             --
+|    |    └─ConvBNReLU1D: 3-13                          [-1, 256, 16]             66,305
+|    |    └─Sequential: 3-14                            [-1, 256, 16]             265,218
+├─ModuleList: 1                                         []                        --
+|    └─PosExtraction: 2-19                              [-1, 256, 64]             --
+|    |    └─Sequential: 3-15                            [-1, 256, 64]             265,218
+├─QuantIdentity: 1-6                                    [-1, 256, 64]             --
+|    └─ActQuantProxyFromInjector: 2-20                  [-1, 256, 64]             --
+|    └─ActQuantProxyFromInjector: 2-21                  [-1, 256, 64]             --
+├─ModuleList: 1                                         []                        --
+|    └─LocalGrouper: 2-22                               [-1, 32, 3]               --
+├─ModuleList: 1                                         []                        --
+|    └─PreExtraction: 2-23                              [-1, 256, 32]             --
+|    |    └─ConvBNReLU1D: 3-16                          [-1, 256, 16]             131,841
+|    |    └─Sequential: 3-17                            [-1, 256, 16]             132,609
+├─ModuleList: 1                                         []                        --
+|    └─PosExtraction: 2-24                              [-1, 256, 32]             --
+|    |    └─Sequential: 3-18                            [-1, 256, 32]             132,609
+├─Sequential: 1-7                                       [-1, 40]                  --
+|    └─QuantLinear: 2-25                                [-1, 512]                 --
+|    |    └─ActQuantProxyFromInjector: 3-19             [-1, 256]                 --
+|    |    └─WeightQuantProxyFromInjector: 3-20          [-1, 256]                 131,072
+|    |    └─BiasQuantProxyFromInjector: 3-21            [-1]                      512
+|    |    └─ActQuantProxyFromInjector: 3-22             [-1, 512]                 --
+|    └─BatchNorm1d: 2-26                                [-1, 512]                 1,024
+├─QuantReLU: 1-8                                        [-1, 512]                 --
+├─Sequential: 1                                         []                        --
+|    └─QuantReLU: 2-27                                  [-1, 512]                 (recursive)
+├─QuantReLU: 1                                          []                        --
+|    └─ActQuantProxyFromInjector: 2-28                  [-1, 512]                 --
+├─Sequential: 1                                         []                        --
+|    └─QuantReLU: 2                                     []                        --
+|    |    └─ActQuantProxyFromInjector: 3-23             [-1, 512]                 --
+├─QuantReLU: 1                                          []                        --
+|    └─ActQuantProxyFromInjector: 2-29                  [-1, 512]                 --
+├─Sequential: 1                                         []                        --
+|    └─QuantReLU: 2                                     []                        --
+|    |    └─ActQuantProxyFromInjector: 3-24             [-1, 512]                 (recursive)
+├─QuantReLU: 1                                          []                        --
+|    └─ActQuantProxyFromInjector: 2                     []                        --
+|    |    └─FusedActivationQuantProxy: 3-25             [-1, 512]                 1
+├─Sequential: 1                                         []                        --
+|    └─Dropout: 2-30                                    [-1, 512]                 --
+|    └─QuantLinear: 2-31                                [-1, 256]                 --
+|    |    └─ActQuantProxyFromInjector: 3-26             [-1, 512]                 --
+|    |    └─WeightQuantProxyFromInjector: 3-27          [-1, 512]                 131,072
+|    |    └─BiasQuantProxyFromInjector: 3-28            [-1]                      256
+|    |    └─ActQuantProxyFromInjector: 3-29             [-1, 256]                 --
+|    └─BatchNorm1d: 2-32                                [-1, 256]                 512
+├─QuantReLU: 1-9                                        [-1, 256]                 (recursive)
+├─Sequential: 1                                         []                        --
+|    └─QuantReLU: 2-33                                  [-1, 256]                 (recursive)
+├─QuantReLU: 1                                          []                        --
+|    └─ActQuantProxyFromInjector: 2-34                  [-1, 256]                 --
+├─Sequential: 1                                         []                        --
+|    └─QuantReLU: 2                                     []                        --
+|    |    └─ActQuantProxyFromInjector: 3-30             [-1, 256]                 --
+├─QuantReLU: 1                                          []                        --
+|    └─ActQuantProxyFromInjector: 2-35                  [-1, 256]                 (recursive)
+├─Sequential: 1                                         []                        --
+|    └─QuantReLU: 2                                     []                        --
+|    |    └─ActQuantProxyFromInjector: 3-31             [-1, 256]                 (recursive)
+├─QuantReLU: 1                                          []                        --
+|    └─ActQuantProxyFromInjector: 2                     []                        --
+|    |    └─FusedActivationQuantProxy: 3-32             [-1, 256]                 (recursive)
+├─Sequential: 1                                         []                        --
+|    └─Dropout: 2-36                                    [-1, 256]                 --
+|    └─QuantLinear: 2-37                                [-1, 40]                  --
+|    |    └─ActQuantProxyFromInjector: 3-33             [-1, 256]                 --
+|    |    └─WeightQuantProxyFromInjector: 3-34          [-1, 256]                 10,240
+|    |    └─BiasQuantProxyFromInjector: 3-35            [-1]                      40
+|    |    └─ActQuantProxyFromInjector: 3-36             [-1, 40]                  --
+=========================================================================================================
+Total params: 1,374,009
+Trainable params: 1,374,009
+Non-trainable params: 0
+Total mult-adds (M): 3.91
+=========================================================================================================
+Input size (MB): 0.38
+Forward/backward pass size (MB): 0.26
+Params size (MB): 5.24
+Estimated Total Size (MB): 5.87
+=========================================================================================================

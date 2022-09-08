@@ -1,0 +1,293 @@
+INFO-FLOW: Workspace /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1 opened at Mon Sep 05 10:36:25 CEST 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /software/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.14 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /software/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /software/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z045ffg900-2 
+Execute       add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z045 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 0.3 sec.
+Execute   set_part xc7z045ffg900-2 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z045 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+WARNING: [HLS 200-40] Skipped source file 'output_relu.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'output_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'out_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_emb.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'into_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding_NCHW.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_embedding.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'input_conv.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-10] Analyzing design file 'PointMLPElite/top.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling PointMLPElite/top.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted PointMLPElite/top.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "PointMLPElite/top.cpp"   -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/software/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/software/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp" 
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /software/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E PointMLPElite/top.cpp -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /software/Xilinx/Vivado/2018.3/common/technology/autopilot -I /software/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp
+Command       clang done; 1.75 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp std=c++0x 
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 5.44 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/software/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/software/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/software/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp"  -o "/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /software/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /software/Xilinx/Vivado/2018.3/common/technology/autopilot -I /software/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/useless.bc
+Command       clang done; 4.81 sec.
+INFO-FLOW: Done: GCC PP time: 12 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp std=c++0x -directive=/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 4.92 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp std=c++0x -directive=/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 5.06 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.diag.yml /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 -fstrict-dataflow > /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.out.log 2> /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/xilinx-dataflow-lawyer.top.pp.0.cpp.err.log 
+Command       ap_eval done; 4.59 sec.
+WARNING: [HLS 214-111] Streams will behave like static variables inside a dataflow region: PointMLPElite/top.cpp:10:11
+Execute       send_msg_by_id WARNING @200-471@%s%s 1 PointMLPElite/top.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file PointMLPElite/top.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp std=c++0x 
+Execute         ap_eval exec -ignorestderr /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 > /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.out.log 2> /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/tidy-3.1.top.pp.0.cpp.err.log 
+Command         ap_eval done; 9.53 sec.
+Execute         ap_eval exec -ignorestderr /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 > /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/xilinx-legacy-rewriter.top.pp.0.cpp.out.log 2> /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/xilinx-legacy-rewriter.top.pp.0.cpp.err.log 
+Command         ap_eval done; 6.63 sec.
+Command       tidy_31 done; 16.62 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 26.3 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pragma.1.cpp std=c++0x 
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pragma.1.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 7.82 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /software/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pragma.2.cpp"  -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/software/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/software/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.bc" 
+INFO-FLOW: exec /software/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /software/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.pragma.2.cpp -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /software/Xilinx/Vivado/2018.3/common/technology/autopilot -I /software/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.bc
+Command       clang done; 5.41 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/top.g.bc -hls-opt -except-internalize DoCompute -L/software/Xilinx/Vivado/2018.3/lnx64/lib -lhlsm -lhlsmc++ -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 3.6 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 528.848 ; gain = 3.004 ; free physical = 46603 ; free virtual = 140774
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 528.848 ; gain = 3.004 ; free physical = 46603 ; free virtual = 140774
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.pp.bc -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 1.23 sec.
+Execute         llvm-ld /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/software/Xilinx/Vivado/2018.3/lnx64/lib -lfloatconversion -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 3.38 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top DoCompute -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.0.bc -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-489] Unrolling loop 'loop_init' (PointMLPElite/conv1d.h:686) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'loop_pe' (PointMLPElite/conv1d.h:700) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'loop_simd' (PointMLPElite/conv1d.h:706) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.2' (PointMLPElite/conv1d.h:751) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)3, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 96u>, Identity>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'loop_simd' (PointMLPElite/conv1d.h:816) in function 'void Relu1D<(unsigned short)32, (unsigned short)512, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::shift_pixels_up' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:116).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::insert_bottom_row' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:117).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:136).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:135).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:134).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:129).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::shift_pixels_up' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:189).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::insert_bottom_row' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:190).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:208).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<512, 32, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::getval' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:198).
+Command         transform done; 3.89 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 917.516 ; gain = 391.672 ; free physical = 46297 ; free virtual = 140524
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.1.bc -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'shift_lfsr' into 'get_random' (PointMLPElite/grouperPE.hpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_random' into 'randomGen' (PointMLPElite/grouperPE.hpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'init_lfsrs' into 'LFSR' (PointMLPElite/grouperPE.hpp:64) automatically.
+INFO: [XFORM 203-602] Inlining function 'randomGen' into 'LFSR' (PointMLPElite/grouperPE.hpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:224) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:226) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:228) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:230) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:234) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:236) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:333) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:372) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:374) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:640) automatically.
+INFO: [XFORM 203-602] Inlining function 'LFSR' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:137) automatically.
+Command         transform done; 4.62 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.2.prechk.bc -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] PointMLPElite/grouperPE.hpp:137: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 1.06 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1045.516 ; gain = 519.672 ; free physical = 46134 ; free virtual = 140382
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.g.1.bc to /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.o.1.bc -o /net/user/r1/unix/amur/Desktop/PointMLPElite/PointMLPElite/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' (PointMLPElite/grouperPE.hpp:112) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3' (PointMLPElite/grouperPE.hpp:122) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-4' (PointMLPElite/grouperPE.hpp:141) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-10' (PointMLPElite/grouperPE.hpp:215) in function 'grouperPE<32u, 512u, 16u, 256u>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (/software/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 511.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (PointMLPElite/grouperPE.hpp:131) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 512.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1' (PointMLPElite/grouperPE.hpp:143) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 512.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1.1' (PointMLPElite/grouperPE.hpp:145) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 511.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1' (/software/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 511.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1' (PointMLPElite/grouperPE.hpp:218) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1.1' (PointMLPElite/grouperPE.hpp:219) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-10.1.2' (PointMLPElite/grouperPE.hpp:223) in function 'grouperPE<32u, 512u, 16u, 256u>' completely with a factor of 32.
+INFO: [XFORM 203-102] Partitioning array 'inputBuf.V' (PointMLPElite/conv1d.h:135) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weights0.m_weights.V' in dimension 1 automatically.
+WARNING: [XFORM 203-104] Completely partitioning array 'inputPC.val.V' (PointMLPElite/grouperPE.hpp:82) accessed through non-constant indices on dimension 1 (PointMLPElite/grouperPE.hpp:129:18), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'inputPC.val.V' (PointMLPElite/grouperPE.hpp:82) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'featurePC.val.V' (PointMLPElite/grouperPE.hpp:83) accessed through non-constant indices on dimension 1 (PointMLPElite/grouperPE.hpp:208:39), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'featurePC.val.V' (PointMLPElite/grouperPE.hpp:83) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'knnIndices' (PointMLPElite/grouperPE.hpp:96) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'indices' (PointMLPElite/grouperPE.hpp:95) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'distances.V' (PointMLPElite/grouperPE.hpp:89) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'macRegisters.V' (PointMLPElite/conv1d.h:682) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'shift_lfsr' into 'get_random' (PointMLPElite/grouperPE.hpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'get_random' into 'randomGen' (PointMLPElite/grouperPE.hpp:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'init_lfsrs' into 'LFSR' (PointMLPElite/grouperPE.hpp:64) automatically.
+INFO: [XFORM 203-602] Inlining function 'randomGen' into 'LFSR' (PointMLPElite/grouperPE.hpp:67) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:224) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:226) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:228) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:230) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:232) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:234) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>' into 'pow_reduce::pow_traits<double>::log_range_reduction<71>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:236) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:333) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isinf<double>' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:372) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_isnan<double>' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:374) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:411) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_pow.h:640) automatically.
+INFO: [XFORM 203-602] Inlining function 'LFSR' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow' into 'grouperPE<32u, 512u, 16u, 256u>' (PointMLPElite/grouperPE.hpp:137) automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (PointMLPElite/top.cpp:24) to a process function for dataflow in function 'DoCompute'.
+WARNING: [XFORM 203-731] Internal stream variable 'grouperOut.V.V' (PointMLPElite/top.cpp:20) is invalid: it has no data consumer.
+ERROR: [XFORM 203-711] Internal stream 'grouperOut.V.V' failed dataflow checking: it must be produced and consumed exactly once.
+WARNING: [XFORM 203-713] Variable 'grouperOut.V.V' has write operations in process function 'grouperPE<32u, 512u, 16u, 256u>'.
+Command         transform done; error code: 1; 96153.6 sec.
+ERROR: [HLS 200-70] Pre-synthesis failed.
+Command       opt_and_import_c done; error code: 2; 96168 sec.
+Command     elaborate done; error code: 2; 96229.6 sec.
+Command   csynth_design done; error code: 2; 96229.6 sec.
+Command ap_source done; error code: 1; 96230.1 sec.
+Execute cleanup_all 
+Command cleanup_all done; 0.62 sec.

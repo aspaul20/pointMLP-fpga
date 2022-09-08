@@ -1,0 +1,403 @@
+ 
+Model(
+  (embedding): ConvBNReLU1D(
+    (act): ReLU(inplace=True)
+    (net): Sequential(
+      (0): Conv1d(3, 64, kernel_size=(1,), stride=(1,), bias=False)
+      (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+  )
+  (local_grouper_list): ModuleList(
+    (0): LocalGrouper()
+    (1): LocalGrouper()
+    (2): LocalGrouper()
+    (3): LocalGrouper()
+  )
+  (pre_blocks_list): ModuleList(
+    (0): PreExtraction(
+      (transfer): ConvBNReLU1D(
+        (act): ReLU(inplace=True)
+        (net): Sequential(
+          (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+          (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace=True)
+        )
+      )
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (1): PreExtraction(
+      (transfer): ConvBNReLU1D(
+        (act): ReLU(inplace=True)
+        (net): Sequential(
+          (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+          (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace=True)
+        )
+      )
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (2): PreExtraction(
+      (transfer): ConvBNReLU1D(
+        (act): ReLU(inplace=True)
+        (net): Sequential(
+          (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+          (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace=True)
+        )
+      )
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (3): PreExtraction(
+      (transfer): ConvBNReLU1D(
+        (act): ReLU(inplace=True)
+        (net): Sequential(
+          (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+          (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (2): ReLU(inplace=True)
+        )
+      )
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+  )
+  (pos_blocks_list): ModuleList(
+    (0): PosExtraction(
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (1): PosExtraction(
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (2): PosExtraction(
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+    (3): PosExtraction(
+      (operation): Sequential(
+        (0): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): ConvBNReLURes1D(
+          (act): ReLU(inplace=True)
+          (net1): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (2): ReLU(inplace=True)
+          )
+          (net2): Sequential(
+            (0): Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False)
+            (1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+    )
+  )
+  (act): ReLU(inplace=True)
+  (classifier): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=512, out_features=256, bias=True)
+    (5): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (6): ReLU(inplace=True)
+    (7): Dropout(p=0.5, inplace=False)
+    (8): Linear(in_features=256, out_features=40, bias=True)
+  )
+)
+
+
++++++++  Weights for: EMBEDDING LAYER  +++++++
+
+
+Conv1d(3, 64, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight: 1.2296496629714966 
+Min Weight:  -1.6499935388565063 
+
+
++++++++  Weights for: PRE-EXTRACTION CONV LAYERS  +++++++
+
+
+Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.7491880059242249 
+Min Weight:  tensor(-0.7316) 
+
+Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.18208567798137665 
+Min Weight:  -0.21559707820415497 
+
+Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.23149801790714264 
+Min Weight:  -0.19602300226688385 
+
+Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.23905426263809204 
+Min Weight:  tensor(-0.3013) 
+
+Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.1642102599143982 
+Min Weight:  -0.10447494685649872 
+
+Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.11886231601238251 
+Min Weight:  -0.1524752676486969 
+
+Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.30046024918556213 
+Min Weight:  tensor(-0.2018) 
+
+Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.09304019063711166 
+Min Weight:  -0.06376632302999496 
+
+Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.10578105598688126 
+Min Weight:  -0.09595764428377151 
+
+Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.2251773625612259 
+Min Weight:  tensor(-0.1438) 
+
+Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.04158079996705055 
+Min Weight:  -0.029016466811299324 
+
+Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.05663803219795227 
+Min Weight:  -0.04613722115755081 
+
+
++++++++  Weights for: POS-EXTRACTION CONV LAYERS  +++++++
+
+
+Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.1417330503463745 
+Min Weight:  -0.1563393771648407 
+
+Conv1d(128, 128, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.12193290889263153 
+Min Weight:  -0.13348320126533508 
+
+Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.05891842767596245 
+Min Weight:  -0.1563393771648407 
+
+Conv1d(256, 256, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.06284167617559433 
+Min Weight:  -0.13348320126533508 
+
+Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.038639843463897705 
+Min Weight:  -0.1563393771648407 
+
+Conv1d(512, 512, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.024938562884926796 
+Min Weight:  -0.13348320126533508 
+
+Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.09353282302618027 
+Min Weight:  -0.1563393771648407 
+
+Conv1d(1024, 1024, kernel_size=(1,), stride=(1,), bias=False) 
+Max Weight:  0.13876651227474213 
+Min Weight:  -0.13348320126533508 
+
+
++++++++  Weights for: CLASSIFIER LINEAR LAYERS  +++++++
+
+
+Linear(in_features=1024, out_features=512, bias=True) 
+Max Weight:  0.1524098515510559 
+Min Weight:  -0.13558557629585266 
+
+Linear(in_features=512, out_features=256, bias=True) 
+Max Weight:  0.17691542208194733 
+Min Weight:  -0.16267593204975128 
+
+Linear(in_features=256, out_features=40, bias=True) 
+Max Weight:  0.30225804448127747 
+Min Weight:  -0.2770717442035675 
+
+

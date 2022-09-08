@@ -1,0 +1,46 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../grouper_tb.cpp in debug mode
+   Compiling ../../../grouper.cpp in debug mode
+   Generating csim.exe
+
+
+Checking distances...
+Total distance count: 262144
+Correct distances: 262144
+Incorrect distances: 0
+Accuracy: 100%
+
+
+***Distances - PASS***
+
+
+
+
+Checking k-Nearest Neighbors...
+
+Total indices: 4096
+Correct indices: 3874
+Incorrect indices: 222
+Accuracy: 94.5801%
+
+
+***kNN - PASS***
+
+
+
+
+Checking final outputs...
+Total outputted values: 262144
+Correct outputs: 258625
+Incorrect outputs: 3519
+Accuracy: 98.6576%
+
+
+***Local Grouper - PASS***
+
+
+WARNING: Hls::stream 'hls::stream<double>.6' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<double>.5' contains leftover data, which may result in RTL simulation hanging.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

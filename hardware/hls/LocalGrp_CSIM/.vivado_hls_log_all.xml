@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:31:11.628+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:31:11.622+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:30:26.668+0200"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:22:10.295+0200"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:22:10.284+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;double>.5' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:31:45.632+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;double>.6' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:31:45.614+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_fixed&lt;8, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >.5' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:31:11.616+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_fixed&lt;8, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >.6' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:31:11.605+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_fixed&lt;8, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >.5' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:22:10.254+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_fixed&lt;8, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >.6' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:22:10.242+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;double>.5' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:21:25.378+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;double>.6' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:21:25.361+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;double>.5' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:19:35.314+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;double>.6' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:19:35.292+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0> >.5' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:19:05.430+0200" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_fixed&lt;8, 4, (ap_q_mode)5, (ap_o_mode)3, 0> >.6' contains leftover data, which may result in RTL simulation hanging." projectName="LocalGrp_CSIM" solutionName="solution1" date="2022-09-07T14:19:05.423+0200" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
