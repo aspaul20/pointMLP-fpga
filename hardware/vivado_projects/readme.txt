@@ -1,0 +1,1 @@
+This folder contains the S1, S2, S3, S4.1, S4.2, S4.3, and FC1 Vivado HLS projects along with the IPs used to construct the PointMLPElite project in Vivado. Find the Vivado project in PointMLPElite_final folder.
