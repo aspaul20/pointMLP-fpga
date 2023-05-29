@@ -1,0 +1,52 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'computeS4_2'" level="0">
+<item name = "Date">Tue May  9 09:37:45 2023
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">S4_2</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.198, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">8786088, 8786088, 8388869, 8388869, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Conv1DMac_new_fu_182">Conv1DMac_new, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="grp_Conv1DBuffer_new_fu_196">Conv1DBuffer_new, 8388868, 8388868, 8388868, 8388868, none</column>
+<column name="grp_StreamingDataWidthCo_fu_202">StreamingDataWidthCo, 131074, 131074, 131074, 131074, none</column>
+<column name="grp_StreamingMaxPool_Pre_fu_208">StreamingMaxPool_Pre, 139683, 139683, 139683, 139683, none</column>
+<column name="grp_ResizeStream_fu_214">ResizeStream, 16385, 16385, 16385, 16385, none</column>
+<column name="grp_Relu1D_fu_221">Relu1D, 32770, 32770, 32770, 32770, none</column>
+<column name="grp_ResizeStream_1_fu_227">ResizeStream_1, 262145, 262145, 262145, 262145, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

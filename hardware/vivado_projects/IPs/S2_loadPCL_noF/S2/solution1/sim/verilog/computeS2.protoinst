@@ -1,0 +1,306 @@
+{
+	"version": "1.0",
+	"modules": {
+		"computeS2": {
+			"proto_instances": {
+				"CloneStream_U0/CloneStream_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DBuffer_new394_U0/Conv1DBuffer_new394_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DBuffer_new398_U0/Conv1DBuffer_new398_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DBuffer_new402_U0/Conv1DBuffer_new402_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DBuffer_new_1_U0/Conv1DBuffer_new_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DBuffer_new_U0/Conv1DBuffer_new_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new395_U0/Conv1DMac_new395_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new399_U0/Conv1DMac_new399_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new403_U0/Conv1DMac_new403_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new_1_U0/Conv1DMac_new_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new_U0/Conv1DMac_new_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D396_U0/Relu1D396_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D400_U0/Relu1D400_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D404_U0/Relu1D404_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D_1_U0/Relu1D_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D_U0/Relu1D_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"ResizeStream_1_U0/ResizeStream_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"ResizeStream_2_U0/ResizeStream_2_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"ResizeStream_3_U0/ResizeStream_3_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"ResizeStream_U0/ResizeStream_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_1_U0/StreamingDataWidthCo_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_2_U0/StreamingDataWidthCo_2_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_3_U0/StreamingDataWidthCo_3_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_4_U0/StreamingDataWidthCo_4_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_U0/StreamingDataWidthCo_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingMaxPool_Pre_U0/StreamingMaxPool_Pre_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grouperPE_U0/grouperPE_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

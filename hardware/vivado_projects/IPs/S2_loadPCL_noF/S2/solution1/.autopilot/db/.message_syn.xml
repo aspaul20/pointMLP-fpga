@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;S2/Compute.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from S2/Compute.cpp:1:
+In file included from S2/Compute.cpp:1:
+In file included from S2/bnn-library.h:2:
+In file included from /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int.h:63:
+/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int_syn.h:3690:512: warning: comparison of unsigned expression &gt;= 0 is always true [-Wtautological-compare]
+template &lt;int _AP_W, bool _AP_S&gt; inline __attribute__((always_inline)) ap_int_base&lt;_AP_W, _AP_S&gt; operator &lt;&lt; (const ap_int_base&lt;_AP_W, _AP_S&gt;&amp; op, unsigned int op2) { ap_int_base&lt;_AP_W, _AP_S&gt; r; if (false) r.V = op2 &gt;= 0 ? (op.V &lt;&lt; op2) : (op.V &gt;&gt; (-op2)); else r.V = op.V &lt;&lt; op2; return r; } template &lt;int _AP_W, bool _AP_S&gt; inline __attribute__((always_inline)) ap_int_base&lt;_AP_W, _AP_S&gt; operator &gt;&gt; (const ap_int_base&lt;_AP_W, _AP_S&gt;&amp; op, unsigned int op2) { ap_int_base&lt;_AP_W, _AP_S&gt; r; if (false) r.V = op2 &gt;= 0 ? (op.V &gt;&gt; op2) : (op.V &lt;&lt; (-op2)); else r.V = op.V &gt;&gt; op2; return r; }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ~~~ ^  ~
+S2/conv1d.h:62:15: note: in instantiation of function template specialization &apos;operator&gt;&gt;&lt;32, false&gt;&apos; requested here
+      ei = ei &gt;&gt; OutWidth;
+              ^
+S2/Compute.cpp:91:3: note: in instantiation of function template specialization &apos;StreamingDataWidthConverter_Batch&lt;32, 8, 65536&gt;&apos; requested here
+  StreamingDataWidthConverter_Batch&lt;32, 8, 65536&gt;(cnv_30PRL, cnv_31, 1);
+  ^
+In file included from S2/Compute.cpp:1:
+In file included from S2/Compute.cpp:1:
+In file included from S2/bnn-library.h:2:
+In file included from /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int.h:63:
+/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int_syn.h:3690:512: warning: comparison of unsigned expression &gt;= 0 is always true [-Wtautological-compare]
+template &lt;int _AP_W, bool _AP_S&gt; inline __attribute__((always_inline)) ap_int_base&lt;_AP_W, _AP_S&gt; operator &lt;&lt; (const ap_int_base&lt;_AP_W, _AP_S&gt;&amp; op, unsigned int op2) { ap_int_base&lt;_AP_W, _AP_S&gt; r; if (false) r.V = op2 &gt;= 0 ? (op.V &lt;&lt; op2) : (op.V &gt;&gt; (-op2)); else r.V = op.V &lt;&lt; op2; return r; } template &lt;int _AP_W, bool _AP_S&gt; inline __attribute__((always_inline)) ap_int_base&lt;_AP_W, _AP_S&gt; operator &gt;&gt; (const ap_int_base&lt;_AP_W, _AP_S&gt;&amp; op, unsigned int op2) { ap_int_base&lt;_AP_W, _AP_S&gt; r; if (false) r.V = op2 &gt;= 0 ? (op.V &gt;&gt; op2) : (op.V &lt;&lt; (-op2)); else r.V = op.V &gt;&gt; op2; return r; }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ~~~ ^  ~
+S2/conv1d.h:88:15: note: in instantiation of function template specialization &apos;operator&gt;&gt;&lt;8, false&gt;&apos; requested here
+      eo = eo &gt;&gt; InWidth;
+              ^
+S2/Compute.cpp:91:3: note: in instantiation of function template specialization &apos;StreamingDataWidthConverter_Batch&lt;32, 8, 65536&gt;&apos; requested here
+  StreamingDataWidthConverter_Batch&lt;32, 8, 65536&gt;(cnv_30PRL, cnv_31, 1);
+  ^
+In file included from S2/Compute.cpp:1:
+In file included from S2/Compute.cpp:2:
+S2/conv1d.h:1835:30: warning: comparison of unsigned expression &lt; 0 is always false [-Wtautological-compare]
+  for (unsigned int r = 0; r &lt; REMAINDER_PIXELS*NF; r++){
+                           ~ ^ ~~~~~~~~~~~~~~~~~~~
+S2/Compute.cpp:103:3: note: in instantiation of function template specialization &apos;StreamingMaxPool_Precision_1d&lt;2048, 16, 128, 1, 128&gt;&apos; requested here
+  StreamingMaxPool_Precision_1d&lt;2048, 16, 128, 1, 128&gt;(cnv_39, cnv_40);
+  ^
+3 warnings generated.\n"/>
+	<Message severity="WARNING" prefix="[HLS 214-111]" key="HLS 214-111" tag="DATAFLOW,SDX_KERNEL" content="Static variables and non-static stream cannot be used inside a dataflow region: S2/Compute.cpp:26:11"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 349.691 ; gain = 0.094 ; free physical = 11229 ; free virtual = 62385"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 349.691 ; gain = 0.094 ; free physical = 11229 ; free virtual = 62385"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_simd&apos; (S2/conv1d.h:804) in function &apos;void Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;(hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;, FORWARD_REFERENCE const&amp;, FORWARD_REFERENCE const&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_simd&apos; (S2/conv1d.h:1131) in function &apos;void Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;(hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2.1&apos; (S2/conv1d.h:1784) in function &apos;void StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;(hls::stream&lt;ap_uint&lt;8&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt; &gt;&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-3.1.1.1&apos; (S2/conv1d.h:1801) in function &apos;void StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;(hls::stream&lt;ap_uint&lt;8&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt; &gt;&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-3.2.1&apos; (S2/conv1d.h:1820) in function &apos;void StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;(hls::stream&lt;ap_uint&lt;8&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt; &gt;&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_simd&apos; (S2/conv1d.h:804) in function &apos;void Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;(hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;, FORWARD_REFERENCE const&amp;, FORWARD_REFERENCE const&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_simd&apos; (S2/conv1d.h:1131) in function &apos;void Relu1D&lt;(unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;(hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;, hls::stream&lt;ap_uint&lt;(FORWARD_REFERENCE) * (FORWARD_REFERENCE)&gt; &gt;&amp;)&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;43, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&lt;&lt;=&apos; into &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:729)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;51, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;log_apfixed_reduce::range_reduce&lt;ap_fixed&lt;44, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 38, 30&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:179)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;52, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;log_apfixed_reduce::range_reduce&lt;ap_fixed&lt;44, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 30, 25&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:179)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;28, 1, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:781)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0&gt;::quantization_adjust&apos; into &apos;ap_fixed_base&lt;8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;16, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&apos; ()."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:02:20 ; elapsed = 00:02:25 . Memory (MB): peak = 2941.609 ; gain = 2592.012 ; free physical = 8812 ; free virtual = 60021"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;shift_lfsr&apos; into &apos;get_random&apos; (S2/grouperPE.hpp:80) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;get_random&apos; into &apos;LFSR&apos; (S2/grouperPE.hpp:93) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;log_apfixed_reduce::range_reduce&lt;ap_fixed&lt;44, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 38, 30&gt;&apos; into &apos;log_apfixed_reduce::log_traits&lt;3&gt;::range_reduction&lt;38&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:277) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;log_apfixed_reduce::range_reduce&lt;ap_fixed&lt;44, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 30, 25&gt;&apos; into &apos;log_apfixed_reduce::log_traits&lt;3&gt;::range_reduction&lt;38&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:279) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;log_apfixed_reduce::log_traits&lt;3&gt;::range_reduction&lt;38&gt;&apos; into &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:767) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fabs_fixed&lt;17, 9&gt;&apos; into &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:94) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;LFSR&apos; into &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; (S2/grouperPE.hpp:151) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;hls::pow&lt;16, 8&gt;&apos; into &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; (S2/grouperPE.hpp:183) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;findMin&lt;ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, unsigned int, unsigned int&gt;&apos; into &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; (S2/grouperPE.hpp:191) automatically."/>
+	<Message severity="WARNING" prefix="[SYNCHK 200-23]" key="SYNCHK_VAR_INDEX_RANGE_359" tag="" content="/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:75: variable-indexed range selection may cause suboptimal QoR."/>
+	<Message severity="INFO" prefix="[SYNCHK 200-10]" key="SYNCHK_SYNCHK_SUMMARY_377" tag="" content="0 error(s), 1 warning(s)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:02:30 ; elapsed = 00:02:35 . Memory (MB): peak = 2941.609 ; gain = 2592.012 ; free physical = 8787 ; free virtual = 60012"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:63:29)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:497:123)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:877:29)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;loop_synapseFold&apos; (S2/conv1d.h:793) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;loop_synapseFold&apos; (S2/conv1d.h:793) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:75) in function &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:134) in function &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-3&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:177) in function &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:726) in function &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1&apos; (S2/grouperPE.hpp:154) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; completely."/>
+	<Message severity="WARNING" prefix="[XFORM 203-505]" key="XFORM_UNROLL_DEAD_PIPELINE_318" tag="SDX_LOOP" content="Pipeline directive for loop &apos;Loop-1&apos; (S2/grouperPE.hpp:154) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; has been removed because the loop is unrolled completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2.1&apos; (S2/grouperPE.hpp:162) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; completely."/>
+	<Message severity="WARNING" prefix="[XFORM 203-505]" key="XFORM_UNROLL_DEAD_PIPELINE_318" tag="SDX_LOOP" content="Pipeline directive for loop &apos;Loop-2.1&apos; (S2/grouperPE.hpp:162) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; has been removed because the loop is unrolled completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-5.1&apos; (S2/grouperPE.hpp:201) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; completely."/>
+	<Message severity="WARNING" prefix="[XFORM 203-505]" key="XFORM_UNROLL_DEAD_PIPELINE_318" tag="SDX_LOOP" content="Pipeline directive for loop &apos;Loop-5.1&apos; (S2/grouperPE.hpp:201) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; has been removed because the loop is unrolled completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:1147) in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:1153) in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-3&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:1257) in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-4&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:1263) in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-5&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:1266) in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-1&apos; (S2/grouperPE.hpp:91) in function &apos;LFSR&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_init&apos; (S2/conv1d.h:785) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_pe&apos; (S2/conv1d.h:798) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2.1.1.2&apos; (S2/conv1d.h:851) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_init&apos; (S2/conv1d.h:785) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_pe&apos; (S2/conv1d.h:798) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;Loop-2.1.1.2&apos; (S2/conv1d.h:851) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_121" tag="" content="Partitioning array &apos;inputBuf.V&apos; (S2/conv1d.h:231) in dimension 1 automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_121" tag="" content="Partitioning array &apos;inputBuf.V&apos; (S2/conv1d.h:231) in dimension 1 automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;pcl.V&apos;  in dimension 1 with a block factor 16."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;inputPC.V&apos; (S2/grouperPE.hpp:127) in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;featurePC.V&apos; (S2/grouperPE.hpp:128) in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;knnIndices&apos;  in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;indices&apos; (S2/grouperPE.hpp:138) in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;indexedFeatures.V&apos; (S2/grouperPE.hpp:134) in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;sampledFeatures.V&apos; (S2/grouperPE.hpp:135) in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;sampStore&apos; (S2/grouperPE.hpp:136) in dimension 1 with a block factor 4."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;distances.V&apos; (S2/grouperPE.hpp:133) in dimension 1 with a block factor 8."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;buf.V&apos; (S2/conv1d.h:1779) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;weights8.m_weights.V&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;bias8.m_weights.V&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;macRegisters.V&apos; (S2/conv1d.h:781) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;weights10.m_weights.V&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;bias10.m_weights.V&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;macRegisters.V&apos; (S2/conv1d.h:781) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;weights6.m_weights.V&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;bias6.m_weights.V&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;macRegisters.V&apos; (S2/conv1d.h:781) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;weights7.m_weights.V&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;bias7.m_weights.V&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;macRegisters.V&apos; (S2/conv1d.h:781) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;weights9.m_weights.V&apos;  in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;bias9.m_weights.V&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;macRegisters.V&apos; (S2/conv1d.h:781) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;shift_lfsr&apos; into &apos;get_random&apos; (S2/grouperPE.hpp:80) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;log_apfixed_reduce::range_reduce&lt;ap_fixed&lt;44, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, 4, 38, 30&gt;&apos; into &apos;log_apfixed_reduce::log_traits&lt;3&gt;::range_reduction&lt;38&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:277) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;log_apfixed_reduce::range_reduce&lt;ap_fixed&lt;44, 7, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 7, 6, 30, 25&gt;&apos; into &apos;log_apfixed_reduce::log_traits&lt;3&gt;::range_reduction&lt;38&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:279) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;log_apfixed_reduce::log_traits&lt;3&gt;::range_reduction&lt;38&gt;&apos; into &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:767) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;fabs_fixed&lt;17, 9&gt;&apos; into &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_pow_apfixed.h:94) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;pow_apfixed_reduce::pow&lt;16, 8&gt;&apos; into &apos;hls::pow&lt;16, 8&gt;&apos; (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_math.h:1480) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;computeS2&apos;, detected/extracted 26 process function(s): 
+	 &apos;loadPCL&apos;
+	 &apos;ResizeStream&lt;64u, 8u, 16384u&gt;&apos;
+	 &apos;CloneStreamOnce&apos;
+	 &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos;
+	 &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;397&apos;
+	 &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;398&apos;
+	 &apos;Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;399&apos;
+	 &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 65536u&gt;400&apos;
+	 &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;401&apos;
+	 &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;402&apos;
+	 &apos;Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;403&apos;
+	 &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 65536u&gt;404&apos;
+	 &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos;
+	 &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos;
+	 &apos;Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;&apos;
+	 &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 65536u&gt;&apos;
+	 &apos;StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;&apos;
+	 &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;405&apos;
+	 &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;406&apos;
+	 &apos;Relu1D&lt;(unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;407&apos;
+	 &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 4096u&gt;408&apos;
+	 &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos;
+	 &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos;
+	 &apos;Relu1D&lt;(unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;&apos;
+	 &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 4096u&gt;&apos;
+	 &apos;ResizeStream&lt;8u, 64u, 16384u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:724:44) to (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_log_apfixed.h:744:17) in function &apos;log_apfixed_reduce::log&lt;35, 9&gt;&apos;... converting 36 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (S2/grouperPE.hpp:171:24) to (S2/grouperPE.hpp:200:23) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/hls_exp_apfixed.h:877:1) in function &apos;exp_reduce::exp_core&lt;16, 8, 26&gt;&apos;... converting 4 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[96 x i8]P.i32.i64&apos; into &apos;loadPCL&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;get_random&apos; (S2/grouperPE.hpp:51)...3 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:02:55 ; elapsed = 00:03:00 . Memory (MB): peak = 2941.609 ; gain = 2592.012 ; free physical = 8777 ; free virtual = 60021"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-3.1&apos; (S2/grouperPE.hpp:212:28) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-3&apos; (S2/grouperPE.hpp:210:24) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-4&apos; (S2/grouperPE.hpp:221:24) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-5.1&apos; (S2/grouperPE.hpp:231:25) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-5&apos; (S2/grouperPE.hpp:230:24) in function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (S2/conv1d.h:1795:29) in function &apos;StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (S2/conv1d.h:1793:27) in function &apos;StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_neuronFold&apos; (S2/conv1d.h:792:74) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;402&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_ofmChannels&apos; (S2/conv1d.h:791:85) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;402&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_neuronFold&apos; (S2/conv1d.h:792:74) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;398&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_ofmChannels&apos; (S2/conv1d.h:791:85) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;398&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_neuronFold&apos; (S2/conv1d.h:792:74) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_ofmChannels&apos; (S2/conv1d.h:791:85) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_neuronFold&apos; (S2/conv1d.h:792:74) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;406&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_ofmChannels&apos; (S2/conv1d.h:791:85) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;406&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_neuronFold&apos; (S2/conv1d.h:792:74) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;loop_ofmChannels&apos; (S2/conv1d.h:791:85) in function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (S2/conv1d.h:244:26) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;401&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (S2/conv1d.h:243:31) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;401&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (S2/conv1d.h:244:26) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;397&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (S2/conv1d.h:243:31) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;397&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (S2/conv1d.h:244:26) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (S2/conv1d.h:243:31) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (S2/conv1d.h:244:26) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;405&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (S2/conv1d.h:243:31) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;405&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (S2/conv1d.h:244:26) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (S2/conv1d.h:243:31) in function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;grouperPE&lt;64u, 256u, 16u, 128u&gt;&apos; to &apos;grouperPE&apos; (S2/grouperPE.hpp:128:46)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingMaxPool_Precision_1d&lt;2048u, 16u, 128u, 1u, 128u&gt;&apos; to &apos;StreamingMaxPool_Pre&apos; (S2/conv1d.h:1779:39)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 65536u&gt;404&apos; to &apos;StreamingDataWidthCo&apos; (S2/conv1d.h:52:46)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 65536u&gt;400&apos; to &apos;StreamingDataWidthCo.1&apos; (S2/conv1d.h:52:46)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 65536u&gt;&apos; to &apos;StreamingDataWidthCo.2&apos; (S2/conv1d.h:52:46)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 4096u&gt;408&apos; to &apos;StreamingDataWidthCo.3&apos; (S2/conv1d.h:52:46)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;StreamingDataWidthConverter_Batch&lt;32u, 8u, 4096u&gt;&apos; to &apos;StreamingDataWidthCo.4&apos; (S2/conv1d.h:52:46)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;ResizeStream&lt;8u, 64u, 16384u&gt;&apos; to &apos;ResizeStream&apos; (S2/conv1d.h:19:37)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;ResizeStream&lt;64u, 8u, 16384u&gt;&apos; to &apos;ResizeStream.1&apos; (S2/conv1d.h:19:37)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;403&apos; to &apos;Relu1D403&apos; (S2/conv1d.h:1123:50)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;399&apos; to &apos;Relu1D399&apos; (S2/conv1d.h:1123:50)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Relu1D&lt;(unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;&apos; to &apos;Relu1D&apos; (S2/conv1d.h:1123:50)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Relu1D&lt;(unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;407&apos; to &apos;Relu1D407&apos; (S2/conv1d.h:1123:50)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Relu1D&lt;(unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1&gt;&apos; to &apos;Relu1D.1&apos; (S2/conv1d.h:1123:50)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;402&apos; to &apos;Conv1DMac_new402&apos; (S2/conv1d.h:791:74)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;398&apos; to &apos;Conv1DMac_new398&apos; (S2/conv1d.h:791:74)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; to &apos;Conv1DMac_new&apos; (S2/conv1d.h:791:74)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;406&apos; to &apos;Conv1DMac_new406&apos; (S2/conv1d.h:791:74)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DMac_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)0, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 4096u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 4u, 32u&gt; &gt;&apos; to &apos;Conv1DMac_new.1&apos; (S2/conv1d.h:791:74)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;401&apos; to &apos;Conv1DBuffer_new401&apos; (S2/conv1d.h:231:59)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;397&apos; to &apos;Conv1DBuffer_new397&apos; (S2/conv1d.h:231:59)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)1, (unsigned short)128, (unsigned short)2048, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos; to &apos;Conv1DBuffer_new&apos; (S2/conv1d.h:231:59)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;405&apos; to &apos;Conv1DBuffer_new405&apos; (S2/conv1d.h:231:59)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;Conv1DBuffer_new&lt;(unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)1, (unsigned short)128, (unsigned short)128, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1&gt;&apos; to &apos;Conv1DBuffer_new.1&apos; (S2/conv1d.h:231:59)"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:03:04 ; elapsed = 00:03:09 . Memory (MB): peak = 3069.602 ; gain = 2720.004 ; free physical = 8553 ; free virtual = 59799"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;computeS2&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;ResizeStream.1&apos; to &apos;ResizeStream_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;StreamingDataWidthCo.1&apos; to &apos;StreamingDataWidthCo_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;StreamingDataWidthCo.2&apos; to &apos;StreamingDataWidthCo_2&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;StreamingDataWidthCo.3&apos; to &apos;StreamingDataWidthCo_3&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;Conv1DBuffer_new.1&apos; to &apos;Conv1DBuffer_new_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;Conv1DMac_new.1&apos; to &apos;Conv1DMac_new_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;Relu1D.1&apos; to &apos;Relu1D_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;StreamingDataWidthCo.4&apos; to &apos;StreamingDataWidthCo_4&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;loadPCL&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 189.1 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.17 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;ResizeStream_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.19 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 1 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;CloneStreamOnce&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.14 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.09 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;get_random&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.1 seconds; current allocated memory: 1.799 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 1.800 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;LFSR&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 4.75 seconds; current allocated memory: 1.801 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.75 seconds; current allocated memory: 1.802 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;grouperPE&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 4.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 5.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 5.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.46 seconds; current allocated memory: 1.807 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.57 seconds; current allocated memory: 1.812 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DBuffer_new397&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.93 seconds; current allocated memory: 1.812 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 1.812 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DMac_new398&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_ofmChannels_loop_neuronFold_loop_synapseFold&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 1.813 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.22 seconds; current allocated memory: 1.814 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Relu1D399&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_dim&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 1.814 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 1.814 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingDataWidthCo_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.12 seconds; current allocated memory: 1.814 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 1.814 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DBuffer_new401&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 1.814 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.12 seconds; current allocated memory: 1.815 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DMac_new402&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_ofmChannels_loop_neuronFold_loop_synapseFold&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.28 seconds; current allocated memory: 1.815 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.22 seconds; current allocated memory: 1.816 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Relu1D403&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_dim&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 1.816 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 1.816 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingDataWidthCo&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 1.816 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 1.816 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DBuffer_new&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.19 seconds; current allocated memory: 1.817 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 1.817 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DMac_new&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_ofmChannels_loop_neuronFold_loop_synapseFold&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 1.817 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.22 seconds; current allocated memory: 1.818 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Relu1D&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_dim&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 1.818 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.07 seconds; current allocated memory: 1.818 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingDataWidthCo_2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 1.819 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 1.819 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingMaxPool_Pre&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 1."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 1.819 GB."/>
+	<Message severity="WARNING" prefix="[HLS 200-433]" key="HLS 200-433" tag="SDX" content="Loop - Loop 1 has an initiation interval that is equal to the pipeline depth (1) - this results in an unpipelined loop."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.14 seconds; current allocated memory: 1.819 GB."/>
+	<Message severity="WARNING" prefix="[HLS 200-433]" key="HLS 200-433" tag="SDX" content="Loop - Loop 1 has an initiation interval that is equal to the pipeline depth (1) - this results in an unpipelined loop."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DBuffer_new405&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.25 seconds; current allocated memory: 1.819 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 1.820 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DMac_new406&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_ofmChannels_loop_neuronFold_loop_synapseFold&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.3 seconds; current allocated memory: 1.820 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.24 seconds; current allocated memory: 1.821 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Relu1D407&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_dim&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.31 seconds; current allocated memory: 1.821 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 1.821 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingDataWidthCo_3&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.14 seconds; current allocated memory: 1.821 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 1.822 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DBuffer_new_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.2 seconds; current allocated memory: 1.822 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 1.822 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Conv1DMac_new_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_ofmChannels_loop_neuronFold_loop_synapseFold&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.29 seconds; current allocated memory: 1.823 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.23 seconds; current allocated memory: 1.823 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;Relu1D_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;loop_dim&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.3 seconds; current allocated memory: 1.823 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.07 seconds; current allocated memory: 1.824 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;StreamingDataWidthCo_4&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.14 seconds; current allocated memory: 1.824 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.08 seconds; current allocated memory: 1.824 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;ResizeStream&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.11 seconds; current allocated memory: 1.824 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 1.824 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;computeS2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.16 seconds; current allocated memory: 1.824 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.77 seconds; current allocated memory: 1.826 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;loadPCL&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;loadPCL&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.81 seconds; current allocated memory: 1.828 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;ResizeStream_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;ResizeStream_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.24 seconds; current allocated memory: 1.829 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;CloneStreamOnce&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;CloneStreamOnce&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.09 seconds; current allocated memory: 1.830 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;get_random&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;get_random&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.09 seconds; current allocated memory: 1.830 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;LFSR&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;LFSR&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.21 seconds; current allocated memory: 1.834 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;grouperPE&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_featurePC_0_V&apos; to &apos;grouperPE_featurebkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_featurePC_1_V&apos; to &apos;grouperPE_featurecud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_featurePC_2_V&apos; to &apos;grouperPE_featuredEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_featurePC_3_V&apos; to &apos;grouperPE_featureeOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_indexedFeatures_0_V&apos; to &apos;grouperPE_indexedfYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_indexedFeatures_1_V&apos; to &apos;grouperPE_indexedg8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_indexedFeatures_2_V&apos; to &apos;grouperPE_indexedhbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_indexedFeatures_3_V&apos; to &apos;grouperPE_indexedibs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampledFeatures_0_V&apos; to &apos;grouperPE_sampledjbC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampledFeatures_1_V&apos; to &apos;grouperPE_sampledkbM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampledFeatures_2_V&apos; to &apos;grouperPE_sampledlbW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampledFeatures_3_V&apos; to &apos;grouperPE_sampledmb6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampStore_0&apos; to &apos;grouperPE_sampStoncg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampStore_1&apos; to &apos;grouperPE_sampStoocq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampStore_2&apos; to &apos;grouperPE_sampStopcA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;grouperPE_sampStore_3&apos; to &apos;grouperPE_sampStoqcK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;computeS2_mux_432_32_1_1&apos; to &apos;computeS2_mux_432rcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;computeS2_mux_432_8_1_1&apos; to &apos;computeS2_mux_432sc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_432rcU&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_432sc4&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;grouperPE&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.85 seconds; current allocated memory: 1.848 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DBuffer_new397&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DBuffer_new397_inputBuf_0_V&apos; to &apos;Conv1DBuffer_new3tde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DBuffer_new397&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.35 seconds; current allocated memory: 1.865 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DMac_new398&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new398_weights6_m_weights_V&apos; to &apos;Conv1DMac_new398_udo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new398_weights6_m_weights_V_1&apos; to &apos;Conv1DMac_new398_vdy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new398_weights6_m_weights_V_2&apos; to &apos;Conv1DMac_new398_wdI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new398_weights6_m_weights_V_3&apos; to &apos;Conv1DMac_new398_xdS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;computeS2_mux_325_8_1_1&apos; to &apos;computeS2_mux_325yd2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_325yd2&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DMac_new398&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.36 seconds; current allocated memory: 1.868 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Relu1D399&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Relu1D399&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.43 seconds; current allocated memory: 1.870 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingDataWidthCo_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingDataWidthCo_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.16 seconds; current allocated memory: 1.871 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DBuffer_new401&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DBuffer_new401_inputBuf_0_V&apos; to &apos;Conv1DBuffer_new4zec&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DBuffer_new401&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.19 seconds; current allocated memory: 1.872 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DMac_new402&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new402_weights7_m_weights_V&apos; to &apos;Conv1DMac_new402_Aem&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new402_weights7_m_weights_V_1&apos; to &apos;Conv1DMac_new402_Bew&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new402_weights7_m_weights_V_2&apos; to &apos;Conv1DMac_new402_CeG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new402_weights7_m_weights_V_3&apos; to &apos;Conv1DMac_new402_DeQ&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_751" tag="" content="RTL name &apos;computeS2_mux_325yd2&apos; is changed to &apos;computeS2_mux_325yd2_x&apos; due to conflict."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_325yd2_x&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DMac_new402&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.39 seconds; current allocated memory: 1.874 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Relu1D403&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Relu1D403&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.45 seconds; current allocated memory: 1.877 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingDataWidthCo&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingDataWidthCo&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.18 seconds; current allocated memory: 1.878 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DBuffer_new&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DBuffer_new_inputBuf_0_V&apos; to &apos;Conv1DBuffer_new_Ee0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DBuffer_new&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.22 seconds; current allocated memory: 1.879 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DMac_new&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_weights8_m_weights_V&apos; to &apos;Conv1DMac_new_weiFfa&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_weights8_m_weights_V_1&apos; to &apos;Conv1DMac_new_weiGfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_weights8_m_weights_V_2&apos; to &apos;Conv1DMac_new_weiHfu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_weights8_m_weights_V_3&apos; to &apos;Conv1DMac_new_weiIfE&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_751" tag="" content="RTL name &apos;computeS2_mux_325yd2&apos; is changed to &apos;computeS2_mux_325yd2_x_x&apos; due to conflict."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_325yd2_x_x&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DMac_new&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.41 seconds; current allocated memory: 1.881 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Relu1D&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Relu1D&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.47 seconds; current allocated memory: 1.884 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingDataWidthCo_2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingDataWidthCo_2&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.2 seconds; current allocated memory: 1.884 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingMaxPool_Pre&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;StreamingMaxPool_Pre_buf_0_V&apos; to &apos;StreamingMaxPool_JfO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingMaxPool_Pre&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.25 seconds; current allocated memory: 1.885 GB."/>
+	<Message severity="WARNING" prefix="[HLS 200-433]" key="HLS 200-433" tag="SDX" content="Loop - Loop 1 has an initiation interval that is equal to the pipeline depth (1) - this results in an unpipelined loop."/>
+	<Message severity="WARNING" prefix="[HLS 200-433]" key="HLS 200-433" tag="SDX" content="Loop - Loop 1 has an initiation interval that is equal to the pipeline depth (1) - this results in an unpipelined loop."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DBuffer_new405&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DBuffer_new405_inputBuf_0_V&apos; to &apos;Conv1DBuffer_new4KfY&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DBuffer_new405&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.32 seconds; current allocated memory: 1.887 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DMac_new406&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new406_weights9_m_weights_V&apos; to &apos;Conv1DMac_new406_Lf8&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new406_weights9_m_weights_V_1&apos; to &apos;Conv1DMac_new406_Mgi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new406_weights9_m_weights_V_2&apos; to &apos;Conv1DMac_new406_Ngs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new406_weights9_m_weights_V_3&apos; to &apos;Conv1DMac_new406_OgC&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_751" tag="" content="RTL name &apos;computeS2_mux_325yd2&apos; is changed to &apos;computeS2_mux_325yd2_x_x_x&apos; due to conflict."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_325yd2_x_x_x&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DMac_new406&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.45 seconds; current allocated memory: 1.889 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Relu1D407&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Relu1D407&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.5 seconds; current allocated memory: 1.892 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingDataWidthCo_3&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingDataWidthCo_3&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.21 seconds; current allocated memory: 1.893 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DBuffer_new_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DBuffer_new_1_inputBuf_0_V&apos; to &apos;Conv1DBuffer_new_PgM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DBuffer_new_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.25 seconds; current allocated memory: 1.894 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Conv1DMac_new_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_1_weights10_m_weights_3&apos; to &apos;Conv1DMac_new_1_wQgW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_1_weights10_m_weights_2&apos; to &apos;Conv1DMac_new_1_wRg6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_1_weights10_m_weights_1&apos; to &apos;Conv1DMac_new_1_wShg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Conv1DMac_new_1_weights10_m_weights_s&apos; to &apos;Conv1DMac_new_1_wThq&apos; due to the length limit 20"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_751" tag="" content="RTL name &apos;computeS2_mux_325yd2&apos; is changed to &apos;computeS2_mux_325yd2_x_x_x_x&apos; due to conflict."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;computeS2_mux_325yd2_x_x_x_x&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Conv1DMac_new_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.49 seconds; current allocated memory: 1.896 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Relu1D_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Relu1D_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.52 seconds; current allocated memory: 1.899 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;StreamingDataWidthCo_4&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;StreamingDataWidthCo_4&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.24 seconds; current allocated memory: 1.900 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;ResizeStream&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;ResizeStream&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.24 seconds; current allocated memory: 1.900 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;computeS2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;computeS2/input1_V_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;computeS2/s2_out_V_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;computeS2&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos; to AXI-Lite port control."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_grouperPE_U0&apos; to &apos;start_for_grouperUhA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DBuffer_new397_U0&apos; to &apos;start_for_Conv1DBVhK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DMac_new398_U0&apos; to &apos;start_for_Conv1DMWhU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Relu1D399_U0&apos; to &apos;start_for_Relu1D3Xh4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_StreamingDataWidthCo_1_U0&apos; to &apos;start_for_StreamiYie&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DBuffer_new401_U0&apos; to &apos;start_for_Conv1DBZio&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DMac_new402_U0&apos; to &apos;start_for_Conv1DM0iy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Relu1D403_U0&apos; to &apos;start_for_Relu1D41iI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_StreamingDataWidthCo_U0&apos; to &apos;start_for_Streami2iS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DBuffer_new_U0&apos; to &apos;start_for_Conv1DB3i2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DMac_new_U0&apos; to &apos;start_for_Conv1DM4jc&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_StreamingDataWidthCo_2_U0&apos; to &apos;start_for_Streami5jm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_StreamingMaxPool_Pre_U0&apos; to &apos;start_for_Streami6jw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DBuffer_new405_U0&apos; to &apos;start_for_Conv1DB7jG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DMac_new406_U0&apos; to &apos;start_for_Conv1DM8jQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Relu1D407_U0&apos; to &apos;start_for_Relu1D49j0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_StreamingDataWidthCo_3_U0&apos; to &apos;start_for_Streamibak&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DBuffer_new_1_U0&apos; to &apos;start_for_Conv1DBbbk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Conv1DMac_new_1_U0&apos; to &apos;start_for_Conv1DMbck&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_Relu1D_1_U0&apos; to &apos;start_for_Relu1D_bdk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_StreamingDataWidthCo_4_U0&apos; to &apos;start_for_Streamibek&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_ResizeStream_U0&apos; to &apos;start_for_ResizeSbfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;computeS2&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.43 seconds; current allocated memory: 1.903 GB."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_0_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_1415_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_2422_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_3423_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_4424_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_5425_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_6426_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_7427_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_8428_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_9429_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_10416_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_11417_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_12418_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_13419_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_14420_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;loadPCL_pcl_V_15421_rom&apos; using distributed ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;grouperPE_featurebkb_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;grouperPE_featurecud_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;grouperPE_indexedfYi_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;grouperPE_sampledjbC_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;grouperPE_sampStoncg_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;sampleStream_V_U(fifo_w32_d256_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;Conv1DBuffer_new3tde_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new398_udo_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new398_vdy_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new398_wdI_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new398_xdS_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new402_Aem_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new402_Bew_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new402_CeG_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new402_DeQ_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_weiFfa_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_weiGfk_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_weiHfu_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_weiIfE_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;StreamingMaxPool_JfO_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new406_Lf8_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new406_Mgi_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new406_Ngs_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new406_OgC_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_1_wQgW_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_1_wRg6_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_1_wShg_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;Conv1DMac_new_1_wThq_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;inStr_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_26_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;in_1_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_27_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_28_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_29PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_30PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_31_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_32_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_33PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_34PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_35_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_36_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_37PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_38PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_39_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_40_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_41_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_42PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_43PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_44_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_45_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_46PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_47PRL_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;cnv_48_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_grouperUhA_U(start_for_grouperUhA)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DBVhK_U(start_for_Conv1DBVhK)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DMWhU_U(start_for_Conv1DMWhU)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Relu1D3Xh4_U(start_for_Relu1D3Xh4)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_StreamiYie_U(start_for_StreamiYie)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DBZio_U(start_for_Conv1DBZio)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DM0iy_U(start_for_Conv1DM0iy)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Relu1D41iI_U(start_for_Relu1D41iI)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Streami2iS_U(start_for_Streami2iS)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DB3i2_U(start_for_Conv1DB3i2)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DM4jc_U(start_for_Conv1DM4jc)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Relu1D_U0_U(start_for_Relu1D_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Streami5jm_U(start_for_Streami5jm)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Streami6jw_U(start_for_Streami6jw)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DB7jG_U(start_for_Conv1DB7jG)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DM8jQ_U(start_for_Conv1DM8jQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Relu1D49j0_U(start_for_Relu1D49j0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Streamibak_U(start_for_Streamibak)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DBbbk_U(start_for_Conv1DBbbk)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Conv1DMbck_U(start_for_Conv1DMbck)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Relu1D_bdk_U(start_for_Relu1D_bdk)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_Streamibek_U(start_for_Streamibek)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_ResizeSbfk_U(start_for_ResizeSbfk)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:03:41 ; elapsed = 00:03:51 . Memory (MB): peak = 3133.602 ; gain = 2784.004 ; free physical = 8341 ; free virtual = 59630"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for computeS2."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for computeS2."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for computeS2."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 230.71 seconds; peak allocated memory: 1.903 GB."/>
+</Messages>

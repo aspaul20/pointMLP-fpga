@@ -1,0 +1,206 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'computeS2'" level="0">
+<item name = "Date">Sat May 13 19:59:25 2023
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">S2</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.198, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">25442976, 25442976, 8388741, 8388741, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grouperPE_U0">grouperPE, 438278, 438278, 438278, 438278, none</column>
+<column name="Conv1DMac_new406_U0">Conv1DMac_new406, 524293, 524293, 524293, 524293, none</column>
+<column name="Conv1DMac_new402_U0">Conv1DMac_new402, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="Conv1DMac_new_U0">Conv1DMac_new, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="Conv1DMac_new398_U0">Conv1DMac_new398, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="Conv1DMac_new_1_U0">Conv1DMac_new_1, 524293, 524293, 524293, 524293, none</column>
+<column name="loadPCL_U0">loadPCL, 1538, 1538, 1538, 1538, none</column>
+<column name="Conv1DBuffer_new397_U0">Conv1DBuffer_new397, 8388740, 8388740, 8388740, 8388740, none</column>
+<column name="Conv1DBuffer_new401_U0">Conv1DBuffer_new401, 8388740, 8388740, 8388740, 8388740, none</column>
+<column name="Conv1DBuffer_new_U0">Conv1DBuffer_new, 8388740, 8388740, 8388740, 8388740, none</column>
+<column name="Conv1DBuffer_new405_U0">Conv1DBuffer_new405, 524420, 524420, 524420, 524420, none</column>
+<column name="Conv1DBuffer_new_1_U0">Conv1DBuffer_new_1, 524420, 524420, 524420, 524420, none</column>
+<column name="StreamingDataWidthCo_1_U0">StreamingDataWidthCo_1, 262146, 262146, 262146, 262146, none</column>
+<column name="StreamingDataWidthCo_U0">StreamingDataWidthCo, 262146, 262146, 262146, 262146, none</column>
+<column name="StreamingDataWidthCo_2_U0">StreamingDataWidthCo_2, 262146, 262146, 262146, 262146, none</column>
+<column name="StreamingDataWidthCo_3_U0">StreamingDataWidthCo_3, 16386, 16386, 16386, 16386, none</column>
+<column name="StreamingDataWidthCo_4_U0">StreamingDataWidthCo_4, 16386, 16386, 16386, 16386, none</column>
+<column name="StreamingMaxPool_Pre_U0">StreamingMaxPool_Pre, 279299, 279299, 279299, 279299, none</column>
+<column name="ResizeStream_U0">ResizeStream, 32769, 32769, 32769, 32769, none</column>
+<column name="Relu1D399_U0">Relu1D399, 65538, 65538, 65538, 65538, none</column>
+<column name="Relu1D403_U0">Relu1D403, 65538, 65538, 65538, 65538, none</column>
+<column name="Relu1D_U0">Relu1D, 65538, 65538, 65538, 65538, none</column>
+<column name="Relu1D407_U0">Relu1D407, 4098, 4098, 4098, 4098, none</column>
+<column name="Relu1D_1_U0">Relu1D_1, 4098, 4098, 4098, 4098, none</column>
+<column name="ResizeStream_1_U0">ResizeStream_1, 32769, 32769, 32769, 32769, none</column>
+<column name="CloneStreamOnce_U0">CloneStreamOnce, 1538, 1538, 1538, 1538, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 2</column>
+<column name="FIFO">0, -, 125, 740</column>
+<column name="Instance">124, 0, 6339, 20242</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, 1, -</column>
+<specialColumn name="Available">1090, 900, 437200, 218600</specialColumn>
+<specialColumn name="Utilization (%)">11, 0, 1, 9</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="CloneStreamOnce_U0">CloneStreamOnce, 0, 0, 18, 113</column>
+<column name="Conv1DBuffer_new_U0">Conv1DBuffer_new, 1, 0, 101, 478</column>
+<column name="Conv1DBuffer_new397_U0">Conv1DBuffer_new397, 1, 0, 101, 478</column>
+<column name="Conv1DBuffer_new401_U0">Conv1DBuffer_new401, 1, 0, 101, 478</column>
+<column name="Conv1DBuffer_new405_U0">Conv1DBuffer_new405, 1, 0, 93, 462</column>
+<column name="Conv1DBuffer_new_1_U0">Conv1DBuffer_new_1, 1, 0, 93, 462</column>
+<column name="Conv1DMac_new_U0">Conv1DMac_new, 8, 0, 377, 1413</column>
+<column name="Conv1DMac_new398_U0">Conv1DMac_new398, 8, 0, 376, 1413</column>
+<column name="Conv1DMac_new402_U0">Conv1DMac_new402, 8, 0, 377, 1413</column>
+<column name="Conv1DMac_new406_U0">Conv1DMac_new406, 4, 0, 349, 1465</column>
+<column name="Conv1DMac_new_1_U0">Conv1DMac_new_1, 8, 0, 373, 1409</column>
+<column name="Relu1D_U0">Relu1D, 0, 0, 25, 164</column>
+<column name="Relu1D399_U0">Relu1D399, 0, 0, 25, 164</column>
+<column name="Relu1D403_U0">Relu1D403, 0, 0, 25, 164</column>
+<column name="Relu1D407_U0">Relu1D407, 0, 0, 21, 155</column>
+<column name="Relu1D_1_U0">Relu1D_1, 0, 0, 21, 155</column>
+<column name="ResizeStream_U0">ResizeStream, 0, 0, 166, 134</column>
+<column name="ResizeStream_1_U0">ResizeStream_1, 0, 0, 167, 141</column>
+<column name="StreamingDataWidthCo_U0">StreamingDataWidthCo, 0, 0, 84, 279</column>
+<column name="StreamingDataWidthCo_1_U0">StreamingDataWidthCo_1, 0, 0, 84, 279</column>
+<column name="StreamingDataWidthCo_2_U0">StreamingDataWidthCo_2, 0, 0, 84, 279</column>
+<column name="StreamingDataWidthCo_3_U0">StreamingDataWidthCo_3, 0, 0, 80, 270</column>
+<column name="StreamingDataWidthCo_4_U0">StreamingDataWidthCo_4, 0, 0, 80, 270</column>
+<column name="StreamingMaxPool_Pre_U0">StreamingMaxPool_Pre, 1, 0, 82, 372</column>
+<column name="computeS2_control_s_axi_U">computeS2_control_s_axi, 0, 0, 36, 40</column>
+<column name="grouperPE_U0">grouperPE, 82, 0, 2815, 7317</column>
+<column name="loadPCL_U0">loadPCL, 0, 0, 185, 475</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="cnv_26_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_27_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_28_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_29PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_30PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_31_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_32_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_33PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_34PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_35_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_36_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_37PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_38PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_39_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_40_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_41_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_42PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_43PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_44_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_45_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="cnv_46PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_47PRL_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="cnv_48_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="inStr_V_V_U">0, 5, 20, 2, 8, 16</column>
+<column name="in_1_V_V_U">0, 5, 20, 2, 8, 16</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="CloneStreamOnce_U0_ap_start">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_AWADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, return void</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_ARADDR">in, 4, s_axi, control, return void</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, return void</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, return void</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, return void</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, computeS2, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, computeS2, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, computeS2, return value</column>
+<column name="input1_V_V_TDATA">in, 64, axis, input1_V_V, pointer</column>
+<column name="input1_V_V_TVALID">in, 1, axis, input1_V_V, pointer</column>
+<column name="input1_V_V_TREADY">out, 1, axis, input1_V_V, pointer</column>
+<column name="s2_out_V_V_TDATA">out, 64, axis, s2_out_V_V, pointer</column>
+<column name="s2_out_V_V_TVALID">out, 1, axis, s2_out_V_V, pointer</column>
+<column name="s2_out_V_V_TREADY">in, 1, axis, s2_out_V_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vivado HLS Report for 'computeS4_3'
+================================================================
+* Date:           Tue May  9 10:02:40 2023
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        S4_3
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.198|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+----------+
+    |      Latency      |      Interval     | Pipeline |
+    |   min   |   max   |   min   |   max   |   Type   |
+    +---------+---------+---------+---------+----------+
+    |  2637844|  2637844|  2097413|  2097413| dataflow |
+    +---------+---------+---------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+------------------------+---------+---------+---------+---------+---------+
+        |                           |                        |      Latency      |      Interval     | Pipeline|
+        |          Instance         |         Module         |   min   |   max   |   min   |   max   |   Type  |
+        +---------------------------+------------------------+---------+---------+---------+---------+---------+
+        |Conv1DMac_new74_U0         |Conv1DMac_new74         |   524293|   524293|   524293|   524293|   none  |
+        |Conv1DMac_new_U0           |Conv1DMac_new           |   524293|   524293|   524293|   524293|   none  |
+        |Conv1DBuffer_new_1_U0      |Conv1DBuffer_new_1      |  2097412|  2097412|  2097412|  2097412|   none  |
+        |Conv1DBuffer_new_U0        |Conv1DBuffer_new        |   524548|   524548|   524548|   524548|   none  |
+        |StreamingDataWidthCo_U0    |StreamingDataWidthCo    |     8194|     8194|     8194|     8194|   none  |
+        |StreamingDataWidthCo_1_U0  |StreamingDataWidthCo_1  |     8194|     8194|     8194|     8194|   none  |
+        |StreamingMaxPool_Pre_U0    |StreamingMaxPool_Pre    |     8710|     8710|     8710|     8710|   none  |
+        |ResizeStream_U0            |ResizeStream            |      513|      513|      513|      513|   none  |
+        |Relu1D75_U0                |Relu1D75                |     2050|     2050|     2050|     2050|   none  |
+        |Relu1D_U0                  |Relu1D                  |     2050|     2050|     2050|     2050|   none  |
+        |ResizeStream_1_U0          |ResizeStream_1          |    16385|    16385|    16385|    16385|   none  |
+        +---------------------------+------------------------+---------+---------+---------+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|       2|
+|FIFO             |        0|      -|      50|     296|
+|Instance         |       63|      0|    1587|    6328|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |       63|      0|    1637|    6626|
++-----------------+---------+-------+--------+--------+
+|Available        |     1090|    900|  437200|  218600|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        5|      0|   ~0   |       3|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+---------------------------+---------+-------+-----+------+
+    |           Instance          |           Module          | BRAM_18K| DSP48E|  FF |  LUT |
+    +-----------------------------+---------------------------+---------+-------+-----+------+
+    |Conv1DBuffer_new_U0          |Conv1DBuffer_new           |        1|      0|   98|   469|
+    |Conv1DBuffer_new_1_U0        |Conv1DBuffer_new_1         |        1|      0|  104|   489|
+    |Conv1DMac_new_U0             |Conv1DMac_new              |       32|      0|  380|  1939|
+    |Conv1DMac_new74_U0           |Conv1DMac_new74            |       28|      0|  380|  1939|
+    |Relu1D_U0                    |Relu1D                     |        0|      0|   20|   154|
+    |Relu1D75_U0                  |Relu1D75                   |        0|      0|   20|   154|
+    |ResizeStream_U0              |ResizeStream               |        0|      0|  154|   128|
+    |ResizeStream_1_U0            |ResizeStream_1             |        0|      0|  165|   140|
+    |StreamingDataWidthCo_U0      |StreamingDataWidthCo       |        0|      0|   79|   269|
+    |StreamingDataWidthCo_1_U0    |StreamingDataWidthCo_1     |        0|      0|   79|   269|
+    |StreamingMaxPool_Pre_U0      |StreamingMaxPool_Pre       |        1|      0|   72|   338|
+    |computeS4_3_control_s_axi_U  |computeS4_3_control_s_axi  |        0|      0|   36|    40|
+    +-----------------------------+---------------------------+---------+-------+-----+------+
+    |Total                        |                           |       63|      0| 1587|  6328|
+    +-----------------------------+---------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------+---------+---+----+------+-----+---------+
+    |       Name       | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +------------------+---------+---+----+------+-----+---------+
+    |cnv_100_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_101_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_102PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_103PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_104_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_105_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_106PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_107PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_108_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |outStr_V_V_U      |        0|  5|  20|     2|    8|       16|
+    +------------------+---------+---+----+------+-----+---------+
+    |Total             |        0| 50| 296|    20|  176|      352|
+    +------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_idle       |    and   |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------+-----+-----+------------+--------------+--------------+
+|s_axi_control_AWVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWADDR   |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_WVALID   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WREADY   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WDATA    |  in |   32|    s_axi   |    control   |  return void |
+|s_axi_control_WSTRB    |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_ARVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARADDR   |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_RVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RDATA    | out |   32|    s_axi   |    control   |  return void |
+|s_axi_control_RRESP    | out |    2|    s_axi   |    control   |  return void |
+|s_axi_control_BVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BRESP    | out |    2|    s_axi   |    control   |  return void |
+|ap_clk                 |  in |    1| ap_ctrl_hs |  computeS4_3 | return value |
+|ap_rst_n               |  in |    1| ap_ctrl_hs |  computeS4_3 | return value |
+|interrupt              | out |    1| ap_ctrl_hs |  computeS4_3 | return value |
+|input1_V_V_TDATA       |  in |   64|    axis    |  input1_V_V  |    pointer   |
+|input1_V_V_TVALID      |  in |    1|    axis    |  input1_V_V  |    pointer   |
+|input1_V_V_TREADY      | out |    1|    axis    |  input1_V_V  |    pointer   |
+|output1_V_V_TDATA      | out |   64|    axis    |  output1_V_V |    pointer   |
+|output1_V_V_TVALID     | out |    1|    axis    |  output1_V_V |    pointer   |
+|output1_V_V_TREADY     |  in |    1|    axis    |  output1_V_V |    pointer   |
++-----------------------+-----+-----+------------+--------------+--------------+
+

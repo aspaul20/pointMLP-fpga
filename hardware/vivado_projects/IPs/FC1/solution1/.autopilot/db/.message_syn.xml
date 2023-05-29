@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;FC1/Compute.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 214-111]" key="HLS 214-111" tag="DATAFLOW,SDX_KERNEL" content="Static variables and non-static stream cannot be used inside a dataflow region: FC1/Compute.cpp:83:11"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 349.691 ; gain = 0.094 ; free physical = 19697 ; free virtual = 69021"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 349.691 ; gain = 0.094 ; free physical = 19697 ; free virtual = 69021"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;ap_fixed_base&lt;8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0&gt;::quantization_adjust&apos; into &apos;ap_fixed_base&lt;8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0&gt;::ap_fixed_base&lt;16, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&apos; ()."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1821.598 ; gain = 1472.000 ; free physical = 18211 ; free virtual = 67539"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.008 ; gain = 1472.410 ; free physical = 18210 ; free virtual = 67539"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_245" tag="" content="Unrolling small iteration loop &apos;loop_output_pe&apos; (FC1/conv1d.h:1557) in function &apos;FCMac&lt;(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 10240u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 40u&gt; &gt;&apos; automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-501]" key="XFORM_UNROLL_STATUS_325" tag="" content="Unrolling loop &apos;loop_output_pe&apos; (FC1/conv1d.h:1557) in function &apos;FCMac&lt;(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 10240u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 40u&gt; &gt;&apos; completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;weights27.m_weights.V&apos;  in dimension 1 completely."/>
+	<Message severity="WARNING" prefix="[XFORM 203-104]" key="XFORM_PARTITION_VAR_INDEX_118" tag="SDX_ARRAY" content="Completely partitioning array &apos;bias27.m_weights.V&apos;  accessed through non-constant indices on dimension 2 (FC1/conv1d.h:1493:62), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;bias27.m_weights.V&apos;  in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;macRegisters.V&apos; (FC1/conv1d.h:1481) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;FCL1&apos;, detected/extracted 3 process function(s): 
+	 &apos;ResizeStream&lt;64u, 8u, 256u&gt;&apos;
+	 &apos;FCMac&lt;(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 10240u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 40u&gt; &gt;&apos;
+	 &apos;ResizeStream&lt;8u, 64u, 40u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.40[1 x i8]P.i6.i64&apos; into &apos;FCMac&lt;(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 10240u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 40u&gt; &gt;&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1949.598 ; gain = 1600.000 ; free physical = 18190 ; free virtual = 67521"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;ResizeStream&lt;8u, 64u, 40u&gt;&apos; to &apos;ResizeStream&apos; (FC1/conv1d.h:19:37)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;ResizeStream&lt;64u, 8u, 256u&gt;&apos; to &apos;ResizeStream.1&apos; (FC1/conv1d.h:19:37)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;FCMac&lt;(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 10240u&gt;, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0&gt;, 1u, 40u&gt; &gt;&apos; to &apos;FCMac&apos; (FC1/conv1d.h:1481:53)"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1949.598 ; gain = 1600.000 ; free physical = 18173 ; free virtual = 67504"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;FCL1&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;ResizeStream.1&apos; to &apos;ResizeStream_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;ResizeStream_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 18.06 seconds; current allocated memory: 1.504 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 1 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.01 seconds; current allocated memory: 1.504 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;FCMac&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 1.505 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.04 seconds; current allocated memory: 1.505 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;ResizeStream&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 1.505 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.01 seconds; current allocated memory: 1.505 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;FCL1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.01 seconds; current allocated memory: 1.506 GB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.04 seconds; current allocated memory: 1.506 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;ResizeStream_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;ResizeStream_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.04 seconds; current allocated memory: 1.506 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;FCMac&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FCMac_weights27_m_weights_s&apos; to &apos;FCMac_weights27_mbkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FCMac_macRegisters_0_V&apos; to &apos;FCMac_macRegistercud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;FCL1_mux_646_8_1_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;FCMac&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.04 seconds; current allocated memory: 1.507 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;ResizeStream&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;ResizeStream&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.1 seconds; current allocated memory: 1.508 GB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;FCL1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;FCL1/input1_V_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;FCL1/s4_out_V_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;FCL1&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos; to AXI-Lite port control."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_ResizeStream_U0&apos; to &apos;start_for_ResizeSdEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;FCL1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.05 seconds; current allocated memory: 1.509 GB."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;FCMac_weights27_mbkb_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;FCMac_macRegistercud_ram (RAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;inn_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;outStr_V_V_U(fifo_w8_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_FCMac_U0_U(start_for_FCMac_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_ResizeSdEe_U(start_for_ResizeSdEe)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1949.598 ; gain = 1600.000 ; free physical = 18163 ; free virtual = 67496"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for FCL1."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for FCL1."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for FCL1."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 19.09 seconds; peak allocated memory: 1.509 GB."/>
+</Messages>

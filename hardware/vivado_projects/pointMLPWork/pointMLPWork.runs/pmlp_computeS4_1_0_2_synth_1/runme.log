@@ -1,0 +1,1696 @@
+
+*** Running vivado
+    with args -log pmlp_computeS4_1_0_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pmlp_computeS4_1_0_2.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source pmlp_computeS4_1_0_2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Desktop/FC1_lastLayerOnly/FC1/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Desktop/allSyn/S4/S4_1/S4_1/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Desktop/allSyn/S4/S4_2/S4_2/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Desktop/allSyn/S4/S4_3/S4_3/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Desktop/3_3_3/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Downloads/finalCopy/S2_loadPCL_noF/S2/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/efree/Downloads/finalCopy/S3_loadPCL_noF/S3/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top pmlp_computeS4_1_0_2 -part xc7z045ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8628 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 429.535 ; gain = 102.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pmlp_computeS4_1_0_2' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ip/pmlp_computeS4_1_0_2/synth/pmlp_computeS4_1_0_2.v:58]
+INFO: [Synth 8-6157] synthesizing module 'computeS4_1' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'computeS4_1_control_s_axi' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_control_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_control_s_axi.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'computeS4_1_control_s_axi' (1#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ResizeStream_1' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream_1.v:58]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_V_V_0_data_out_reg' and it is trimmed from '64' to '8' bits. [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream_1.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'ResizeStream_1' (2#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DBuffer_new' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state4 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:61]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DBuffer_new_bkb' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_bkb.v:62]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 512 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DBuffer_new_bkb_ram' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_bkb.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_bkb.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DBuffer_new_bkb_ram' (3#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_bkb.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DBuffer_new_bkb' (4#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_bkb.v:62]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:582]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:588]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:590]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:596]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:602]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:608]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:632]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DBuffer_new' (5#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state7 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:59]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weicud' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weicud.v:43]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 32768 - type: integer 
+	Parameter AddressWidth bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weicud_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weicud.v:9]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 15 - type: integer 
+	Parameter MEM_SIZE bound to: 32768 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_weicud_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weicud.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weicud_rom' (6#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weicud.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weicud' (7#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weicud.v:43]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weidEe' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weidEe.v:43]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 32768 - type: integer 
+	Parameter AddressWidth bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weidEe_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weidEe.v:9]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 15 - type: integer 
+	Parameter MEM_SIZE bound to: 32768 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_weidEe_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weidEe.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weidEe_rom' (8#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weidEe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weidEe' (9#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weidEe.v:43]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weieOg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weieOg.v:43]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 32768 - type: integer 
+	Parameter AddressWidth bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weieOg_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weieOg.v:9]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 15 - type: integer 
+	Parameter MEM_SIZE bound to: 32768 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_weieOg_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weieOg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weieOg_rom' (10#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weieOg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weieOg' (11#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weieOg.v:43]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weifYi' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weifYi.v:43]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 32768 - type: integer 
+	Parameter AddressWidth bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_weifYi_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weifYi.v:9]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 15 - type: integer 
+	Parameter MEM_SIZE bound to: 32768 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_weifYi_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weifYi.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weifYi_rom' (12#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weifYi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_weifYi' (13#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_weifYi.v:43]
+INFO: [Synth 8-6157] synthesizing module 'computeS4_1_mux_6g8j' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_mux_6g8j.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 8 - type: integer 
+	Parameter din5_WIDTH bound to: 8 - type: integer 
+	Parameter din6_WIDTH bound to: 8 - type: integer 
+	Parameter din7_WIDTH bound to: 8 - type: integer 
+	Parameter din8_WIDTH bound to: 8 - type: integer 
+	Parameter din9_WIDTH bound to: 8 - type: integer 
+	Parameter din10_WIDTH bound to: 8 - type: integer 
+	Parameter din11_WIDTH bound to: 8 - type: integer 
+	Parameter din12_WIDTH bound to: 8 - type: integer 
+	Parameter din13_WIDTH bound to: 8 - type: integer 
+	Parameter din14_WIDTH bound to: 8 - type: integer 
+	Parameter din15_WIDTH bound to: 8 - type: integer 
+	Parameter din16_WIDTH bound to: 8 - type: integer 
+	Parameter din17_WIDTH bound to: 8 - type: integer 
+	Parameter din18_WIDTH bound to: 8 - type: integer 
+	Parameter din19_WIDTH bound to: 8 - type: integer 
+	Parameter din20_WIDTH bound to: 8 - type: integer 
+	Parameter din21_WIDTH bound to: 8 - type: integer 
+	Parameter din22_WIDTH bound to: 8 - type: integer 
+	Parameter din23_WIDTH bound to: 8 - type: integer 
+	Parameter din24_WIDTH bound to: 8 - type: integer 
+	Parameter din25_WIDTH bound to: 8 - type: integer 
+	Parameter din26_WIDTH bound to: 8 - type: integer 
+	Parameter din27_WIDTH bound to: 8 - type: integer 
+	Parameter din28_WIDTH bound to: 8 - type: integer 
+	Parameter din29_WIDTH bound to: 8 - type: integer 
+	Parameter din30_WIDTH bound to: 8 - type: integer 
+	Parameter din31_WIDTH bound to: 8 - type: integer 
+	Parameter din32_WIDTH bound to: 8 - type: integer 
+	Parameter din33_WIDTH bound to: 8 - type: integer 
+	Parameter din34_WIDTH bound to: 8 - type: integer 
+	Parameter din35_WIDTH bound to: 8 - type: integer 
+	Parameter din36_WIDTH bound to: 8 - type: integer 
+	Parameter din37_WIDTH bound to: 8 - type: integer 
+	Parameter din38_WIDTH bound to: 8 - type: integer 
+	Parameter din39_WIDTH bound to: 8 - type: integer 
+	Parameter din40_WIDTH bound to: 8 - type: integer 
+	Parameter din41_WIDTH bound to: 8 - type: integer 
+	Parameter din42_WIDTH bound to: 8 - type: integer 
+	Parameter din43_WIDTH bound to: 8 - type: integer 
+	Parameter din44_WIDTH bound to: 8 - type: integer 
+	Parameter din45_WIDTH bound to: 8 - type: integer 
+	Parameter din46_WIDTH bound to: 8 - type: integer 
+	Parameter din47_WIDTH bound to: 8 - type: integer 
+	Parameter din48_WIDTH bound to: 8 - type: integer 
+	Parameter din49_WIDTH bound to: 8 - type: integer 
+	Parameter din50_WIDTH bound to: 8 - type: integer 
+	Parameter din51_WIDTH bound to: 8 - type: integer 
+	Parameter din52_WIDTH bound to: 8 - type: integer 
+	Parameter din53_WIDTH bound to: 8 - type: integer 
+	Parameter din54_WIDTH bound to: 8 - type: integer 
+	Parameter din55_WIDTH bound to: 8 - type: integer 
+	Parameter din56_WIDTH bound to: 8 - type: integer 
+	Parameter din57_WIDTH bound to: 8 - type: integer 
+	Parameter din58_WIDTH bound to: 8 - type: integer 
+	Parameter din59_WIDTH bound to: 8 - type: integer 
+	Parameter din60_WIDTH bound to: 8 - type: integer 
+	Parameter din61_WIDTH bound to: 8 - type: integer 
+	Parameter din62_WIDTH bound to: 8 - type: integer 
+	Parameter din63_WIDTH bound to: 8 - type: integer 
+	Parameter din64_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'computeS4_1_mux_6g8j' (14#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_mux_6g8j.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1234]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1248]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1250]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1252]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1254]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1310]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:1370]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new' (15#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Relu1D73' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D73.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D73.v:59]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D73.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'Relu1D73' (16#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D73.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataWidthCo' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo.v:59]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo.v:380]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingDataWidthCo' (17#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DBuffer_new_1' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state4 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:61]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DBuffer_new_hbi' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_hbi.v:62]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DBuffer_new_hbi_ram' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_hbi.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_hbi.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DBuffer_new_hbi_ram' (18#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_hbi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DBuffer_new_hbi' (19#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_hbi.v:62]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:582]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:588]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:590]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:596]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:602]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:608]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:620]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DBuffer_new_1' (20#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DBuffer_new_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state7 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:59]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wibs' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wibs.v:43]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 16384 - type: integer 
+	Parameter AddressWidth bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wibs_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wibs.v:9]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 14 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_1_wibs_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wibs.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wibs_rom' (21#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wibs.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wibs' (22#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wibs.v:43]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wjbC' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wjbC.v:43]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 16384 - type: integer 
+	Parameter AddressWidth bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wjbC_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wjbC.v:9]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 14 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_1_wjbC_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wjbC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wjbC_rom' (23#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wjbC.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wjbC' (24#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wjbC.v:43]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wkbM' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wkbM.v:43]
+	Parameter DataWidth bound to: 7 - type: integer 
+	Parameter AddressRange bound to: 16384 - type: integer 
+	Parameter AddressWidth bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wkbM_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wkbM.v:9]
+	Parameter DWIDTH bound to: 7 - type: integer 
+	Parameter AWIDTH bound to: 14 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_1_wkbM_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wkbM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wkbM_rom' (25#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wkbM.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wkbM' (26#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wkbM.v:43]
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wlbW' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wlbW.v:43]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 16384 - type: integer 
+	Parameter AddressWidth bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Conv1DMac_new_1_wlbW_rom' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wlbW.v:9]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 14 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Conv1DMac_new_1_wlbW_rom.dat' is read successfully [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wlbW.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wlbW_rom' (27#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wlbW.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1_wlbW' (28#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1_wlbW.v:43]
+INFO: [Synth 8-6157] synthesizing module 'computeS4_1_mux_6g8j_x' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_mux_6g8j_x.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 8 - type: integer 
+	Parameter din5_WIDTH bound to: 8 - type: integer 
+	Parameter din6_WIDTH bound to: 8 - type: integer 
+	Parameter din7_WIDTH bound to: 8 - type: integer 
+	Parameter din8_WIDTH bound to: 8 - type: integer 
+	Parameter din9_WIDTH bound to: 8 - type: integer 
+	Parameter din10_WIDTH bound to: 8 - type: integer 
+	Parameter din11_WIDTH bound to: 8 - type: integer 
+	Parameter din12_WIDTH bound to: 8 - type: integer 
+	Parameter din13_WIDTH bound to: 8 - type: integer 
+	Parameter din14_WIDTH bound to: 8 - type: integer 
+	Parameter din15_WIDTH bound to: 8 - type: integer 
+	Parameter din16_WIDTH bound to: 8 - type: integer 
+	Parameter din17_WIDTH bound to: 8 - type: integer 
+	Parameter din18_WIDTH bound to: 8 - type: integer 
+	Parameter din19_WIDTH bound to: 8 - type: integer 
+	Parameter din20_WIDTH bound to: 8 - type: integer 
+	Parameter din21_WIDTH bound to: 8 - type: integer 
+	Parameter din22_WIDTH bound to: 8 - type: integer 
+	Parameter din23_WIDTH bound to: 8 - type: integer 
+	Parameter din24_WIDTH bound to: 8 - type: integer 
+	Parameter din25_WIDTH bound to: 8 - type: integer 
+	Parameter din26_WIDTH bound to: 8 - type: integer 
+	Parameter din27_WIDTH bound to: 8 - type: integer 
+	Parameter din28_WIDTH bound to: 8 - type: integer 
+	Parameter din29_WIDTH bound to: 8 - type: integer 
+	Parameter din30_WIDTH bound to: 8 - type: integer 
+	Parameter din31_WIDTH bound to: 8 - type: integer 
+	Parameter din32_WIDTH bound to: 8 - type: integer 
+	Parameter din33_WIDTH bound to: 8 - type: integer 
+	Parameter din34_WIDTH bound to: 8 - type: integer 
+	Parameter din35_WIDTH bound to: 8 - type: integer 
+	Parameter din36_WIDTH bound to: 8 - type: integer 
+	Parameter din37_WIDTH bound to: 8 - type: integer 
+	Parameter din38_WIDTH bound to: 8 - type: integer 
+	Parameter din39_WIDTH bound to: 8 - type: integer 
+	Parameter din40_WIDTH bound to: 8 - type: integer 
+	Parameter din41_WIDTH bound to: 8 - type: integer 
+	Parameter din42_WIDTH bound to: 8 - type: integer 
+	Parameter din43_WIDTH bound to: 8 - type: integer 
+	Parameter din44_WIDTH bound to: 8 - type: integer 
+	Parameter din45_WIDTH bound to: 8 - type: integer 
+	Parameter din46_WIDTH bound to: 8 - type: integer 
+	Parameter din47_WIDTH bound to: 8 - type: integer 
+	Parameter din48_WIDTH bound to: 8 - type: integer 
+	Parameter din49_WIDTH bound to: 8 - type: integer 
+	Parameter din50_WIDTH bound to: 8 - type: integer 
+	Parameter din51_WIDTH bound to: 8 - type: integer 
+	Parameter din52_WIDTH bound to: 8 - type: integer 
+	Parameter din53_WIDTH bound to: 8 - type: integer 
+	Parameter din54_WIDTH bound to: 8 - type: integer 
+	Parameter din55_WIDTH bound to: 8 - type: integer 
+	Parameter din56_WIDTH bound to: 8 - type: integer 
+	Parameter din57_WIDTH bound to: 8 - type: integer 
+	Parameter din58_WIDTH bound to: 8 - type: integer 
+	Parameter din59_WIDTH bound to: 8 - type: integer 
+	Parameter din60_WIDTH bound to: 8 - type: integer 
+	Parameter din61_WIDTH bound to: 8 - type: integer 
+	Parameter din62_WIDTH bound to: 8 - type: integer 
+	Parameter din63_WIDTH bound to: 8 - type: integer 
+	Parameter din64_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'computeS4_1_mux_6g8j_x' (29#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1_mux_6g8j_x.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1236]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1250]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1252]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1254]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1256]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1312]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1362]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:1364]
+INFO: [Synth 8-6155] done synthesizing module 'Conv1DMac_new_1' (30#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Conv1DMac_new_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Relu1D' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D.v:59]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D.v:327]
+INFO: [Synth 8-6155] done synthesizing module 'Relu1D' (31#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/Relu1D.v:10]
+INFO: [Synth 8-6157] synthesizing module 'StreamingDataWidthCo_1' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state4 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo_1.v:59]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo_1.v:380]
+INFO: [Synth 8-6155] done synthesizing module 'StreamingDataWidthCo_1' (32#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/StreamingDataWidthCo_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'ResizeStream' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'ResizeStream' (33#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (34#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (35#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w32_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w32_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A_shiftReg' (36#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w32_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A' (37#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/fifo_w32_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DBmb6' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBmb6.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DBmb6_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBmb6.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DBmb6_shiftReg' (38#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBmb6.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DBmb6' (39#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBmb6.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DMncg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMncg.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DMncg_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMncg.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DMncg_shiftReg' (40#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMncg.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DMncg' (41#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMncg.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Relu1D7ocq' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D7ocq.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Relu1D7ocq_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D7ocq.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Relu1D7ocq_shiftReg' (42#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D7ocq.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Relu1D7ocq' (43#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D7ocq.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_StreamipcA' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_StreamipcA.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_StreamipcA_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_StreamipcA.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_StreamipcA_shiftReg' (44#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_StreamipcA.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_StreamipcA' (45#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_StreamipcA.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DBqcK' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBqcK.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DBqcK_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBqcK.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DBqcK_shiftReg' (46#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBqcK.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DBqcK' (47#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DBqcK.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DMrcU' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMrcU.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Conv1DMrcU_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMrcU.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DMrcU_shiftReg' (48#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMrcU.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Conv1DMrcU' (49#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Conv1DMrcU.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Relu1D_U0' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D_U0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Relu1D_U0_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Relu1D_U0_shiftReg' (50#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Relu1D_U0' (51#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Relu1D_U0.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Streamisc4' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Streamisc4.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Streamisc4_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Streamisc4.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Streamisc4_shiftReg' (52#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Streamisc4.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Streamisc4' (53#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_Streamisc4.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_ResizeStde' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_ResizeStde.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_ResizeStde_shiftReg' [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_ResizeStde.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ResizeStde_shiftReg' (54#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_ResizeStde.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_ResizeStde' (55#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/start_for_ResizeStde.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'computeS4_1' (56#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/computeS4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmlp_computeS4_1_0_2' (57#1) [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ip/pmlp_computeS4_1_0_2/synth/pmlp_computeS4_1_0_2.v:58]
+WARNING: [Synth 8-3331] design Conv1DMac_new_1_wlbW has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_1_wkbM has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_1_wjbC has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_1_wibs has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DBuffer_new_hbi has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_weifYi has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_weieOg has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_weidEe has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DMac_new_weicud has unconnected port reset
+WARNING: [Synth 8-3331] design Conv1DBuffer_new_bkb has unconnected port reset
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[16]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[15]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[14]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[13]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[12]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[11]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[10]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[9]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[8]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[6]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[5]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[4]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[3]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WDATA[2]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WSTRB[3]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WSTRB[2]
+WARNING: [Synth 8-3331] design computeS4_1_control_s_axi has unconnected port WSTRB[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 656.875 ; gain = 329.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 656.875 ; gain = 329.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 656.875 ; gain = 329.813
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ip/pmlp_computeS4_1_0_2/constraints/computeS4_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ip/pmlp_computeS4_1_0_2/constraints/computeS4_1_ooc.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ip/pmlp_computeS4_1_0_2/constraints/computeS4_1_ooc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pmlp_computeS4_1_0_2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pmlp_computeS4_1_0_2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1060.164 ; gain = 0.000
+Parsing XDC File [C:/Users/efree/Desktop/pointMLPWork/pointMLPWork.runs/pmlp_computeS4_1_0_2_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/efree/Desktop/pointMLPWork/pointMLPWork.runs/pmlp_computeS4_1_0_2_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1060.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1060.164 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1060.164 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1060.164 ; gain = 733.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1060.164 ; gain = 733.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/efree/Desktop/pointMLPWork/pointMLPWork.runs/pmlp_computeS4_1_0_2_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1060.164 ; gain = 733.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'computeS4_1_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'computeS4_1_control_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_V_V_0_payload_B_reg' and it is trimmed from '64' to '8' bits. [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream_1.v:187]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_V_V_0_payload_A_reg' and it is trimmed from '64' to '8' bits. [c:/Users/efree/Desktop/pointMLPWork/pointMLPWork.srcs/sources_1/bd/pmlp/ipshared/cb82/hdl/verilog/ResizeStream_1.v:181]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_fu_72_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_44_fu_295_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_249_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_fu_202_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten4_fu_237_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_10_fu_225_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten2_fu_411_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_423_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_40_fu_459_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_537_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_fu_96_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_131_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_fu_143_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_42_fu_299_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_253_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_fu_206_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten3_fu_241_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_16_fu_229_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten1_fu_387_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_399_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_435_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_513_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_fu_96_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_131_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tmp_fu_143_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_fu_72_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'computeS4_1_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'computeS4_1_control_s_axi'
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1088.660 ; gain = 761.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      9 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 18    
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               32 Bit    Registers := 9     
+	               24 Bit    Registers := 2     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 37    
+	                7 Bit    Registers := 12    
+	                6 Bit    Registers := 10    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 151   
++---RAMs : 
+	               4K Bit         RAMs := 1     
+	               2K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 8     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 512   
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 12    
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 187   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module computeS4_1_control_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module ResizeStream_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Conv1DBuffer_new_bkb_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+Module Conv1DBuffer_new 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+Module Conv1DMac_new_weicud_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Conv1DMac_new_weidEe_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Conv1DMac_new_weieOg_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Conv1DMac_new_weifYi_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module computeS4_1_mux_6g8j 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 63    
+Module Conv1DMac_new 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module Relu1D73 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module StreamingDataWidthCo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module Conv1DBuffer_new_hbi_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module Conv1DBuffer_new_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+Module Conv1DMac_new_1_wibs_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Conv1DMac_new_1_wjbC_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Conv1DMac_new_1_wkbM_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Conv1DMac_new_1_wlbW_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module computeS4_1_mux_6g8j_x 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 63    
+Module Conv1DMac_new_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module Relu1D 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module StreamingDataWidthCo_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module ResizeStream 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w32_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fifo_w32_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Conv1DBmb6_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Conv1DBmb6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Conv1DMncg_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Conv1DMncg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Relu1D7ocq_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Relu1D7ocq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_StreamipcA_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_StreamipcA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Conv1DBqcK_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Conv1DBqcK 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Conv1DMrcU_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Conv1DMrcU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Relu1D_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Relu1D_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Streamisc4_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Streamisc4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_ResizeStde_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_ResizeStde 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "exitcond_flatten2_fu_411_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_423_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_40_fu_459_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_537_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten1_fu_387_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_399_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_435_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_513_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten2_fu_411_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_423_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_40_fu_459_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_537_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten1_fu_387_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_399_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_435_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_513_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ResizeStream_1_U0/tmp_fu_72_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_U0/tmp_fu_202_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_U0/exitcond_flatten_fu_249_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_U0/tmp_44_fu_295_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_U0/tmp_10_fu_225_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_U0/exitcond_flatten4_fu_237_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Relu1D73_U0/tmp_fu_96_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "StreamingDataWidthCo_U0/tmp_fu_143_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "StreamingDataWidthCo_U0/exitcond_fu_131_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_1_U0/tmp_fu_206_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_1_U0/exitcond_flatten_fu_253_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_1_U0/tmp_42_fu_299_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_1_U0/tmp_16_fu_229_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Conv1DBuffer_new_1_U0/exitcond_flatten3_fu_241_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Relu1D_U0/tmp_fu_96_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "StreamingDataWidthCo_1_U0/tmp_fu_143_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "StreamingDataWidthCo_1_U0/exitcond_fu_131_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ResizeStream_U0/tmp_fu_72_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[31]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[30]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[29]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[28]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[27]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[26]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[25]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[24]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[23]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[22]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[21]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[20]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[19]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[18]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[17]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[16]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[15]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[14]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[13]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[12]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[11]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[10]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[9]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[8]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[6]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[5]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[4]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[3]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WDATA[2]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WSTRB[3]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WSTRB[2]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port s_axi_control_WSTRB[1]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[63]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[62]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[61]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[60]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[59]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[58]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[57]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[56]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[55]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[54]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[53]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[52]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[51]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[50]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[49]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[48]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[47]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[46]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[45]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[44]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[43]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[42]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[41]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[40]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[39]
+WARNING: [Synth 8-3331] design computeS4_1 has unconnected port input1_V_V_TDATA[38]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3971] The signal Conv1DBuffer_new_U0/inputBuf_0_V_U/Conv1DBuffer_new_bkb_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal Conv1DBuffer_new_1_U0/inputBuf_0_V_U/Conv1DBuffer_new_hbi_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\StreamingDataWidthCo_U0/p_1_reg_87_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\StreamingDataWidthCo_1_U0/p_1_reg_87_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\StreamingDataWidthCo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Conv1DBuffer_new_1_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Conv1DBuffer_new_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Conv1DMac_new_1_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Conv1DMac_new_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Relu1D73_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Relu1D_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\StreamingDataWidthCo_1_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ResizeStream_1_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ResizeStream_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[4]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[5]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[6]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[8]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[9]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[10]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[11]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[12]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[13]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[14]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[15]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[16]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[17]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[18]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[19]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[20]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[21]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[22]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[23]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[24]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[25]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[26]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[27]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[28]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[29]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/computeS4_1_control_s_axi_U/rdata_reg[30]' (FDE) to 'inst/computeS4_1_control_s_axi_U/rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\computeS4_1_control_s_axi_U/rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (computeS4_1_control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module computeS4_1.
+WARNING: [Synth 8-3332] Sequential element (computeS4_1_control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module computeS4_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 1115.855 ; gain = 788.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+------------------------+---------------+----------------+
+|Module Name     | RTL Object             | Depth x Width | Implemented As | 
++----------------+------------------------+---------------+----------------+
+|Conv1DMac_new   | tmp_6_reg_1585_reg_rep | 32768x6       | Block RAM      | 
+|Conv1DMac_new   | tmp_6_reg_1585_reg_rep | 32768x7       | Block RAM      | 
+|Conv1DMac_new   | tmp_6_reg_1585_reg_rep | 32768x7       | Block RAM      | 
+|Conv1DMac_new   | tmp_6_reg_1585_reg     | 32768x7       | Block RAM      | 
+|Conv1DMac_new_1 | tmp_4_reg_1569_reg_rep | 16384x6       | Block RAM      | 
+|Conv1DMac_new_1 | tmp_4_reg_1569_reg_rep | 16384x6       | Block RAM      | 
+|Conv1DMac_new_1 | tmp_4_reg_1569_reg_rep | 16384x7       | Block RAM      | 
+|Conv1DMac_new_1 | tmp_4_reg_1569_reg     | 16384x6       | Block RAM      | 
++----------------+------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Conv1DBuffer_new_bkb_ram: | ram_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
+|Conv1DBuffer_new_hbi_ram: | ram_reg    | 256 x 8(WRITE_FIRST)   | W | R | 256 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_0/tmp_6_reg_1585_reg_rep_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_0/tmp_6_reg_1585_reg_rep_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_0/tmp_6_reg_1585_reg_rep_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_0/tmp_6_reg_1585_reg_rep_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_0/tmp_6_reg_1585_reg_rep_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_0/tmp_6_reg_1585_reg_rep_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_1/tmp_6_reg_1585_reg_rep_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_2/tmp_6_reg_1585_reg_rep_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_U0/i_4_3/tmp_6_reg_1585_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_0/tmp_4_reg_1569_reg_rep_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_0/tmp_4_reg_1569_reg_rep_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_0/tmp_4_reg_1569_reg_rep_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_1/tmp_4_reg_1569_reg_rep_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_1/tmp_4_reg_1569_reg_rep_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_1/tmp_4_reg_1569_reg_rep_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_2/tmp_4_reg_1569_reg_rep_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_2/tmp_4_reg_1569_reg_rep_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_2/tmp_4_reg_1569_reg_rep_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_2/tmp_4_reg_1569_reg_rep_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_3/tmp_4_reg_1569_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_3/tmp_4_reg_1569_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/Conv1DMac_new_1_U0/i_4_3/tmp_4_reg_1569_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 1168.883 ; gain = 841.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Conv1DBuffer_new_bkb_ram: | ram_reg    | 512 x 8(WRITE_FIRST)   | W | R | 512 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
+|Conv1DBuffer_new_hbi_ram: | ram_reg    | 256 x 8(WRITE_FIRST)   | W | R | 256 x 8(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:19 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CARRY4      |   212|
+|2     |LUT1        |    22|
+|3     |LUT2        |   287|
+|4     |LUT3        |   106|
+|5     |LUT4        |   301|
+|6     |LUT5        |   327|
+|7     |LUT6        |   656|
+|8     |RAMB18E1_2  |     2|
+|9     |RAMB18E1_3  |     1|
+|10    |RAMB36E1_39 |     1|
+|11    |RAMB36E1_40 |     1|
+|12    |RAMB36E1_41 |     1|
+|13    |RAMB36E1_42 |     1|
+|14    |RAMB36E1_43 |     1|
+|15    |RAMB36E1_44 |     1|
+|16    |RAMB36E1_45 |     1|
+|17    |RAMB36E1_46 |     1|
+|18    |RAMB36E1_47 |     1|
+|19    |RAMB36E1_48 |     1|
+|20    |RAMB36E1_49 |     1|
+|21    |RAMB36E1_50 |     1|
+|22    |RAMB36E1_51 |     1|
+|23    |RAMB36E1_52 |     1|
+|24    |RAMB36E1_53 |     1|
+|25    |RAMB36E1_54 |     1|
+|26    |RAMB36E1_55 |     1|
+|27    |RAMB36E1_56 |     1|
+|28    |RAMB36E1_57 |     1|
+|29    |RAMB36E1_58 |     1|
+|30    |RAMB36E1_59 |     1|
+|31    |RAMB36E1_60 |     1|
+|32    |RAMB36E1_61 |     1|
+|33    |RAMB36E1_62 |     1|
+|34    |RAMB36E1_63 |     1|
+|35    |RAMB36E1_64 |     1|
+|36    |RAMB36E1_65 |     1|
+|37    |RAMB36E1_66 |     1|
+|38    |RAMB36E1_67 |     1|
+|39    |RAMB36E1_68 |     1|
+|40    |RAMB36E1_69 |     1|
+|41    |RAMB36E1_70 |     1|
+|42    |RAMB36E1_71 |     1|
+|43    |RAMB36E1_72 |     1|
+|44    |RAMB36E1_73 |     1|
+|45    |RAMB36E1_74 |     1|
+|46    |RAMB36E1_75 |     1|
+|47    |RAMB36E1_76 |     1|
+|48    |RAMB36E1_77 |     1|
+|49    |FDRE        |  1294|
+|50    |FDSE        |    46|
++------+------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+--------------------------+------+
+|      |Instance                           |Module                    |Cells |
++------+-----------------------------------+--------------------------+------+
+|1     |top                                |                          |  3293|
+|2     |  inst                             |computeS4_1               |  3293|
+|3     |    Conv1DBuffer_new_1_U0          |Conv1DBuffer_new_1        |   254|
+|4     |      inputBuf_0_V_U               |Conv1DBuffer_new_hbi      |    21|
+|5     |        Conv1DBuffer_new_hbi_ram_U |Conv1DBuffer_new_hbi_ram  |    21|
+|6     |    Conv1DBuffer_new_U0            |Conv1DBuffer_new          |   264|
+|7     |      inputBuf_0_V_U               |Conv1DBuffer_new_bkb      |    23|
+|8     |        Conv1DBuffer_new_bkb_ram_U |Conv1DBuffer_new_bkb_ram  |    23|
+|9     |    Conv1DMac_new_1_U0             |Conv1DMac_new_1           |   596|
+|10    |    Conv1DMac_new_U0               |Conv1DMac_new             |   622|
+|11    |    Relu1D73_U0                    |Relu1D73                  |    49|
+|12    |    Relu1D_U0                      |Relu1D                    |    49|
+|13    |    ResizeStream_1_U0              |ResizeStream_1            |    94|
+|14    |    ResizeStream_U0                |ResizeStream              |    91|
+|15    |    StreamingDataWidthCo_1_U0      |StreamingDataWidthCo_1    |   164|
+|16    |    StreamingDataWidthCo_U0        |StreamingDataWidthCo      |   165|
+|17    |    cnv_87_V_V_U                   |fifo_w8_d2_A              |    32|
+|18    |      U_fifo_w8_d2_A_ram           |fifo_w8_d2_A_shiftReg_13  |    24|
+|19    |    cnv_88_V_V_U                   |fifo_w8_d2_A_0            |   175|
+|20    |      U_fifo_w8_d2_A_ram           |fifo_w8_d2_A_shiftReg_12  |   167|
+|21    |    cnv_89PRL_V_V_U                |fifo_w32_d2_A             |   103|
+|22    |      U_fifo_w32_d2_A_ram          |fifo_w32_d2_A_shiftReg_11 |    95|
+|23    |    cnv_90PRL_V_V_U                |fifo_w32_d2_A_1           |    86|
+|24    |      U_fifo_w32_d2_A_ram          |fifo_w32_d2_A_shiftReg_10 |    78|
+|25    |    cnv_91_V_V_U                   |fifo_w8_d2_A_2            |    32|
+|26    |      U_fifo_w8_d2_A_ram           |fifo_w8_d2_A_shiftReg_9   |    24|
+|27    |    cnv_92_V_V_U                   |fifo_w8_d2_A_3            |   153|
+|28    |      U_fifo_w8_d2_A_ram           |fifo_w8_d2_A_shiftReg_8   |   145|
+|29    |    cnv_93PRL_V_V_U                |fifo_w32_d2_A_4           |   103|
+|30    |      U_fifo_w32_d2_A_ram          |fifo_w32_d2_A_shiftReg_7  |    95|
+|31    |    cnv_94PRL_V_V_U                |fifo_w32_d2_A_5           |    86|
+|32    |      U_fifo_w32_d2_A_ram          |fifo_w32_d2_A_shiftReg    |    78|
+|33    |    computeS4_1_control_s_axi_U    |computeS4_1_control_s_axi |    55|
+|34    |    outStr_V_V_U                   |fifo_w8_d2_A_6            |    32|
+|35    |      U_fifo_w8_d2_A_ram           |fifo_w8_d2_A_shiftReg     |    24|
+|36    |    start_for_Conv1DBmb6_U         |start_for_Conv1DBmb6      |     9|
+|37    |    start_for_Conv1DBqcK_U         |start_for_Conv1DBqcK      |     9|
+|38    |    start_for_Conv1DMncg_U         |start_for_Conv1DMncg      |     9|
+|39    |    start_for_Conv1DMrcU_U         |start_for_Conv1DMrcU      |     9|
+|40    |    start_for_Relu1D7ocq_U         |start_for_Relu1D7ocq      |    12|
+|41    |    start_for_Relu1D_U0_U          |start_for_Relu1D_U0       |    12|
+|42    |    start_for_ResizeStde_U         |start_for_ResizeStde      |     9|
+|43    |    start_for_StreamipcA_U         |start_for_StreamipcA      |    10|
+|44    |    start_for_Streamisc4_U         |start_for_Streamisc4      |     9|
++------+-----------------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 92 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:14 . Memory (MB): peak = 1262.277 ; gain = 531.926
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1262.277 ; gain = 935.215
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+331 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:24 . Memory (MB): peak = 1262.277 ; gain = 946.738
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/efree/Desktop/pointMLPWork/pointMLPWork.runs/pmlp_computeS4_1_0_2_synth_1/pmlp_computeS4_1_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pmlp_computeS4_1_0_2, cache-ID = d0e96033831959ea
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1262.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/efree/Desktop/pointMLPWork/pointMLPWork.runs/pmlp_computeS4_1_0_2_synth_1/pmlp_computeS4_1_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pmlp_computeS4_1_0_2_utilization_synth.rpt -pb pmlp_computeS4_1_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 22:57:20 2023...

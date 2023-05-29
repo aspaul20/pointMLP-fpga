@@ -1,0 +1,21 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'root' on host 'tukl-pc' (Linux_x86_64 version 5.15.0-71-generic) on Tue May 09 09:34:06 CST 2023
+INFO: [HLS 200-10] On os Ubuntu 20.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/tukl/Amur/IndividualSyn/S4/S4_1'
+INFO: [HLS 200-10] Opening project '/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1'.
+INFO: [HLS 200-10] Opening solution '/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 09:34:43 2023...

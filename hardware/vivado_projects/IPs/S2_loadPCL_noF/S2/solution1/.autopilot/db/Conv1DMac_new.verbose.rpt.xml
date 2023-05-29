@@ -1,0 +1,233 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Conv1DMac_new'" level="0">
+<item name = "Date">Sat May 13 19:59:20 2023
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">S2</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.198, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">8388613, 8388613, 8388613, 8388613, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_ofmChannels_loop_neuronFold_loop_synapseFold">8388611, 8388611, 5, 1, 1, 8388608, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, 0, 0, 590</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 0, 580</column>
+<column name="Memory">8, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 147</column>
+<column name="Register">0, -, 377, 96</column>
+<specialColumn name="Available">1090, 900, 437200, 218600</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="computeS2_mux_325yd2_x_x_U83">computeS2_mux_325yd2_x_x, 0, 0, 0, 145</column>
+<column name="computeS2_mux_325yd2_x_x_U84">computeS2_mux_325yd2_x_x, 0, 0, 0, 145</column>
+<column name="computeS2_mux_325yd2_x_x_U85">computeS2_mux_325yd2_x_x, 0, 0, 0, 145</column>
+<column name="computeS2_mux_325yd2_x_x_U86">computeS2_mux_325yd2_x_x, 0, 0, 0, 145</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="weights8_m_weights_V_U">Conv1DMac_new_weiFfa, 2, 0, 0, 4096, 7, 1, 28672</column>
+<column name="weights8_m_weights_V_1_U">Conv1DMac_new_weiGfk, 2, 0, 0, 4096, 7, 1, 28672</column>
+<column name="weights8_m_weights_V_2_U">Conv1DMac_new_weiHfu, 2, 0, 0, 4096, 7, 1, 28672</column>
+<column name="weights8_m_weights_V_3_U">Conv1DMac_new_weiIfE, 2, 0, 0, 4096, 7, 1, 28672</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="p_Val2_1_fu_574_p2">*, 0, 0, 41, 7, 8</column>
+<column name="p_Val2_2_fu_644_p2">*, 0, 0, 41, 7, 8</column>
+<column name="p_Val2_3_fu_714_p2">*, 0, 0, 41, 7, 8</column>
+<column name="p_Val2_s_fu_504_p2">*, 0, 0, 41, 7, 8</column>
+<column name="indvar_flatten_next7_fu_343_p2">+, 0, 0, 31, 1, 24</column>
+<column name="indvar_flatten_op_fu_475_p2">+, 0, 0, 21, 14, 1</column>
+<column name="macRegisters_0_V_fu_806_p2">+, 0, 0, 8, 8, 8</column>
+<column name="macRegisters_1_V_fu_825_p2">+, 0, 0, 8, 8, 8</column>
+<column name="macRegisters_2_V_fu_844_p2">+, 0, 0, 8, 8, 8</column>
+<column name="macRegisters_3_V_fu_863_p2">+, 0, 0, 8, 8, 8</column>
+<column name="nm_1_fu_397_p2">+, 0, 0, 15, 1, 6</column>
+<column name="p_Val2_20_1_fu_1032_p2">+, 0, 0, 15, 8, 8</column>
+<column name="p_Val2_20_2_fu_1107_p2">+, 0, 0, 15, 8, 8</column>
+<column name="p_Val2_20_3_fu_1182_p2">+, 0, 0, 15, 8, 8</column>
+<column name="p_Val2_9_fu_957_p2">+, 0, 0, 15, 8, 8</column>
+<column name="sf_1_fu_469_p2">+, 0, 0, 15, 8, 1</column>
+<column name="tmp1_fu_800_p2">+, 0, 0, 8, 8, 8</column>
+<column name="tmp2_fu_819_p2">+, 0, 0, 8, 8, 8</column>
+<column name="tmp3_fu_838_p2">+, 0, 0, 8, 8, 8</column>
+<column name="tmp4_fu_857_p2">+, 0, 0, 8, 8, 8</column>
+<column name="tmp_86_fu_457_p2">+, 0, 0, 19, 12, 12</column>
+<column name="ap_block_state4_pp0_stage0_iter2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state6_pp0_stage0_iter4">and, 0, 0, 2, 1, 1</column>
+<column name="qb_assign_1_1_fu_811_p2">and, 0, 0, 2, 1, 1</column>
+<column name="qb_assign_1_2_fu_830_p2">and, 0, 0, 2, 1, 1</column>
+<column name="qb_assign_1_3_fu_849_p2">and, 0, 0, 2, 1, 1</column>
+<column name="qb_assign_1_fu_792_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_85_mid_fu_391_p2">and, 0, 0, 2, 1, 1</column>
+<column name="exitcond_flatten7_fu_337_p2">icmp, 0, 0, 18, 24, 25</column>
+<column name="exitcond_flatten_fu_349_p2">icmp, 0, 0, 13, 14, 13</column>
+<column name="tmp_203_1_fu_634_p2">icmp, 0, 0, 11, 6, 1</column>
+<column name="tmp_203_2_fu_704_p2">icmp, 0, 0, 11, 6, 1</column>
+<column name="tmp_203_3_fu_774_p2">icmp, 0, 0, 11, 6, 1</column>
+<column name="tmp_293_fu_385_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="tmp_88_fu_463_p2">icmp, 0, 0, 11, 8, 7</column>
+<column name="tmp_97_fu_564_p2">icmp, 0, 0, 11, 6, 1</column>
+<column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_100_fu_610_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_104_fu_680_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_108_fu_750_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_276_fu_403_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_94_fu_540_p2">or, 0, 0, 2, 1, 1</column>
+<column name="indvar_flatten_next_fu_481_p3">select, 0, 0, 14, 1, 1</column>
+<column name="nm_mid2_fu_445_p3">select, 0, 0, 6, 1, 6</column>
+<column name="nm_mid_fu_355_p3">select, 0, 0, 6, 1, 1</column>
+<column name="nm_t_mid2_fu_437_p3">select, 0, 0, 5, 1, 5</column>
+<column name="nm_t_mid_fu_371_p3">select, 0, 0, 5, 1, 1</column>
+<column name="sf_mid2_fu_409_p3">select, 0, 0, 8, 1, 1</column>
+<column name="tmp_84_mid2_fu_429_p3">select, 0, 0, 12, 1, 12</column>
+<column name="tmp_84_mid_fu_363_p3">select, 0, 0, 12, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+<column name="not_exitcond_flatten_fu_379_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter4">9, 2, 1, 2</column>
+<column name="in_V_V_blk_n">9, 2, 1, 2</column>
+<column name="indvar_flatten7_reg_261">9, 2, 24, 48</column>
+<column name="indvar_flatten_reg_272">9, 2, 14, 28</column>
+<column name="macRegisters_0_V_5_fu_180">9, 2, 8, 16</column>
+<column name="macRegisters_1_V_5_fu_184">9, 2, 8, 16</column>
+<column name="macRegisters_2_V_5_fu_188">9, 2, 8, 16</column>
+<column name="macRegisters_3_V_5_fu_192">9, 2, 8, 16</column>
+<column name="nm_reg_283">9, 2, 6, 12</column>
+<column name="out_V_V_blk_n">9, 2, 1, 2</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="sf_reg_294">9, 2, 8, 16</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter4">1, 0, 1, 0</column>
+<column name="exitcond_flatten7_reg_1225">1, 0, 1, 0</column>
+<column name="indvar_flatten7_reg_261">24, 0, 24, 0</column>
+<column name="indvar_flatten_reg_272">14, 0, 14, 0</column>
+<column name="macRegisters_0_V_5_fu_180">8, 0, 8, 0</column>
+<column name="macRegisters_1_V_5_fu_184">8, 0, 8, 0</column>
+<column name="macRegisters_2_V_5_fu_188">8, 0, 8, 0</column>
+<column name="macRegisters_3_V_5_fu_192">8, 0, 8, 0</column>
+<column name="nm_reg_283">6, 0, 6, 0</column>
+<column name="nm_t_mid2_reg_1234">5, 0, 5, 0</column>
+<column name="p_Val2_20_1_reg_1351">8, 0, 8, 0</column>
+<column name="p_Val2_20_2_reg_1356">8, 0, 8, 0</column>
+<column name="p_Val2_20_3_reg_1361">8, 0, 8, 0</column>
+<column name="p_Val2_9_reg_1346">8, 0, 8, 0</column>
+<column name="sf_reg_294">8, 0, 8, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+<column name="tmp_127_reg_1301">8, 0, 8, 0</column>
+<column name="tmp_128_reg_1316">8, 0, 8, 0</column>
+<column name="tmp_129_reg_1331">8, 0, 8, 0</column>
+<column name="tmp_203_1_reg_1311">1, 0, 1, 0</column>
+<column name="tmp_203_2_reg_1326">1, 0, 1, 0</column>
+<column name="tmp_203_3_reg_1341">1, 0, 1, 0</column>
+<column name="tmp_366_reg_1291">1, 0, 1, 0</column>
+<column name="tmp_369_reg_1306">1, 0, 1, 0</column>
+<column name="tmp_372_reg_1321">1, 0, 1, 0</column>
+<column name="tmp_375_reg_1336">1, 0, 1, 0</column>
+<column name="tmp_86_reg_1247">12, 0, 12, 0</column>
+<column name="tmp_88_reg_1252">1, 0, 1, 0</column>
+<column name="tmp_97_reg_1296">1, 0, 1, 0</column>
+<column name="tmp_s_reg_1286">8, 0, 8, 0</column>
+<column name="exitcond_flatten7_reg_1225">64, 32, 1, 0</column>
+<column name="nm_t_mid2_reg_1234">64, 32, 5, 0</column>
+<column name="tmp_88_reg_1252">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, Conv1DMac_new, return value</column>
+<column name="in_V_V_dout">in, 8, ap_fifo, in_V_V, pointer</column>
+<column name="in_V_V_empty_n">in, 1, ap_fifo, in_V_V, pointer</column>
+<column name="in_V_V_read">out, 1, ap_fifo, in_V_V, pointer</column>
+<column name="out_V_V_din">out, 32, ap_fifo, out_V_V, pointer</column>
+<column name="out_V_V_full_n">in, 1, ap_fifo, out_V_V, pointer</column>
+<column name="out_V_V_write">out, 1, ap_fifo, out_V_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

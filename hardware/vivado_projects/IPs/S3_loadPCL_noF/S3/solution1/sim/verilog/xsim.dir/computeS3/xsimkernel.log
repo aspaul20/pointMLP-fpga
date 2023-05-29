@@ -1,0 +1,7 @@
+Running: xsim.dir/computeS3/xsimk -simmode gui -wdb computeS3.wdb -simrunnum 0 -socket 56867
+Design successfully loaded
+Design Loading Memory Usage: 46592 KB (Peak: 46592 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 132700 KB (Peak: 185860 KB)
+Simulation CPU Usage: 17749820 ms

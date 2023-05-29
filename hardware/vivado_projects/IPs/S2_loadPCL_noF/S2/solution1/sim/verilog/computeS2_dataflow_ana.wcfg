@@ -1,0 +1,2226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="computeS2.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_computeS2_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_computeS2_group">
+      <obj_property name="label">AESL_inst_computeS2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/ResizeStream_3_U0_activity">
+         <obj_property name="ElementShortName">ResizeStream_3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">ResizeStream_3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/ResizeStream_2_U0_activity">
+         <obj_property name="ElementShortName">ResizeStream_2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">ResizeStream_2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/CloneStream_U0_activity">
+         <obj_property name="ElementShortName">CloneStream_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">CloneStream_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/grouperPE_U0_activity">
+         <obj_property name="ElementShortName">grouperPE_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">grouperPE_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/Conv1DBuffer_new394_U0_activity">
+         <obj_property name="ElementShortName">Conv1DBuffer_new394_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DBuffer_new394_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/Conv1DMac_new395_U0_activity">
+         <obj_property name="ElementShortName">Conv1DMac_new395_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DMac_new395_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/Relu1D396_U0_activity">
+         <obj_property name="ElementShortName">Relu1D396_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Relu1D396_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/StreamingDataWidthCo_1_U0_activity">
+         <obj_property name="ElementShortName">StreamingDataWidthCo_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">StreamingDataWidthCo_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/Conv1DBuffer_new398_U0_activity">
+         <obj_property name="ElementShortName">Conv1DBuffer_new398_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DBuffer_new398_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/Conv1DMac_new399_U0_activity">
+         <obj_property name="ElementShortName">Conv1DMac_new399_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DMac_new399_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/Relu1D400_U0_activity">
+         <obj_property name="ElementShortName">Relu1D400_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Relu1D400_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/StreamingDataWidthCo_U0_activity">
+         <obj_property name="ElementShortName">StreamingDataWidthCo_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">StreamingDataWidthCo_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/Conv1DBuffer_new_U0_activity">
+         <obj_property name="ElementShortName">Conv1DBuffer_new_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DBuffer_new_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/Conv1DMac_new_U0_activity">
+         <obj_property name="ElementShortName">Conv1DMac_new_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DMac_new_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/Relu1D_U0_activity">
+         <obj_property name="ElementShortName">Relu1D_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Relu1D_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/StreamingDataWidthCo_2_U0_activity">
+         <obj_property name="ElementShortName">StreamingDataWidthCo_2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">StreamingDataWidthCo_2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/StreamingMaxPool_Pre_U0_activity">
+         <obj_property name="ElementShortName">StreamingMaxPool_Pre_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">StreamingMaxPool_Pre_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/Conv1DBuffer_new402_U0_activity">
+         <obj_property name="ElementShortName">Conv1DBuffer_new402_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DBuffer_new402_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/Conv1DMac_new403_U0_activity">
+         <obj_property name="ElementShortName">Conv1DMac_new403_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DMac_new403_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/Relu1D404_U0_activity">
+         <obj_property name="ElementShortName">Relu1D404_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Relu1D404_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/StreamingDataWidthCo_3_U0_activity">
+         <obj_property name="ElementShortName">StreamingDataWidthCo_3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">StreamingDataWidthCo_3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/Conv1DBuffer_new_1_U0_activity">
+         <obj_property name="ElementShortName">Conv1DBuffer_new_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DBuffer_new_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/Conv1DMac_new_1_U0_activity">
+         <obj_property name="ElementShortName">Conv1DMac_new_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Conv1DMac_new_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/Relu1D_1_U0_activity">
+         <obj_property name="ElementShortName">Relu1D_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Relu1D_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/StreamingDataWidthCo_4_U0_activity">
+         <obj_property name="ElementShortName">StreamingDataWidthCo_4_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">StreamingDataWidthCo_4_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/ResizeStream_1_U0_activity">
+         <obj_property name="ElementShortName">ResizeStream_1_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">ResizeStream_1_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/ResizeStream_U0_activity">
+         <obj_property name="ElementShortName">ResizeStream_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">ResizeStream_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="ResizeStream_3_U0_group">
+         <obj_property name="label">ResizeStream_3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="ResizeStream_3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(inStr_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_3_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="ResizeStream_2_U0_group">
+         <obj_property name="label">ResizeStream_2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="ResizeStream_2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_26_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_2_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="CloneStream_U0_group">
+         <obj_property name="label">CloneStream_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="CloneStream_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="IN_V_V_group">
+               <obj_property name="label">IN_V_V(inStr_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/IN_V_V_blk_n">
+                  <obj_property name="ElementShortName">IN_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">IN_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/IN_V_V_dout">
+                  <obj_property name="ElementShortName">IN_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">IN_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/IN_V_V_empty_n">
+                  <obj_property name="ElementShortName">IN_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">IN_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/IN_V_V_read">
+                  <obj_property name="ElementShortName">IN_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">IN_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="CloneStream_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="CloneStream_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out1_V_V_group">
+               <obj_property name="label">out1_V_V(in_1_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out1_V_V_blk_n">
+                  <obj_property name="ElementShortName">out1_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out1_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out1_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out1_V_V_full_n">
+                  <obj_property name="ElementShortName">out1_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out1_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out1_V_V_write">
+                  <obj_property name="ElementShortName">out1_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out1_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="out2_V_V_group">
+               <obj_property name="label">out2_V_V(in_2_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out2_V_V_blk_n">
+                  <obj_property name="ElementShortName">out2_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out2_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out2_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out2_V_V_full_n">
+                  <obj_property name="ElementShortName">out2_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out2_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/CloneStream_U0/out2_V_V_write">
+                  <obj_property name="ElementShortName">out2_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out2_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grouperPE_U0_group">
+         <obj_property name="label">grouperPE_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grouperPE_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="inStream_V_V_group">
+               <obj_property name="label">inStream_V_V(in_1_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/inStream_V_V_blk_n">
+                  <obj_property name="ElementShortName">inStream_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">inStream_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/inStream_V_V_dout">
+                  <obj_property name="ElementShortName">inStream_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">inStream_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/inStream_V_V_empty_n">
+                  <obj_property name="ElementShortName">inStream_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">inStream_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/inStream_V_V_read">
+                  <obj_property name="ElementShortName">inStream_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">inStream_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="features_V_V_group">
+               <obj_property name="label">features_V_V(cnv_26_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/features_V_V_blk_n">
+                  <obj_property name="ElementShortName">features_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">features_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/features_V_V_dout">
+                  <obj_property name="ElementShortName">features_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">features_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/features_V_V_empty_n">
+                  <obj_property name="ElementShortName">features_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">features_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/features_V_V_read">
+                  <obj_property name="ElementShortName">features_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">features_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grouperPE_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grouperPE_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="outStream_V_V_group">
+               <obj_property name="label">outStream_V_V(cnv_27_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/outStream_V_V_blk_n">
+                  <obj_property name="ElementShortName">outStream_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">outStream_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/outStream_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/outStream_V_V_full_n">
+                  <obj_property name="ElementShortName">outStream_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">outStream_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/grouperPE_U0/outStream_V_V_write">
+                  <obj_property name="ElementShortName">outStream_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">outStream_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DBuffer_new394_U0_group">
+         <obj_property name="label">Conv1DBuffer_new394_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DBuffer_new394_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_27_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new394_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new394_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_28_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new394_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DMac_new395_U0_group">
+         <obj_property name="label">Conv1DMac_new395_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DMac_new395_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_28_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights6_m_weights_V_group">
+               <obj_property name="label">weights6_m_weights_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_ce0">
+                  <obj_property name="ElementShortName">weights6_m_weights_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights6_m_weights_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights6_m_weights_V_1_group">
+               <obj_property name="label">weights6_m_weights_V_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_1_ce0">
+                  <obj_property name="ElementShortName">weights6_m_weights_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights6_m_weights_V_1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights6_m_weights_V_2_group">
+               <obj_property name="label">weights6_m_weights_V_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_2_ce0">
+                  <obj_property name="ElementShortName">weights6_m_weights_V_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights6_m_weights_V_2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights6_m_weights_V_3_group">
+               <obj_property name="label">weights6_m_weights_V_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/weights6_m_weights_V_3_ce0">
+                  <obj_property name="ElementShortName">weights6_m_weights_V_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights6_m_weights_V_3_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new395_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new395_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_29PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new395_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Relu1D396_U0_group">
+         <obj_property name="label">Relu1D396_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Relu1D396_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_29PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D396_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D396_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_30PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D396_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="StreamingDataWidthCo_1_U0_group">
+         <obj_property name="label">StreamingDataWidthCo_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_30PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_31_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_1_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DBuffer_new398_U0_group">
+         <obj_property name="label">Conv1DBuffer_new398_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DBuffer_new398_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_31_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new398_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new398_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_32_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new398_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DMac_new399_U0_group">
+         <obj_property name="label">Conv1DMac_new399_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DMac_new399_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_32_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights7_m_weights_V_group">
+               <obj_property name="label">weights7_m_weights_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_ce0">
+                  <obj_property name="ElementShortName">weights7_m_weights_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights7_m_weights_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights7_m_weights_V_1_group">
+               <obj_property name="label">weights7_m_weights_V_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_1_ce0">
+                  <obj_property name="ElementShortName">weights7_m_weights_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights7_m_weights_V_1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights7_m_weights_V_2_group">
+               <obj_property name="label">weights7_m_weights_V_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_2_ce0">
+                  <obj_property name="ElementShortName">weights7_m_weights_V_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights7_m_weights_V_2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights7_m_weights_V_3_group">
+               <obj_property name="label">weights7_m_weights_V_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/weights7_m_weights_V_3_ce0">
+                  <obj_property name="ElementShortName">weights7_m_weights_V_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights7_m_weights_V_3_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new399_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new399_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_33PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new399_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Relu1D400_U0_group">
+         <obj_property name="label">Relu1D400_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Relu1D400_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_33PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D400_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D400_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_34PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D400_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="StreamingDataWidthCo_U0_group">
+         <obj_property name="label">StreamingDataWidthCo_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_34PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_35_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DBuffer_new_U0_group">
+         <obj_property name="label">Conv1DBuffer_new_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DBuffer_new_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_35_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_36_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DMac_new_U0_group">
+         <obj_property name="label">Conv1DMac_new_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DMac_new_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_36_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights8_m_weights_V_group">
+               <obj_property name="label">weights8_m_weights_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_ce0">
+                  <obj_property name="ElementShortName">weights8_m_weights_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights8_m_weights_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights8_m_weights_V_1_group">
+               <obj_property name="label">weights8_m_weights_V_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_1_ce0">
+                  <obj_property name="ElementShortName">weights8_m_weights_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights8_m_weights_V_1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights8_m_weights_V_2_group">
+               <obj_property name="label">weights8_m_weights_V_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_2_ce0">
+                  <obj_property name="ElementShortName">weights8_m_weights_V_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights8_m_weights_V_2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights8_m_weights_V_3_group">
+               <obj_property name="label">weights8_m_weights_V_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/weights8_m_weights_V_3_ce0">
+                  <obj_property name="ElementShortName">weights8_m_weights_V_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights8_m_weights_V_3_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_37PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Relu1D_U0_group">
+         <obj_property name="label">Relu1D_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Relu1D_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_37PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_38PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="StreamingDataWidthCo_2_U0_group">
+         <obj_property name="label">StreamingDataWidthCo_2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_38PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_39_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_2_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="StreamingMaxPool_Pre_U0_group">
+         <obj_property name="label">StreamingMaxPool_Pre_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="StreamingMaxPool_Pre_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_39_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingMaxPool_Pre_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingMaxPool_Pre_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_40_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingMaxPool_Pre_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DBuffer_new402_U0_group">
+         <obj_property name="label">Conv1DBuffer_new402_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DBuffer_new402_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_40_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new402_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new402_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_41_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new402_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DMac_new403_U0_group">
+         <obj_property name="label">Conv1DMac_new403_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DMac_new403_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_41_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights9_m_weights_V_group">
+               <obj_property name="label">weights9_m_weights_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_ce0">
+                  <obj_property name="ElementShortName">weights9_m_weights_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights9_m_weights_V_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights9_m_weights_V_1_group">
+               <obj_property name="label">weights9_m_weights_V_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_1_ce0">
+                  <obj_property name="ElementShortName">weights9_m_weights_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights9_m_weights_V_1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights9_m_weights_V_2_group">
+               <obj_property name="label">weights9_m_weights_V_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_2_ce0">
+                  <obj_property name="ElementShortName">weights9_m_weights_V_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights9_m_weights_V_2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights9_m_weights_V_3_group">
+               <obj_property name="label">weights9_m_weights_V_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/weights9_m_weights_V_3_ce0">
+                  <obj_property name="ElementShortName">weights9_m_weights_V_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights9_m_weights_V_3_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new403_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new403_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_42PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new403_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Relu1D404_U0_group">
+         <obj_property name="label">Relu1D404_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Relu1D404_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_42PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D404_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D404_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_43PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D404_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="StreamingDataWidthCo_3_U0_group">
+         <obj_property name="label">StreamingDataWidthCo_3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_43PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_44_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_3_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DBuffer_new_1_U0_group">
+         <obj_property name="label">Conv1DBuffer_new_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DBuffer_new_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_44_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DBuffer_new_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_45_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DBuffer_new_1_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Conv1DMac_new_1_U0_group">
+         <obj_property name="label">Conv1DMac_new_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Conv1DMac_new_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_45_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights10_m_weights_3_group">
+               <obj_property name="label">weights10_m_weights_3(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_3_ce0">
+                  <obj_property name="ElementShortName">weights10_m_weights_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights10_m_weights_3_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights10_m_weights_2_group">
+               <obj_property name="label">weights10_m_weights_2(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_2_ce0">
+                  <obj_property name="ElementShortName">weights10_m_weights_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights10_m_weights_2_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights10_m_weights_1_group">
+               <obj_property name="label">weights10_m_weights_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_1_ce0">
+                  <obj_property name="ElementShortName">weights10_m_weights_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights10_m_weights_1_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="weights10_m_weights_s_group">
+               <obj_property name="label">weights10_m_weights_s(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_s_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_s_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/weights10_m_weights_s_ce0">
+                  <obj_property name="ElementShortName">weights10_m_weights_s_ce0</obj_property>
+                  <obj_property name="ObjectShortName">weights10_m_weights_s_ce0</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Conv1DMac_new_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_46PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Conv1DMac_new_1_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Relu1D_1_U0_group">
+         <obj_property name="label">Relu1D_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Relu1D_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_46PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Relu1D_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_47PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/Relu1D_1_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="StreamingDataWidthCo_4_U0_group">
+         <obj_property name="label">StreamingDataWidthCo_4_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_4_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_47PRL_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_4_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="StreamingDataWidthCo_4_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_V_V_group">
+               <obj_property name="label">out_V_V(cnv_48_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/out_V_V_blk_n">
+                  <obj_property name="ElementShortName">out_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/out_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/out_V_V_full_n">
+                  <obj_property name="ElementShortName">out_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/StreamingDataWidthCo_4_U0/out_V_V_write">
+                  <obj_property name="ElementShortName">out_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">out_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="ResizeStream_1_U0_group">
+         <obj_property name="label">ResizeStream_1_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="ResizeStream_1_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(in_2_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_1_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_1_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_1_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="ResizeStream_U0_group">
+         <obj_property name="label">ResizeStream_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="ResizeStream_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="in_V_V_group">
+               <obj_property name="label">in_V_V(cnv_48_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/in_V_V_blk_n">
+                  <obj_property name="ElementShortName">in_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/in_V_V_dout">
+                  <obj_property name="ElementShortName">in_V_V_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/in_V_V_empty_n">
+                  <obj_property name="ElementShortName">in_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/in_V_V_read">
+                  <obj_property name="ElementShortName">in_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">in_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_computeS2_top/AESL_inst_computeS2/ResizeStream_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="ResizeStream_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

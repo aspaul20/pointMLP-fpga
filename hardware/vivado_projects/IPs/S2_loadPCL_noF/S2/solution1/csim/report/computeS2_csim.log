@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../Compute.cpp in debug mode
+   Generating csim.exe
+obj/Compute.o: In function `loadPCL(hls::stream<ap_uint<8> >&)':
+/home/tukl/Amur/IndividualSyn/S2/solution1/csim/build/../../../conv1d.h:1861: multiple definition of `loadPCL(hls::stream<ap_uint<8> >&)'
+obj/my_tb.o:/home/tukl/Amur/IndividualSyn/S2/solution1/csim/build/../../../conv1d.h:1861: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:400: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

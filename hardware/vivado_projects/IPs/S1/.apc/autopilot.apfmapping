@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="weights.hpp" path="C:\Users\efree\Desktop\3_3_3\weights.hpp"/>
+    <originFiles name="weightMem-5.h" path="C:\Users\efree\Desktop\3_3_3\weightMem-5.h"/>
+    <originFiles name="weightMem-4.h" path="C:\Users\efree\Desktop\3_3_3\weightMem-4.h"/>
+    <originFiles name="weightMem-3.h" path="C:\Users\efree\Desktop\3_3_3\weightMem-3.h"/>
+    <originFiles name="weightMem-2.h" path="C:\Users\efree\Desktop\3_3_3\weightMem-2.h"/>
+    <originFiles name="weightMem-1.h" path="C:\Users\efree\Desktop\3_3_3\weightMem-1.h"/>
+    <originFiles name="weightMem-0.h" path="C:\Users\efree\Desktop\3_3_3\weightMem-0.h"/>
+    <originFiles name="grouperPE.hpp" path="C:\Users\efree\Desktop\3_3_3\grouperPE.hpp"/>
+    <originFiles name="conv1d.h" path="C:\Users\efree\Desktop\3_3_3\conv1d.h"/>
+    <originFiles name="config.h" path="C:\Users\efree\Desktop\3_3_3\config.h"/>
+    <originFiles name="bnn-library.h" path="C:\Users\efree\Desktop\3_3_3\bnn-library.h"/>
+    <originFiles name="biasMem-5.h" path="C:\Users\efree\Desktop\3_3_3\biasMem-5.h"/>
+    <originFiles name="biasMem-4.h" path="C:\Users\efree\Desktop\3_3_3\biasMem-4.h"/>
+    <originFiles name="biasMem-3.h" path="C:\Users\efree\Desktop\3_3_3\biasMem-3.h"/>
+    <originFiles name="biasMem-2.h" path="C:\Users\efree\Desktop\3_3_3\biasMem-2.h"/>
+    <originFiles name="biasMem-1.h" path="C:\Users\efree\Desktop\3_3_3\biasMem-1.h"/>
+    <originFiles name="biasMem-0.h" path="C:\Users\efree\Desktop\3_3_3\biasMem-0.h"/>
+    <originFiles name="Compute.cpp" path="C:\Users\efree\Desktop\3_3_3\Compute.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="point_cloud.txt" path="C:\Users\efree\Desktop\3_3_3\point_cloud.txt"/>
+    <originFiles name="output.txt" path="C:\Users\efree\Desktop\3_3_3\output.txt"/>
+    <originFiles name="my_tb.cpp" path="C:\Users\efree\Desktop\3_3_3\my_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

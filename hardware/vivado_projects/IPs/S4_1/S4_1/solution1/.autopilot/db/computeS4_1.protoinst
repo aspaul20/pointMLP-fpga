@@ -1,0 +1,119 @@
+{
+	"version": "1.0",
+	"modules": {
+		"computeS4_1": {
+			"proto_instances": {
+				"Conv1DBuffer_new_1_U0/Conv1DBuffer_new_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DBuffer_new_U0/Conv1DBuffer_new_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new_1_U0/Conv1DMac_new_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Conv1DMac_new_U0/Conv1DMac_new_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D73_U0/Relu1D73_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"Relu1D_U0/Relu1D_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"ResizeStream_1_U0/ResizeStream_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"ResizeStream_U0/ResizeStream_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_1_U0/StreamingDataWidthCo_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"StreamingDataWidthCo_U0/StreamingDataWidthCo_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

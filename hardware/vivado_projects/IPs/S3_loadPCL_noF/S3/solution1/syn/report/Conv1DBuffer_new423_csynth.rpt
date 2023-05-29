@@ -1,0 +1,210 @@
+
+
+================================================================
+== Vivado HLS Report for 'Conv1DBuffer_new423'
+================================================================
+* Date:           Wed May 10 08:52:08 2023
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        S3
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.254|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  1048836|  1048836|  1048836|  1048836|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |          |      Latency      | Iteration|  Initiation Interval  |   Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- Loop 1  |      256|      256|         2|          1|          1|      256|    yes   |
+        |- Loop 2  |  1048576|  1048576|         2|          1|          1|  1048576|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|     294|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        1|      -|       0|       0|
+|Multiplexer      |        -|      -|       -|     177|
+|Register         |        -|      -|     100|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        1|      0|     100|     471|
++-----------------+---------+-------+--------+--------+
+|Available        |     1090|    900|  437200|  218600|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |    ~0   |      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |     Memory     |        Module        | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |inputBuf_0_V_U  |Conv1DBuffer_new3tde  |        1|  0|   0|   256|    8|     1|         2048|
+    +----------------+----------------------+---------+---+----+------+-----+------+-------------+
+    |Total           |                      |        1|  0|   0|   256|    8|     1|         2048|
+    +----------------+----------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |indvar_flatten_next1_fu_219_p2    |     +    |      0|  0|  28|          21|           1|
+    |indvar_flatten_op_fu_350_p2       |     +    |      0|  0|  23|          16|           1|
+    |nm_3_fu_291_p2                    |     +    |      0|  0|  15|           7|           1|
+    |ofm_iter_fu_225_p2                |     +    |      0|  0|  15|           7|           1|
+    |ptr_simd_1_fu_184_p2              |     +    |      0|  0|  16|           9|           1|
+    |ptr_simd_2_fu_344_p2              |     +    |      0|  0|  16|           9|           1|
+    |ap_block_pp0_stage0_11001         |    and   |      0|  0|   2|           1|           1|
+    |ap_block_pp1_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage0_iter1  |    and   |      0|  0|   2|           1|           1|
+    |or_cond_fu_207_p2                 |    and   |      0|  0|   2|           1|           1|
+    |or_cond_mid1_fu_317_p2            |    and   |      0|  0|   2|           1|           1|
+    |or_cond_mid_fu_265_p2             |    and   |      0|  0|   2|           1|           1|
+    |tmp_277_mid_fu_277_p2             |    and   |      0|  0|   2|           1|           1|
+    |exitcond_flatten5_fu_231_p2       |   icmp   |      0|  0|  13|          16|          15|
+    |exitcond_flatten_fu_213_p2        |   icmp   |      0|  0|  18|          21|          22|
+    |tmp_252_fu_195_p2                 |   icmp   |      0|  0|  11|           7|           6|
+    |tmp_253_fu_201_p2                 |   icmp   |      0|  0|  11|           7|           6|
+    |tmp_274_mid1_fu_245_p2            |   icmp   |      0|  0|  11|           7|           6|
+    |tmp_276_mid1_fu_311_p2            |   icmp   |      0|  0|  11|           7|           6|
+    |tmp_889_fu_271_p2                 |   icmp   |      0|  0|  13|           9|          10|
+    |tmp_fu_178_p2                     |   icmp   |      0|  0|  13|           9|          10|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state6_pp1_stage0_iter1  |    or    |      0|  0|   2|           1|           1|
+    |tmp_869_fu_297_p2                 |    or    |      0|  0|   2|           1|           1|
+    |indvar_flatten_next_fu_356_p3     |  select  |      0|  0|  16|           1|           1|
+    |nm_mid2_fu_331_p3                 |  select  |      0|  0|   7|           1|           7|
+    |nm_mid_fu_237_p3                  |  select  |      0|  0|   7|           1|           1|
+    |op1_assign_mid2_fu_283_p3         |  select  |      0|  0|   7|           1|           7|
+    |or_cond_mid2_fu_323_p3            |  select  |      0|  0|   2|           1|           1|
+    |ptr_simd4_mid2_fu_303_p3          |  select  |      0|  0|   9|           1|           1|
+    |tmp_274_mid2_fu_251_p3            |  select  |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_pp1                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    |ap_enable_reg_pp1_iter1           |    xor   |      0|  0|   2|           2|           1|
+    |not_exitcond_flatten_fu_259_p2    |    xor   |      0|  0|   2|           1|           2|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0| 294|         176|         124|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                          |  33|          6|    1|          6|
+    |ap_done                            |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1            |  15|          3|    1|          3|
+    |ap_enable_reg_pp1_iter1            |  15|          3|    1|          3|
+    |ap_phi_mux_ptr_simd_phi_fu_115_p4  |   9|          2|    9|         18|
+    |in_V_V_blk_n                       |   9|          2|    1|          2|
+    |indvar_flatten5_reg_123            |   9|          2|   21|         42|
+    |indvar_flatten_reg_145             |   9|          2|   16|         32|
+    |inputBuf_0_V_address0              |  15|          3|    8|         24|
+    |nm_reg_156                         |   9|          2|    7|         14|
+    |op1_assign_reg_134                 |   9|          2|    7|         14|
+    |out_V_V_blk_n                      |   9|          2|    1|          2|
+    |ptr_simd4_reg_167                  |   9|          2|    9|         18|
+    |ptr_simd_reg_111                   |   9|          2|    9|         18|
+    |real_start                         |   9|          2|    1|          2|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              | 177|         37|   93|        200|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                    |   5|   0|    5|          0|
+    |ap_done_reg                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0      |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter0      |   1|   0|    1|          0|
+    |ap_enable_reg_pp1_iter1      |   1|   0|    1|          0|
+    |exitcond_flatten_reg_373     |   1|   0|    1|          0|
+    |indvar_flatten5_reg_123      |  21|   0|   21|          0|
+    |indvar_flatten_reg_145       |  16|   0|   16|          0|
+    |inputBuf_0_V_addr_1_reg_396  |   8|   0|    8|          0|
+    |nm_reg_156                   |   7|   0|    7|          0|
+    |op1_assign_reg_134           |   7|   0|    7|          0|
+    |or_cond_mid2_reg_387         |   1|   0|    1|          0|
+    |ptr_simd4_reg_167            |   9|   0|    9|          0|
+    |ptr_simd_1_reg_368           |   9|   0|    9|          0|
+    |ptr_simd_reg_111             |   9|   0|    9|          0|
+    |start_once_reg               |   1|   0|    1|          0|
+    |tmp_reg_364                  |   1|   0|    1|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        | 100|   0|  100|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+---------------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++----------------+-----+-----+------------+---------------------+--------------+
+|ap_clk          |  in |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|ap_rst          |  in |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|ap_start        |  in |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|start_full_n    |  in |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|ap_done         | out |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|ap_continue     |  in |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|ap_idle         | out |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|ap_ready        | out |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|start_out       | out |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|start_write     | out |    1| ap_ctrl_hs | Conv1DBuffer_new423 | return value |
+|in_V_V_dout     |  in |    8|   ap_fifo  |        in_V_V       |    pointer   |
+|in_V_V_empty_n  |  in |    1|   ap_fifo  |        in_V_V       |    pointer   |
+|in_V_V_read     | out |    1|   ap_fifo  |        in_V_V       |    pointer   |
+|out_V_V_din     | out |    8|   ap_fifo  |       out_V_V       |    pointer   |
+|out_V_V_full_n  |  in |    1|   ap_fifo  |       out_V_V       |    pointer   |
+|out_V_V_write   | out |    1|   ap_fifo  |       out_V_V       |    pointer   |
++----------------+-----+-----+------------+---------------------+--------------+
+
