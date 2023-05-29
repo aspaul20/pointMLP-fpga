@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="biasMem-25.h" path="/home/tukl/Amur/IndividualSyn/FC1/biasMem-25.h"/>
+    <originFiles name="bnn-library.h" path="/home/tukl/Amur/IndividualSyn/FC1/bnn-library.h"/>
+    <originFiles name="Compute.cpp" path="/home/tukl/Amur/IndividualSyn/FC1/Compute.cpp"/>
+    <originFiles name="conv1d.h" path="/home/tukl/Amur/IndividualSyn/FC1/conv1d.h"/>
+    <originFiles name="weightMem-25.h" path="/home/tukl/Amur/IndividualSyn/FC1/weightMem-25.h"/>
+    <originFiles name="weights.hpp" path="/home/tukl/Amur/IndividualSyn/FC1/weights.hpp"/>
+    <originFiles name="biasMem-26.h" path="/home/tukl/Amur/IndividualSyn/FC1/biasMem-26.h"/>
+    <originFiles name="weightMem-26.h" path="/home/tukl/Amur/IndividualSyn/FC1/weightMem-26.h"/>
+  </source>
+  <testbench>
+    <originFiles name="my_tb.cpp" path="/home/tukl/Amur/IndividualSyn/FC1/my_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

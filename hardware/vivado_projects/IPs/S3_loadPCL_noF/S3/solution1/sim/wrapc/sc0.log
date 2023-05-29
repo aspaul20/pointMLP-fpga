@@ -1,0 +1,5 @@
+   Build using "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_computeS3.cpp
+   Compiling my_tb.cpp_pre.cpp.tb.cpp
+   Compiling Compute.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

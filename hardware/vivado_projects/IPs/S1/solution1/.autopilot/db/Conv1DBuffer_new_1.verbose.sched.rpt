@@ -1,0 +1,243 @@
+
+
+================================================================
+== Vivado HLS Report for 'Conv1DBuffer_new_1'
+================================================================
+* Date:           Tue May  9 01:01:14 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        3_3_3
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.424|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  262212|  262212|  262212|  262212|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+        |          |     Latency     | Iteration|  Initiation Interval  |  Trip  |          |
+        | Loop Name|   min  |   max  |  Latency |  achieved |   target  |  Count | Pipelined|
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+        |- Loop 1  |      64|      64|         2|          1|          1|      64|    yes   |
+        |- Loop 2  |  262144|  262144|         2|          1|          1|  262144|    yes   |
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+  * Pipeline-1: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 2
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+  Pipeline-1 : II = 1, D = 2, States = { 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / (tmp)
+	3  / (!tmp)
+3 --> 
+	2  / true
+4 --> 
+	5  / true
+5 --> 
+	7  / (exitcond_flatten)
+	6  / (!exitcond_flatten)
+6 --> 
+	5  / true
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.46>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %out_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str524, i32 0, i32 0, [1 x i8]* @p_str525, [1 x i8]* @p_str526, [1 x i8]* @p_str527, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str528, [1 x i8]* @p_str529)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %in_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str517, i32 0, i32 0, [1 x i8]* @p_str518, [1 x i8]* @p_str519, [1 x i8]* @p_str520, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str521, [1 x i8]* @p_str522)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%inputBuf_0_V = alloca [64 x i8], align 1" [3_3_3/conv1d.h:222]   --->   Operation 10 'alloca' 'inputBuf_0_V' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 64> <RAM>
+ST_1 : Operation 11 [1/1] (0.46ns)   --->   "br label %.preheader108" [3_3_3/conv1d.h:226]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.46>
+
+State 2 <SV = 1> <Delay = 1.31>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%ptr_simd = phi i7 [ %ptr_simd_3, %0 ], [ 0, %.preheader109.preheader ]"   --->   Operation 12 'phi' 'ptr_simd' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (1.06ns)   --->   "%tmp = icmp eq i7 %ptr_simd, -64" [3_3_3/conv1d.h:226]   --->   Operation 13 'icmp' 'tmp' <Predicate = true> <Delay = 1.06> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"   --->   Operation 14 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.31ns)   --->   "%ptr_simd_3 = add i7 %ptr_simd, 1" [3_3_3/conv1d.h:226]   --->   Operation 15 'add' 'ptr_simd_3' <Predicate = true> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "br i1 %tmp, label %.preheader105.preheader, label %0" [3_3_3/conv1d.h:226]   --->   Operation 16 'br' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.15>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_139 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str61)" [3_3_3/conv1d.h:226]   --->   Operation 17 'specregionbegin' 'tmp_139' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [3_3_3/conv1d.h:227]   --->   Operation 18 'specpipeline' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_s = zext i7 %ptr_simd to i64" [3_3_3/conv1d.h:229]   --->   Operation 19 'zext' 'tmp_s' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (3.40ns)   --->   "%tmp_V = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %in_V_V)" [3_3_3/conv1d.h:229]   --->   Operation 20 'read' 'tmp_V' <Predicate = (!tmp)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%inputBuf_0_V_addr = getelementptr [64 x i8]* %inputBuf_0_V, i64 0, i64 %tmp_s" [3_3_3/conv1d.h:229]   --->   Operation 21 'getelementptr' 'inputBuf_0_V_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (1.75ns)   --->   "store i8 %tmp_V, i8* %inputBuf_0_V_addr, align 1" [3_3_3/conv1d.h:229]   --->   Operation 22 'store' <Predicate = (!tmp)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 64> <RAM>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%empty_141 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str61, i32 %tmp_139)" [3_3_3/conv1d.h:230]   --->   Operation 23 'specregionend' 'empty_141' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "br label %.preheader108" [3_3_3/conv1d.h:226]   --->   Operation 24 'br' <Predicate = (!tmp)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.46>
+ST_4 : Operation 25 [1/1] (0.46ns)   --->   "br label %.preheader105" [3_3_3/conv1d.h:245]   --->   Operation 25 'br' <Predicate = true> <Delay = 0.46>
+
+State 5 <SV = 3> <Delay = 6.42>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%indvar_flatten4 = phi i19 [ %indvar_flatten_next1, %._crit_edge ], [ 0, %.preheader105.preheader ]"   --->   Operation 26 'phi' 'indvar_flatten4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%op1_assign = phi i9 [ %op1_assign_mid2, %._crit_edge ], [ 0, %.preheader105.preheader ]" [3_3_3/conv1d.h:234]   --->   Operation 27 'phi' 'op1_assign' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i12 [ %indvar_flatten_next, %._crit_edge ], [ 0, %.preheader105.preheader ]"   --->   Operation 28 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%nm = phi i5 [ %nm_mid2, %._crit_edge ], [ 0, %.preheader105.preheader ]" [3_3_3/conv1d.h:236]   --->   Operation 29 'phi' 'nm' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 30 [1/1] (0.00ns)   --->   "%ptr_simd4 = phi i7 [ %ptr_simd_4, %._crit_edge ], [ 0, %.preheader105.preheader ]"   --->   Operation 30 'phi' 'ptr_simd4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 31 [1/1] (1.62ns)   --->   "%tmp_140 = icmp ult i9 %op1_assign, 255" [3_3_3/conv1d.h:245]   --->   Operation 31 'icmp' 'tmp_140' <Predicate = true> <Delay = 1.62> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 32 [1/1] (0.97ns)   --->   "%tmp_141 = icmp eq i5 %nm, 15" [3_3_3/conv1d.h:245]   --->   Operation 32 'icmp' 'tmp_141' <Predicate = true> <Delay = 0.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 33 [1/1] (0.80ns)   --->   "%or_cond = and i1 %tmp_140, %tmp_141" [3_3_3/conv1d.h:245]   --->   Operation 33 'and' 'or_cond' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 34 [1/1] (2.05ns)   --->   "%exitcond_flatten = icmp eq i19 %indvar_flatten4, -262144"   --->   Operation 34 'icmp' 'exitcond_flatten' <Predicate = true> <Delay = 2.05> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 35 [1/1] (1.57ns)   --->   "%indvar_flatten_next1 = add i19 %indvar_flatten4, 1"   --->   Operation 35 'add' 'indvar_flatten_next1' <Predicate = true> <Delay = 1.57> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %2, label %"_ZcmILi2ELb0EE11ap_int_baseIXplT_L3$_032EELb0EEjRKS0_IXT_EXT0_EE.exit""   --->   Operation 36 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (1.36ns)   --->   "%ofm_iter = add i9 %op1_assign, 1" [3_3_3/conv1d.h:234]   --->   Operation 37 'add' 'ofm_iter' <Predicate = (!exitcond_flatten)> <Delay = 1.36> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 38 [1/1] (1.82ns)   --->   "%exitcond_flatten4 = icmp eq i12 %indvar_flatten, 1024"   --->   Operation 38 'icmp' 'exitcond_flatten4' <Predicate = (!exitcond_flatten)> <Delay = 1.82> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 39 [1/1] (0.97ns)   --->   "%nm_mid = select i1 %exitcond_flatten4, i5 0, i5 %nm" [3_3_3/conv1d.h:236]   --->   Operation 39 'select' 'nm_mid' <Predicate = (!exitcond_flatten)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 40 [1/1] (1.62ns)   --->   "%tmp_144_mid1 = icmp ult i9 %ofm_iter, 255" [3_3_3/conv1d.h:245]   --->   Operation 40 'icmp' 'tmp_144_mid1' <Predicate = (!exitcond_flatten)> <Delay = 1.62> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node or_cond_mid1)   --->   "%tmp_144_mid2 = select i1 %exitcond_flatten4, i1 %tmp_144_mid1, i1 %tmp_140" [3_3_3/conv1d.h:245]   --->   Operation 41 'select' 'tmp_144_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 42 [1/1] (0.80ns)   --->   "%not_exitcond_flatten = xor i1 %exitcond_flatten4, true" [3_3_3/conv1d.h:245]   --->   Operation 42 'xor' 'not_exitcond_flatten' <Predicate = (!exitcond_flatten)> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node or_cond_mid2)   --->   "%or_cond_mid = and i1 %or_cond, %not_exitcond_flatten" [3_3_3/conv1d.h:245]   --->   Operation 43 'and' 'or_cond_mid' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 44 [1/1] (1.06ns)   --->   "%tmp_373 = icmp eq i7 %ptr_simd4, -64" [3_3_3/conv1d.h:236]   --->   Operation 44 'icmp' 'tmp_373' <Predicate = (!exitcond_flatten)> <Delay = 1.06> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [1/1] (0.80ns)   --->   "%tmp_147_mid = and i1 %tmp_373, %not_exitcond_flatten" [3_3_3/conv1d.h:236]   --->   Operation 45 'and' 'tmp_147_mid' <Predicate = (!exitcond_flatten)> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 46 [1/1] (0.72ns)   --->   "%op1_assign_mid2 = select i1 %exitcond_flatten4, i9 %ofm_iter, i9 %op1_assign" [3_3_3/conv1d.h:234]   --->   Operation 46 'select' 'op1_assign_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.72> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 47 [1/1] (1.02ns)   --->   "%nm_5 = add i5 %nm_mid, 1" [3_3_3/conv1d.h:235]   --->   Operation 47 'add' 'nm_5' <Predicate = (!exitcond_flatten)> <Delay = 1.02> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node ptr_simd4_mid2)   --->   "%tmp_374 = or i1 %tmp_147_mid, %exitcond_flatten4" [3_3_3/conv1d.h:236]   --->   Operation 48 'or' 'tmp_374' <Predicate = (!exitcond_flatten)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 49 [1/1] (0.80ns) (out node of the LUT)   --->   "%ptr_simd4_mid2 = select i1 %tmp_374, i7 0, i7 %ptr_simd4" [3_3_3/conv1d.h:236]   --->   Operation 49 'select' 'ptr_simd4_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.80> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 50 [1/1] (0.97ns)   --->   "%tmp_146_mid1 = icmp eq i5 %nm_5, 15" [3_3_3/conv1d.h:245]   --->   Operation 50 'icmp' 'tmp_146_mid1' <Predicate = (!exitcond_flatten)> <Delay = 0.97> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 51 [1/1] (0.81ns) (out node of the LUT)   --->   "%or_cond_mid1 = and i1 %tmp_144_mid2, %tmp_146_mid1" [3_3_3/conv1d.h:245]   --->   Operation 51 'and' 'or_cond_mid1' <Predicate = (!exitcond_flatten)> <Delay = 0.81> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 52 [1/1] (0.81ns) (out node of the LUT)   --->   "%or_cond_mid2 = select i1 %tmp_147_mid, i1 %or_cond_mid1, i1 %or_cond_mid" [3_3_3/conv1d.h:245]   --->   Operation 52 'select' 'or_cond_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.81> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 53 [1/1] (0.97ns)   --->   "%nm_mid2 = select i1 %tmp_147_mid, i5 %nm_5, i5 %nm_mid" [3_3_3/conv1d.h:236]   --->   Operation 53 'select' 'nm_mid2' <Predicate = (!exitcond_flatten)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_143 = zext i7 %ptr_simd4_mid2 to i64" [3_3_3/conv1d.h:243]   --->   Operation 54 'zext' 'tmp_143' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%inputBuf_0_V_addr_4 = getelementptr [64 x i8]* %inputBuf_0_V, i64 0, i64 %tmp_143" [3_3_3/conv1d.h:243]   --->   Operation 55 'getelementptr' 'inputBuf_0_V_addr_4' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 56 [2/2] (1.75ns)   --->   "%tmp_V_62 = load i8* %inputBuf_0_V_addr_4, align 1" [3_3_3/conv1d.h:243]   --->   Operation 56 'load' 'tmp_V_62' <Predicate = (!exitcond_flatten)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 64> <RAM>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %or_cond_mid2, label %1, label %._crit_edge" [3_3_3/conv1d.h:245]   --->   Operation 57 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (1.31ns)   --->   "%ptr_simd_4 = add i7 %ptr_simd4_mid2, 1" [3_3_3/conv1d.h:236]   --->   Operation 58 'add' 'ptr_simd_4' <Predicate = (!exitcond_flatten)> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 59 [1/1] (1.54ns)   --->   "%indvar_flatten_op = add i12 %indvar_flatten, 1"   --->   Operation 59 'add' 'indvar_flatten_op' <Predicate = (!exitcond_flatten)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 60 [1/1] (0.59ns)   --->   "%indvar_flatten_next = select i1 %exitcond_flatten4, i12 1, i12 %indvar_flatten_op"   --->   Operation 60 'select' 'indvar_flatten_next' <Predicate = (!exitcond_flatten)> <Delay = 0.59> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 6 <SV = 4> <Delay = 5.15>
+ST_6 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_144 = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str62)" [3_3_3/conv1d.h:237]   --->   Operation 61 'specregionbegin' 'tmp_144' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [3_3_3/conv1d.h:238]   --->   Operation 62 'specpipeline' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 63 [1/2] (1.75ns)   --->   "%tmp_V_62 = load i8* %inputBuf_0_V_addr_4, align 1" [3_3_3/conv1d.h:243]   --->   Operation 63 'load' 'tmp_V_62' <Predicate = (!exitcond_flatten)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 64> <RAM>
+ST_6 : Operation 64 [1/1] (3.40ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %out_V_V, i8 %tmp_V_62)" [3_3_3/conv1d.h:243]   --->   Operation 64 'write' <Predicate = (!exitcond_flatten)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_6 : Operation 65 [1/1] (3.40ns)   --->   "%tmp_V_63 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %in_V_V)" [3_3_3/conv1d.h:248]   --->   Operation 65 'read' 'tmp_V_63' <Predicate = (or_cond_mid2)> <Delay = 3.40> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_6 : Operation 66 [1/1] (1.75ns)   --->   "store i8 %tmp_V_63, i8* %inputBuf_0_V_addr_4, align 1" [3_3_3/conv1d.h:248]   --->   Operation 66 'store' <Predicate = (or_cond_mid2)> <Delay = 1.75> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 64> <RAM>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "br label %._crit_edge" [3_3_3/conv1d.h:249]   --->   Operation 67 'br' <Predicate = (or_cond_mid2)> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%empty_142 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str62, i32 %tmp_144)" [3_3_3/conv1d.h:250]   --->   Operation 68 'specregionend' 'empty_142' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "br label %.preheader105" [3_3_3/conv1d.h:236]   --->   Operation 69 'br' <Predicate = (!exitcond_flatten)> <Delay = 0.00>
+
+State 7 <SV = 4> <Delay = 0.00>
+ST_7 : Operation 70 [1/1] (0.00ns)   --->   "ret void" [3_3_3/conv1d.h:254]   --->   Operation 70 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.466ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('ptr_simd') with incoming values : ('ptr_simd', 3_3_3/conv1d.h:226) [8]  (0.466 ns)
+
+ <State 2>: 1.32ns
+The critical path consists of the following:
+	'phi' operation ('ptr_simd') with incoming values : ('ptr_simd', 3_3_3/conv1d.h:226) [8]  (0 ns)
+	'add' operation ('ptr_simd', 3_3_3/conv1d.h:226) [11]  (1.32 ns)
+
+ <State 3>: 5.16ns
+The critical path consists of the following:
+	fifo read on port 'in_V_V' (3_3_3/conv1d.h:229) [17]  (3.4 ns)
+	'store' operation (3_3_3/conv1d.h:229) of variable 'tmp.V', 3_3_3/conv1d.h:229 on array 'inputBuf[0].V', 3_3_3/conv1d.h:222 [19]  (1.75 ns)
+
+ <State 4>: 0.466ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('indvar_flatten4') with incoming values : ('indvar_flatten_next1') [25]  (0.466 ns)
+
+ <State 5>: 6.42ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten') with incoming values : ('indvar_flatten_next') [27]  (0 ns)
+	'icmp' operation ('exitcond_flatten4') [38]  (1.82 ns)
+	'select' operation ('nm_mid', 3_3_3/conv1d.h:236) [39]  (0.976 ns)
+	'add' operation ('nm_5', 3_3_3/conv1d.h:235) [47]  (1.02 ns)
+	'icmp' operation ('tmp_146_mid1', 3_3_3/conv1d.h:245) [50]  (0.979 ns)
+	'and' operation ('or_cond_mid1', 3_3_3/conv1d.h:245) [51]  (0.813 ns)
+	'select' operation ('or_cond_mid2', 3_3_3/conv1d.h:245) [52]  (0.813 ns)
+
+ <State 6>: 5.16ns
+The critical path consists of the following:
+	'load' operation ('tmp.V', 3_3_3/conv1d.h:243) on array 'inputBuf[0].V', 3_3_3/conv1d.h:222 [58]  (1.75 ns)
+	fifo write on port 'out_V_V' (3_3_3/conv1d.h:243) [59]  (3.4 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

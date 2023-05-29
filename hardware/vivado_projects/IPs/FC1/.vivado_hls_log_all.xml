@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ResizeStream.1' to 'ResizeStream_1'." projectName="FC1" solutionName="solution1" date="2023-05-15T18:27:41.350+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'FCMac&lt;(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 10240u>, FixedPointWeights&lt;1u, ap_fixed&lt;8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 40u> >' to 'FCMac' (FC1/conv1d.h:1481:53)" projectName="FC1" solutionName="solution1" date="2023-05-15T18:27:41.345+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'ResizeStream&lt;64u, 8u, 256u>' to 'ResizeStream.1' (FC1/conv1d.h:19:37)" projectName="FC1" solutionName="solution1" date="2023-05-15T18:27:41.259+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'ResizeStream&lt;8u, 64u, 40u>' to 'ResizeStream' (FC1/conv1d.h:19:37)" projectName="FC1" solutionName="solution1" date="2023-05-15T18:27:41.258+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'bias27.m_weights.V'  accessed through non-constant indices on dimension 2 (FC1/conv1d.h:1493:62), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="FC1" solutionName="solution1" date="2023-05-15T18:27:41.049+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FC1/Compute.cpp:83:11" projectName="FC1" solutionName="solution1" date="2023-05-15T18:27:38.250+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

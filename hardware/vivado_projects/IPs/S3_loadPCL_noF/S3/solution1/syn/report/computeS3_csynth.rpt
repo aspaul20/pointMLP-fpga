@@ -1,0 +1,280 @@
+
+
+================================================================
+== Vivado HLS Report for 'computeS3'
+================================================================
+* Date:           Wed May 10 08:52:46 2023
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        S3
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.198|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +----------+----------+----------+----------+----------+
+    |       Latency       |       Interval      | Pipeline |
+    |    min   |    max   |    min   |    max   |   Type   |
+    +----------+----------+----------+----------+----------+
+    |  84160175|  84160175|  16777477|  16777477| dataflow |
+    +----------+----------+----------+----------+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------+------------------------+----------+----------+----------+----------+---------+
+        |                           |                        |       Latency       |       Interval      | Pipeline|
+        |          Instance         |         Module         |    min   |    max   |    min   |    max   |   Type  |
+        +---------------------------+------------------------+----------+----------+----------+----------+---------+
+        |grouperPE_U0               |grouperPE               |    430214|    430214|    430214|    430214|   none  |
+        |grouperPE_1_U0             |grouperPE_1             |    432902|    432902|    432902|    432902|   none  |
+        |Conv1DMac_new400_U0        |Conv1DMac_new400        |  16777221|  16777221|  16777221|  16777221|   none  |
+        |Conv1DMac_new416_U0        |Conv1DMac_new416        |   1048581|   1048581|   1048581|   1048581|   none  |
+        |Conv1DMac_new404_U0        |Conv1DMac_new404        |  16777221|  16777221|  16777221|  16777221|   none  |
+        |Conv1DMac_new408_U0        |Conv1DMac_new408        |  16777221|  16777221|  16777221|  16777221|   none  |
+        |Conv1DMac_new_1_U0         |Conv1DMac_new_1         |  16777221|  16777221|  16777221|  16777221|   none  |
+        |Conv1DMac_new412_U0        |Conv1DMac_new412        |  16777221|  16777221|  16777221|  16777221|   none  |
+        |Conv1DMac_new420_U0        |Conv1DMac_new420        |   1048581|   1048581|   1048581|   1048581|   none  |
+        |Conv1DMac_new424_U0        |Conv1DMac_new424        |   1048581|   1048581|   1048581|   1048581|   none  |
+        |Conv1DMac_new_U0           |Conv1DMac_new           |   1048581|   1048581|   1048581|   1048581|   none  |
+        |Conv1DBuffer_new399_U0     |Conv1DBuffer_new399     |  16777476|  16777476|  16777476|  16777476|   none  |
+        |Conv1DBuffer_new403_U0     |Conv1DBuffer_new403     |  16777476|  16777476|  16777476|  16777476|   none  |
+        |Conv1DBuffer_new407_U0     |Conv1DBuffer_new407     |  16777476|  16777476|  16777476|  16777476|   none  |
+        |Conv1DBuffer_new411_U0     |Conv1DBuffer_new411     |  16777476|  16777476|  16777476|  16777476|   none  |
+        |Conv1DBuffer_new_1_U0      |Conv1DBuffer_new_1      |  16777476|  16777476|  16777476|  16777476|   none  |
+        |loadPCL_U0                 |loadPCL                 |      1538|      1538|      1538|      1538|   none  |
+        |Conv1DBuffer_new415_U0     |Conv1DBuffer_new415     |   1048836|   1048836|   1048836|   1048836|   none  |
+        |Conv1DBuffer_new419_U0     |Conv1DBuffer_new419     |   1048836|   1048836|   1048836|   1048836|   none  |
+        |Conv1DBuffer_new423_U0     |Conv1DBuffer_new423     |   1048836|   1048836|   1048836|   1048836|   none  |
+        |Conv1DBuffer_new_U0        |Conv1DBuffer_new        |   1048836|   1048836|   1048836|   1048836|   none  |
+        |StreamingDataWidthCo_3_U0  |StreamingDataWidthCo_3  |    262146|    262146|    262146|    262146|   none  |
+        |StreamingDataWidthCo_2_U0  |StreamingDataWidthCo_2  |    262146|    262146|    262146|    262146|   none  |
+        |StreamingDataWidthCo_1_U0  |StreamingDataWidthCo_1  |    262146|    262146|    262146|    262146|   none  |
+        |StreamingDataWidthCo_U0    |StreamingDataWidthCo    |    262146|    262146|    262146|    262146|   none  |
+        |StreamingDataWidthCo_4_U0  |StreamingDataWidthCo_4  |    262146|    262146|    262146|    262146|   none  |
+        |StreamingDataWidthCo_7_U0  |StreamingDataWidthCo_7  |     16386|     16386|     16386|     16386|   none  |
+        |StreamingDataWidthCo_6_U0  |StreamingDataWidthCo_6  |     16386|     16386|     16386|     16386|   none  |
+        |StreamingDataWidthCo_5_U0  |StreamingDataWidthCo_5  |     16386|     16386|     16386|     16386|   none  |
+        |StreamingDataWidthCo_8_U0  |StreamingDataWidthCo_8  |     16386|     16386|     16386|     16386|   none  |
+        |StreamingMaxPool_Pre_U0    |StreamingMaxPool_Pre    |    279107|    279107|    279107|    279107|   none  |
+        |ResizeStream_U0            |ResizeStream            |    524289|    524289|    524289|    524289|   none  |
+        |Relu1D401_U0               |Relu1D401               |     65538|     65538|     65538|     65538|   none  |
+        |Relu1D405_U0               |Relu1D405               |     65538|     65538|     65538|     65538|   none  |
+        |Relu1D409_U0               |Relu1D409               |     65538|     65538|     65538|     65538|   none  |
+        |Relu1D413_U0               |Relu1D413               |     65538|     65538|     65538|     65538|   none  |
+        |Relu1D_1_U0                |Relu1D_1                |     65538|     65538|     65538|     65538|   none  |
+        |Relu1D417_U0               |Relu1D417               |      4098|      4098|      4098|      4098|   none  |
+        |Relu1D421_U0               |Relu1D421               |      4098|      4098|      4098|      4098|   none  |
+        |Relu1D425_U0               |Relu1D425               |      4098|      4098|      4098|      4098|   none  |
+        |Relu1D_U0                  |Relu1D                  |      4098|      4098|      4098|      4098|   none  |
+        |ResizeStream_1_U0          |ResizeStream_1          |     32769|     32769|     32769|     32769|   none  |
+        |CloneStream_U0             |CloneStream             |      1538|      1538|      1538|      1538|   none  |
+        +---------------------------+------------------------+----------+----------+----------+----------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|DSP              |        -|      -|       -|       -|
+|Expression       |        -|      -|       0|       2|
+|FIFO             |        0|      -|     215|    1292|
+|Instance         |      384|      0|   17615|   42745|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       1|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |      384|      0|   17831|   44039|
++-----------------+---------+-------+--------+--------+
+|Available        |     1090|    900|  437200|  218600|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |       35|      0|       4|      20|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-------------------------+---------+-------+------+-------+
+    |          Instance         |          Module         | BRAM_18K| DSP48E|  FF  |  LUT  |
+    +---------------------------+-------------------------+---------+-------+------+-------+
+    |CloneStream_U0             |CloneStream              |        0|      0|    18|    122|
+    |Conv1DBuffer_new_U0        |Conv1DBuffer_new         |        1|      0|   100|    471|
+    |Conv1DBuffer_new399_U0     |Conv1DBuffer_new399      |        1|      0|   108|    486|
+    |Conv1DBuffer_new403_U0     |Conv1DBuffer_new403      |        1|      0|   108|    486|
+    |Conv1DBuffer_new407_U0     |Conv1DBuffer_new407      |        1|      0|   108|    486|
+    |Conv1DBuffer_new411_U0     |Conv1DBuffer_new411      |        1|      0|   108|    486|
+    |Conv1DBuffer_new415_U0     |Conv1DBuffer_new415      |        1|      0|   100|    471|
+    |Conv1DBuffer_new419_U0     |Conv1DBuffer_new419      |        1|      0|   100|    471|
+    |Conv1DBuffer_new423_U0     |Conv1DBuffer_new423      |        1|      0|   100|    471|
+    |Conv1DBuffer_new_1_U0      |Conv1DBuffer_new_1       |        1|      0|   108|    486|
+    |Conv1DMac_new_U0           |Conv1DMac_new            |       24|      0|   377|    916|
+    |Conv1DMac_new400_U0        |Conv1DMac_new400         |       20|      0|   369|    976|
+    |Conv1DMac_new404_U0        |Conv1DMac_new404         |       28|      0|   385|    920|
+    |Conv1DMac_new408_U0        |Conv1DMac_new408         |       28|      0|   385|    920|
+    |Conv1DMac_new412_U0        |Conv1DMac_new412         |       24|      0|   381|    920|
+    |Conv1DMac_new416_U0        |Conv1DMac_new416         |       21|      0|   370|    958|
+    |Conv1DMac_new420_U0        |Conv1DMac_new420         |       24|      0|   377|    916|
+    |Conv1DMac_new424_U0        |Conv1DMac_new424         |       24|      0|   377|    916|
+    |Conv1DMac_new_1_U0         |Conv1DMac_new_1          |       25|      0|   382|    920|
+    |Relu1D_U0                  |Relu1D                   |        0|      0|    21|    155|
+    |Relu1D401_U0               |Relu1D401                |        0|      0|    25|    164|
+    |Relu1D405_U0               |Relu1D405                |        0|      0|    25|    164|
+    |Relu1D409_U0               |Relu1D409                |        0|      0|    25|    164|
+    |Relu1D413_U0               |Relu1D413                |        0|      0|    25|    164|
+    |Relu1D417_U0               |Relu1D417                |        0|      0|    21|    155|
+    |Relu1D421_U0               |Relu1D421                |        0|      0|    21|    155|
+    |Relu1D425_U0               |Relu1D425                |        0|      0|    21|    155|
+    |Relu1D_1_U0                |Relu1D_1                 |        0|      0|    25|    164|
+    |ResizeStream_U0            |ResizeStream             |        0|      0|   174|    143|
+    |ResizeStream_1_U0          |ResizeStream_1           |        0|      0|   167|    141|
+    |StreamingDataWidthCo_U0    |StreamingDataWidthCo     |        0|      0|    84|    279|
+    |StreamingDataWidthCo_1_U0  |StreamingDataWidthCo_1   |        0|      0|    84|    279|
+    |StreamingDataWidthCo_2_U0  |StreamingDataWidthCo_2   |        0|      0|    84|    279|
+    |StreamingDataWidthCo_3_U0  |StreamingDataWidthCo_3   |        0|      0|    84|    279|
+    |StreamingDataWidthCo_4_U0  |StreamingDataWidthCo_4   |        0|      0|    84|    279|
+    |StreamingDataWidthCo_5_U0  |StreamingDataWidthCo_5   |        0|      0|    80|    270|
+    |StreamingDataWidthCo_6_U0  |StreamingDataWidthCo_6   |        0|      0|    80|    270|
+    |StreamingDataWidthCo_7_U0  |StreamingDataWidthCo_7   |        0|      0|    80|    270|
+    |StreamingDataWidthCo_8_U0  |StreamingDataWidthCo_8   |        0|      0|    80|    270|
+    |StreamingMaxPool_Pre_U0    |StreamingMaxPool_Pre     |        1|      0|    86|    375|
+    |computeS3_control_s_axi_U  |computeS3_control_s_axi  |        0|      0|    36|     40|
+    |grouperPE_U0               |grouperPE                |       78|      0|  7187|  15727|
+    |grouperPE_1_U0             |grouperPE_1              |       78|      0|  4470|   9131|
+    |loadPCL_U0                 |loadPCL                  |        0|      0|   185|    475|
+    +---------------------------+-------------------------+---------+-------+------+-------+
+    |Total                      |                         |      384|      0| 17615|  42745|
+    +---------------------------+-------------------------+---------+-------+------+-------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------------+---------+---+----+------+-----+---------+
+    |       Name      | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +-----------------+---------+---+----+------+-----+---------+
+    |cnv_48_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_49_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_50_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_51PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_52PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_53_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_54_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_55PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_56PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_57_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_58_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_59PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_60PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_61_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_62_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_63PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_64PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_65_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_66_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_67PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_68PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_69_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_70_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_71_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_72PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_73PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_74_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_75_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_76PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_77PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_78_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_79_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_80PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_81PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_82_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_83_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |cnv_84PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_85PRL_V_V_U  |        0|  5|  44|     2|   32|       64|
+    |cnv_86_V_V_U     |        0|  5|  20|     2|    8|       16|
+    |inStr_V_V_U      |        0|  5|  20|     2|    8|       16|
+    |in_1_V_V_U       |        0|  5|  20|     2|    8|       16|
+    |in_2_V_V_U       |        0|  5|  20|     2|    8|       16|
+    |outStr_V_V_U     |        0|  5|  20|     2|    8|       16|
+    +-----------------+---------+---+----+------+-----+---------+
+    |Total            |        0|215|1292|    86|  776|     1552|
+    +-----------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_idle       |    and   |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |CloneStream_U0_ap_start  |  1|   0|    1|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    |  1|   0|    1|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------------+-----+-----+------------+--------------+--------------+
+|s_axi_control_AWVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_AWADDR   |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_WVALID   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WREADY   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_WDATA    |  in |   32|    s_axi   |    control   |  return void |
+|s_axi_control_WSTRB    |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_ARVALID  |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARREADY  | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_ARADDR   |  in |    4|    s_axi   |    control   |  return void |
+|s_axi_control_RVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_RDATA    | out |   32|    s_axi   |    control   |  return void |
+|s_axi_control_RRESP    | out |    2|    s_axi   |    control   |  return void |
+|s_axi_control_BVALID   | out |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BREADY   |  in |    1|    s_axi   |    control   |  return void |
+|s_axi_control_BRESP    | out |    2|    s_axi   |    control   |  return void |
+|ap_clk                 |  in |    1| ap_ctrl_hs |   computeS3  | return value |
+|ap_rst_n               |  in |    1| ap_ctrl_hs |   computeS3  | return value |
+|interrupt              | out |    1| ap_ctrl_hs |   computeS3  | return value |
+|input1_V_V_TDATA       |  in |   64|    axis    |  input1_V_V  |    pointer   |
+|input1_V_V_TVALID      |  in |    1|    axis    |  input1_V_V  |    pointer   |
+|input1_V_V_TREADY      | out |    1|    axis    |  input1_V_V  |    pointer   |
+|s3_out_V_V_TDATA       | out |   64|    axis    |  s3_out_V_V  |    pointer   |
+|s3_out_V_V_TVALID      | out |    1|    axis    |  s3_out_V_V  |    pointer   |
+|s3_out_V_V_TREADY      |  in |    1|    axis    |  s3_out_V_V  |    pointer   |
++-----------------------+-----+-----+------------+--------------+--------------+
+

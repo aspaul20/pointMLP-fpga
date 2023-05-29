@@ -1,0 +1,129 @@
+
+
+================================================================
+== Vivado HLS Report for 'get_random'
+================================================================
+* Date:           Tue May  9 01:00:19 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        3_3_3
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.808|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.80>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%lfsr32_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %lfsr32_read) nounwind" [3_3_3/grouperPE.hpp:51]   --->   Operation 2 'read' 'lfsr32_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%lfsr31_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %lfsr31_read) nounwind" [3_3_3/grouperPE.hpp:51]   --->   Operation 3 'read' 'lfsr31_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%feedback = trunc i32 %lfsr32_read_1 to i1" [3_3_3/grouperPE.hpp:40->3_3_3/grouperPE.hpp:80]   --->   Operation 4 'trunc' 'feedback' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns) (grouped into LUT with out node lfsr32_val)   --->   "%tmp_i_cast = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %lfsr32_read_1, i32 1, i32 31)" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:80]   --->   Operation 5 'partselect' 'tmp_i_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns) (grouped into LUT with out node lfsr32_val)   --->   "%tmp_2_i_cast_cast_ca = select i1 %feedback, i31 166, i31 0" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:80]   --->   Operation 6 'select' 'tmp_2_i_cast_cast_ca' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns) (grouped into LUT with out node tmp_cast)   --->   "%tmp_s = call i12 @_ssdm_op_PartSelect.i12.i32.i32.i32(i32 %lfsr32_read_1, i32 1, i32 12)" [3_3_3/grouperPE.hpp:51]   --->   Operation 7 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node tmp_cast)   --->   "%p_cast2_cast = select i1 %feedback, i12 166, i12 0" [3_3_3/grouperPE.hpp:40->3_3_3/grouperPE.hpp:80]   --->   Operation 8 'select' 'p_cast2_cast' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.80ns) (out node of the LUT)   --->   "%lfsr32_val = xor i31 %tmp_2_i_cast_cast_ca, %tmp_i_cast" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:80]   --->   Operation 9 'xor' 'lfsr32_val' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%lfsr_write_assign_i_s = zext i31 %lfsr32_val to i32" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:80]   --->   Operation 10 'zext' 'lfsr_write_assign_i_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%feedback_1 = trunc i32 %lfsr31_read_1 to i1" [3_3_3/grouperPE.hpp:40->3_3_3/grouperPE.hpp:81]   --->   Operation 11 'trunc' 'feedback_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns) (grouped into LUT with out node lfsr31_val)   --->   "%tmp_i2_cast = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %lfsr31_read_1, i32 1, i32 31)" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:81]   --->   Operation 12 'partselect' 'tmp_i2_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node lfsr31_val)   --->   "%tmp_2_i4_cast_cast_c = select i1 %feedback_1, i31 105, i31 0" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:81]   --->   Operation 13 'select' 'tmp_2_i4_cast_cast_c' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns) (grouped into LUT with out node tmp_cast)   --->   "%tmp_22 = call i12 @_ssdm_op_PartSelect.i12.i32.i32.i32(i32 %lfsr31_read_1, i32 1, i32 12)" [3_3_3/grouperPE.hpp:51]   --->   Operation 14 'partselect' 'tmp_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node tmp_cast)   --->   "%p_cast_cast = select i1 %feedback_1, i12 105, i12 0" [3_3_3/grouperPE.hpp:40->3_3_3/grouperPE.hpp:81]   --->   Operation 15 'select' 'p_cast_cast' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.80ns) (out node of the LUT)   --->   "%lfsr31_val = xor i31 %tmp_2_i4_cast_cast_c, %tmp_i2_cast" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:81]   --->   Operation 16 'xor' 'lfsr31_val' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%lfsr_write_assign_i5 = zext i31 %lfsr31_val to i32" [3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:81]   --->   Operation 17 'zext' 'lfsr_write_assign_i5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node tmp_cast)   --->   "%tmp = xor i12 %p_cast_cast, %tmp_22" [3_3_3/grouperPE.hpp:84]   --->   Operation 18 'xor' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node tmp_cast)   --->   "%tmp1 = xor i12 %tmp_s, %p_cast2_cast" [3_3_3/grouperPE.hpp:84]   --->   Operation 19 'xor' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.80ns) (out node of the LUT)   --->   "%tmp_cast = xor i12 %tmp1, %tmp" [3_3_3/grouperPE.hpp:84]   --->   Operation 20 'xor' 'tmp_cast' <Predicate = true> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_cast_30 = zext i12 %tmp_cast to i32" [3_3_3/grouperPE.hpp:84]   --->   Operation 21 'zext' 'tmp_cast_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i32, i32, i32 } undef, i32 %tmp_cast_30, 0" [3_3_3/grouperPE.hpp:84]   --->   Operation 22 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i32, i32, i32 } %mrv, i32 %lfsr_write_assign_i5, 1" [3_3_3/grouperPE.hpp:84]   --->   Operation 23 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i32, i32, i32 } %mrv_1, i32 %lfsr_write_assign_i_s, 2" [3_3_3/grouperPE.hpp:84]   --->   Operation 24 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "ret { i32, i32, i32 } %mrv_2" [3_3_3/grouperPE.hpp:84]   --->   Operation 25 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.808ns
+The critical path consists of the following:
+	wire read on port 'lfsr32_read' (3_3_3/grouperPE.hpp:51) [3]  (0 ns)
+	'xor' operation ('lfsr', 3_3_3/grouperPE.hpp:43->3_3_3/grouperPE.hpp:80) [10]  (0.808 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

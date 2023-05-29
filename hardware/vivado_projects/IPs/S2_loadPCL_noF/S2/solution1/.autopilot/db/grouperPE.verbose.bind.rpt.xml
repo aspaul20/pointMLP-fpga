@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'grouperPE'" level="0">
+<item name = "Date">Sat May 13 19:58:59 2023
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">S2</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.593, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">438278, 438278, 438278, 438278, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_LFSR_fu_3432">LFSR, 127, 127, 127, 127, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">1536, 1536, 3, -, -, 512, no</column>
+<column name="- Loop 2">24320, 24320, 95, -, -, 256, no</column>
+<column name="- Loop 3">131072, 131072, 2, 1, 1, 131072, yes</column>
+<column name="- Loop 4">8704, 8704, 68, -, -, 128, no</column>
+<column name=" + Loop 4.1">64, 64, 2, 1, 1, 64, yes</column>
+<column name="- Loop 5">272384, 272384, 133, -, -, 2048, no</column>
+<column name=" + Loop 5.1">64, 64, 2, 1, 1, 64, yes</column>
+<column name=" + Loop 5.2">64, 64, 2, 1, 1, 64, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

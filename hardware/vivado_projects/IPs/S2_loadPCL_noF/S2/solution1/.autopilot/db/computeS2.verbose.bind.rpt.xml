@@ -1,0 +1,71 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'computeS2'" level="0">
+<item name = "Date">Sat May 13 19:59:11 2023
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">S2</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.198, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">25442976, 25442976, 8388741, 8388741, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_grouperPE_fu_316">grouperPE, 438278, 438278, 438278, 438278, none</column>
+<column name="grp_Conv1DMac_new406_fu_323">Conv1DMac_new406, 524293, 524293, 524293, 524293, none</column>
+<column name="grp_Conv1DMac_new402_fu_337">Conv1DMac_new402, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="grp_Conv1DMac_new_fu_351">Conv1DMac_new, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="grp_Conv1DMac_new398_fu_365">Conv1DMac_new398, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="grp_Conv1DMac_new_1_fu_379">Conv1DMac_new_1, 524293, 524293, 524293, 524293, none</column>
+<column name="grp_loadPCL_fu_393">loadPCL, 1538, 1538, 1538, 1538, none</column>
+<column name="grp_Conv1DBuffer_new397_fu_430">Conv1DBuffer_new397, 8388740, 8388740, 8388740, 8388740, none</column>
+<column name="grp_Conv1DBuffer_new401_fu_436">Conv1DBuffer_new401, 8388740, 8388740, 8388740, 8388740, none</column>
+<column name="grp_Conv1DBuffer_new_fu_442">Conv1DBuffer_new, 8388740, 8388740, 8388740, 8388740, none</column>
+<column name="grp_Conv1DBuffer_new405_fu_448">Conv1DBuffer_new405, 524420, 524420, 524420, 524420, none</column>
+<column name="grp_Conv1DBuffer_new_1_fu_454">Conv1DBuffer_new_1, 524420, 524420, 524420, 524420, none</column>
+<column name="grp_StreamingDataWidthCo_1_fu_460">StreamingDataWidthCo_1, 262146, 262146, 262146, 262146, none</column>
+<column name="grp_StreamingDataWidthCo_fu_466">StreamingDataWidthCo, 262146, 262146, 262146, 262146, none</column>
+<column name="grp_StreamingDataWidthCo_2_fu_472">StreamingDataWidthCo_2, 262146, 262146, 262146, 262146, none</column>
+<column name="grp_StreamingDataWidthCo_3_fu_478">StreamingDataWidthCo_3, 16386, 16386, 16386, 16386, none</column>
+<column name="grp_StreamingDataWidthCo_4_fu_484">StreamingDataWidthCo_4, 16386, 16386, 16386, 16386, none</column>
+<column name="grp_StreamingMaxPool_Pre_fu_490">StreamingMaxPool_Pre, 279299, 279299, 279299, 279299, none</column>
+<column name="grp_ResizeStream_fu_496">ResizeStream, 32769, 32769, 32769, 32769, none</column>
+<column name="grp_Relu1D399_fu_503">Relu1D399, 65538, 65538, 65538, 65538, none</column>
+<column name="grp_Relu1D403_fu_509">Relu1D403, 65538, 65538, 65538, 65538, none</column>
+<column name="grp_Relu1D_fu_515">Relu1D, 65538, 65538, 65538, 65538, none</column>
+<column name="grp_Relu1D407_fu_521">Relu1D407, 4098, 4098, 4098, 4098, none</column>
+<column name="grp_Relu1D_1_fu_527">Relu1D_1, 4098, 4098, 4098, 4098, none</column>
+<column name="grp_ResizeStream_1_fu_533">ResizeStream_1, 32769, 32769, 32769, 32769, none</column>
+<column name="grp_CloneStreamOnce_fu_540">CloneStreamOnce, 1538, 1538, 1538, 1538, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

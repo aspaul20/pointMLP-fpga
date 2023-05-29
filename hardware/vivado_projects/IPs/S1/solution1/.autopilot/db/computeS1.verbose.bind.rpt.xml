@@ -1,0 +1,74 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'computeS1'" level="0">
+<item name = "Date">Tue May  9 01:01:25 2023
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">3_3_3</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.737, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">12863204, 12863204, 4194373, 4194373, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_grouperPE_fu_728">grouperPE, 449030, 449030, 449030, 449030, none</column>
+<column name="grp_Conv1DMac_new_2_fu_735">Conv1DMac_new_2, 12291, 12291, 12291, 12291, none</column>
+<column name="grp_Conv1DMac_new319_fu_749">Conv1DMac_new319, 4194308, 4194308, 4194308, 4194308, none</column>
+<column name="grp_Conv1DMac_new323_fu_763">Conv1DMac_new323, 4194308, 4194308, 4194308, 4194308, none</column>
+<column name="grp_Conv1DMac_new_fu_777">Conv1DMac_new, 4194308, 4194308, 4194308, 4194308, none</column>
+<column name="grp_Conv1DMac_new327_fu_791">Conv1DMac_new327, 262148, 262148, 262148, 262148, none</column>
+<column name="grp_Conv1DMac_new_1_fu_805">Conv1DMac_new_1, 262148, 262148, 262148, 262148, none</column>
+<column name="grp_Conv1DBuffer_new318_fu_819">Conv1DBuffer_new318, 4194372, 4194372, 4194372, 4194372, none</column>
+<column name="grp_Conv1DBuffer_new322_fu_825">Conv1DBuffer_new322, 4194372, 4194372, 4194372, 4194372, none</column>
+<column name="grp_Conv1DBuffer_new_fu_831">Conv1DBuffer_new, 4194372, 4194372, 4194372, 4194372, none</column>
+<column name="grp_StreamingDataWidthCo_1_fu_837">StreamingDataWidthCo_1, 262146, 262146, 262146, 262146, none</column>
+<column name="grp_StreamingDataWidthCo_fu_843">StreamingDataWidthCo, 262146, 262146, 262146, 262146, none</column>
+<column name="grp_StreamingDataWidthCo_2_fu_849">StreamingDataWidthCo_2, 262146, 262146, 262146, 262146, none</column>
+<column name="grp_StreamingDataWidthCo_3_fu_855">StreamingDataWidthCo_3, 16386, 16386, 16386, 16386, none</column>
+<column name="grp_StreamingDataWidthCo_4_fu_861">StreamingDataWidthCo_4, 16386, 16386, 16386, 16386, none</column>
+<column name="grp_Conv1DBuffer_new326_fu_867">Conv1DBuffer_new326, 262212, 262212, 262212, 262212, none</column>
+<column name="grp_Conv1DBuffer_new_1_fu_873">Conv1DBuffer_new_1, 262212, 262212, 262212, 262212, none</column>
+<column name="grp_Conv1DBuffer_new_2_fu_879">Conv1DBuffer_new_2, 12295, 12295, 12295, 12295, none</column>
+<column name="grp_StreamingMaxPool_Pre_fu_885">StreamingMaxPool_Pre, 279875, 279875, 279875, 279875, none</column>
+<column name="grp_ResizeStream_1_fu_891">ResizeStream_1, 8193, 8193, 8193, 8193, none</column>
+<column name="grp_Relu1D320_fu_898">Relu1D320, 65538, 65538, 65538, 65538, none</column>
+<column name="grp_Relu1D324_fu_904">Relu1D324, 65538, 65538, 65538, 65538, none</column>
+<column name="grp_Relu1D_fu_910">Relu1D, 65538, 65538, 65538, 65538, none</column>
+<column name="grp_Relu1D_2_fu_916">Relu1D_2, 4098, 4098, 4098, 4098, none</column>
+<column name="grp_Relu1D328_fu_922">Relu1D328, 4098, 4098, 4098, 4098, none</column>
+<column name="grp_Relu1D_1_fu_928">Relu1D_1, 4098, 4098, 4098, 4098, none</column>
+<column name="grp_CloneStream_fu_934">CloneStream, 1538, 1538, 1538, 1538, none</column>
+<column name="grp_CloneStreamOnce_fu_941">CloneStreamOnce, 1538, 1538, 1538, 1538, none</column>
+<column name="grp_ResizeStream_fu_947">ResizeStream, 1537, 1537, 1537, 1537, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="computeS3" xd:componentRef="computeS3" xd:initiationInterval="84160176" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="input1" xd:originalName="input1" xd:direction="in" xd:interfaceRef="input1_V_V" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="s3_out" xd:originalName="s3_out" xd:direction="out" xd:interfaceRef="s3_out_V_V" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:latencyEstimates xd:best-case="84160175" xd:worst-case="84160175" xd:average-case="84160175"/>
+  <xd:resourceEstimates xd:LUT="44039" xd:FF="17831" xd:BRAM="384" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,807 @@
+INFO-FLOW: Workspace /home/tukl/Amur/IndividualSyn/FC1/solution1 opened at Mon May 15 18:27:23 CST 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z045ffg900-2 
+Execute       add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z045 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 0.12 sec.
+Execute   set_part xc7z045ffg900-2 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z045 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'FC1/Compute.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling FC1/Compute.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted FC1/Compute.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "FC1/Compute.cpp"   --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp" 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E FC1/Compute.cpp --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp
+Command       clang done; 0.88 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp"  -o "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.5 sec.
+INFO-FLOW: GCC PP time: 2 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp std=c++11 -directive=/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.43 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp std=c++11 -directive=/home/tukl/Amur/IndividualSyn/FC1/solution1/solution1.json 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/tukl/Amur/IndividualSyn/FC1/solution1/solution1.json -quiet -fix-errors /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.43 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/xilinx-dataflow-lawyer.Compute.pp.0.cpp.diag.yml /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0 -fstrict-dataflow > /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/xilinx-dataflow-lawyer.Compute.pp.0.cpp.out.log 2> /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/xilinx-dataflow-lawyer.Compute.pp.0.cpp.err.log 
+Command       ap_eval done; 0.98 sec.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: FC1/Compute.cpp:83:11
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp std=c++11 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 3 sec.
+INFO-FLOW: tidy-3.1 time 5 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.1.cpp std=c++11 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.1.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.16 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.1.cpp"   --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.2.cpp" 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.1.cpp --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.2.cpp
+Command       clang done; 0.87 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.2.cpp"  --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.bc" 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.pragma.2.cpp --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.bc
+Command       clang done; 1.53 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/Compute.g.bc -hls-opt -except-internalize FCL1 -L/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.52 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 349.691 ; gain = 0.094 ; free physical = 19697 ; free virtual = 69021
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 349.691 ; gain = 0.094 ; free physical = 19697 ; free virtual = 69021
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.pp.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/lib -lfloatconversion -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.51 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top FCL1 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.0.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0>::quantization_adjust' into 'ap_fixed_base<8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0>::ap_fixed_base<16, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+Command         transform done; 2.08 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1821.598 ; gain = 1472.000 ; free physical = 18211 ; free virtual = 67539
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.1.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1822.008 ; gain = 1472.410 ; free physical = 18210 ; free virtual = 67539
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.g.1.bc to /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.1.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling small iteration loop 'loop_output_pe' (FC1/conv1d.h:1557) in function 'FCMac<(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 10240u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 40u> >' automatically.
+INFO: [XFORM 203-501] Unrolling loop 'loop_output_pe' (FC1/conv1d.h:1557) in function 'FCMac<(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 10240u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 40u> >' completely.
+INFO: [XFORM 203-101] Partitioning array 'weights27.m_weights.V'  in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'bias27.m_weights.V'  accessed through non-constant indices on dimension 2 (FC1/conv1d.h:1493:62), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'bias27.m_weights.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'macRegisters.V' (FC1/conv1d.h:1481) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'FCL1', detected/extracted 3 process function(s): 
+	 'ResizeStream<64u, 8u, 256u>'
+	 'FCMac<(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 10240u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 40u> >'
+	 'ResizeStream<8u, 64u, 40u>'.
+Command         transform done; 0.16 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.40[1 x i8]P.i6.i64' into 'FCMac<(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 10240u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 40u> >'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1949.598 ; gain = 1600.000 ; free physical = 18190 ; free virtual = 67521
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.2.bc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'ResizeStream<8u, 64u, 40u>' to 'ResizeStream' (FC1/conv1d.h:19:37)
+WARNING: [XFORM 203-631] Renaming function 'ResizeStream<64u, 8u, 256u>' to 'ResizeStream.1' (FC1/conv1d.h:19:37)
+WARNING: [XFORM 203-631] Renaming function 'FCMac<(unsigned short)256, (unsigned short)40, (unsigned short)1, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 10240u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 1u, 40u> >' to 'FCMac' (FC1/conv1d.h:1481:53)
+Command         transform done; 0.14 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1949.598 ; gain = 1600.000 ; free physical = 18173 ; free virtual = 67504
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 3.1 sec.
+Command     elaborate done; 17.73 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'FCL1' ...
+Execute       ap_set_top_model FCL1 
+WARNING: [SYN 201-103] Legalizing function name 'ResizeStream.1' to 'ResizeStream_1'.
+Execute       get_model_list FCL1 -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model FCL1 
+Execute       preproc_iomode -model ResizeStream 
+Execute       preproc_iomode -model FCMac 
+Execute       preproc_iomode -model ResizeStream.1 
+Execute       get_model_list FCL1 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: ResizeStream.1 FCMac ResizeStream FCL1
+INFO-FLOW: Configuring Module : ResizeStream.1 ...
+Execute       set_default_model ResizeStream.1 
+Execute       apply_spec_resource_limit ResizeStream.1 
+INFO-FLOW: Configuring Module : FCMac ...
+Execute       set_default_model FCMac 
+Execute       apply_spec_resource_limit FCMac 
+INFO-FLOW: Configuring Module : ResizeStream ...
+Execute       set_default_model ResizeStream 
+Execute       apply_spec_resource_limit ResizeStream 
+INFO-FLOW: Configuring Module : FCL1 ...
+Execute       set_default_model FCL1 
+Execute       apply_spec_resource_limit FCL1 
+INFO-FLOW: Model list for preprocess: ResizeStream.1 FCMac ResizeStream FCL1
+INFO-FLOW: Preprocessing Module: ResizeStream.1 ...
+Execute       set_default_model ResizeStream.1 
+Execute       cdfg_preprocess -model ResizeStream.1 
+Execute       rtl_gen_preprocess ResizeStream.1 
+INFO-FLOW: Preprocessing Module: FCMac ...
+Execute       set_default_model FCMac 
+Execute       cdfg_preprocess -model FCMac 
+Execute       rtl_gen_preprocess FCMac 
+INFO-FLOW: Preprocessing Module: ResizeStream ...
+Execute       set_default_model ResizeStream 
+Execute       cdfg_preprocess -model ResizeStream 
+Execute       rtl_gen_preprocess ResizeStream 
+INFO-FLOW: Preprocessing Module: FCL1 ...
+Execute       set_default_model FCL1 
+Execute       cdfg_preprocess -model FCL1 
+Execute       rtl_gen_preprocess FCL1 
+INFO-FLOW: Model list for synthesis: ResizeStream.1 FCMac ResizeStream FCL1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ResizeStream_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ResizeStream.1 
+Execute       schedule -model ResizeStream.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.06 seconds; current allocated memory: 1.504 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.sched.adb -f 
+INFO-FLOW: Finish scheduling ResizeStream.1.
+Execute       set_default_model ResizeStream.1 
+Execute       bind -model ResizeStream.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=ResizeStream.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 1.504 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.bind.adb -f 
+INFO-FLOW: Finish binding ResizeStream.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FCMac' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FCMac 
+Execute       schedule -model FCMac 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 1.505 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.sched.adb -f 
+INFO-FLOW: Finish scheduling FCMac.
+Execute       set_default_model FCMac 
+Execute       bind -model FCMac 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=FCMac
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 1.505 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.bind.adb -f 
+INFO-FLOW: Finish binding FCMac.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ResizeStream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ResizeStream 
+Execute       schedule -model ResizeStream 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 1.505 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.sched.adb -f 
+INFO-FLOW: Finish scheduling ResizeStream.
+Execute       set_default_model ResizeStream 
+Execute       bind -model ResizeStream 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=ResizeStream
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 1.505 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.bind.adb -f 
+INFO-FLOW: Finish binding ResizeStream.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FCL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model FCL1 
+Execute       schedule -model FCL1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 1.506 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.sched.adb -f 
+INFO-FLOW: Finish scheduling FCL1.
+Execute       set_default_model FCL1 
+Execute       bind -model FCL1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=FCL1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 1.506 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.bind.adb -f 
+INFO-FLOW: Finish binding FCL1.
+Execute       get_model_list FCL1 -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess ResizeStream.1 
+Execute       rtl_gen_preprocess FCMac 
+Execute       rtl_gen_preprocess ResizeStream 
+Execute       rtl_gen_preprocess FCL1 
+INFO-FLOW: Model list for RTL generation: ResizeStream.1 FCMac ResizeStream FCL1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ResizeStream_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model ResizeStream.1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ResizeStream_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 1.506 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ResizeStream.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/systemc/ResizeStream_1 -synmodules ResizeStream.1 FCMac ResizeStream FCL1 
+Execute       gen_rtl ResizeStream.1 -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/vhdl/ResizeStream_1 
+Execute       gen_rtl ResizeStream.1 -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/verilog/ResizeStream_1 
+Execute       gen_tb_info ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1 -p /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db 
+Execute       report -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/ResizeStream_1_csynth.rpt -f 
+Execute       report -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/ResizeStream_1_csynth.xml -f -x 
+Execute       report -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.verbose.rpt -verbose -f 
+Execute       db_write -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FCMac' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model FCMac -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'FCMac_weights27_m_weights_s' to 'FCMac_weights27_mbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'FCMac_macRegisters_0_V' to 'FCMac_macRegistercud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'FCL1_mux_646_8_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FCMac'.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 1.507 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FCMac -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/systemc/FCMac -synmodules ResizeStream.1 FCMac ResizeStream FCL1 
+Execute       gen_rtl FCMac -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/vhdl/FCMac 
+Execute       gen_rtl FCMac -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/verilog/FCMac 
+Execute       gen_tb_info FCMac -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac -p /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db 
+Execute       report -model FCMac -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/FCMac_csynth.rpt -f 
+Execute       report -model FCMac -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/FCMac_csynth.xml -f -x 
+Execute       report -model FCMac -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.verbose.rpt -verbose -f 
+Execute       db_write -model FCMac -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ResizeStream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model ResizeStream -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ResizeStream'.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 1.508 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ResizeStream -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/systemc/ResizeStream -synmodules ResizeStream.1 FCMac ResizeStream FCL1 
+Execute       gen_rtl ResizeStream -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/vhdl/ResizeStream 
+Execute       gen_rtl ResizeStream -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/verilog/ResizeStream 
+Execute       gen_tb_info ResizeStream -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream -p /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db 
+Execute       report -model ResizeStream -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/ResizeStream_csynth.rpt -f 
+Execute       report -model ResizeStream -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/ResizeStream_csynth.xml -f -x 
+Execute       report -model ResizeStream -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.verbose.rpt -verbose -f 
+Execute       db_write -model ResizeStream -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FCL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model FCL1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'FCL1/input1_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FCL1/s4_out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FCL1' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [SYN 201-210] Renamed object name 'start_for_ResizeStream_U0' to 'start_for_ResizeSdEe' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FCL1'.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 1.509 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl FCL1 -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/systemc/FCL1 -synmodules ResizeStream.1 FCMac ResizeStream FCL1 
+Execute       gen_rtl FCL1 -istop -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/vhdl/FCL1 
+Execute       gen_rtl FCL1 -istop -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/verilog/FCL1 
+Execute       export_constraint_db -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl -f -tool general 
+Execute       report -model FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.design.xml -verbose -f -dv 
+Execute       report -model FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1 -p /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db 
+Execute       report -model FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/FCL1_csynth.rpt -f 
+Execute       report -model FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/syn/report/FCL1_csynth.xml -f -x 
+Execute       report -model FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.verbose.rpt -verbose -f 
+Execute       db_write -model FCL1 -o /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.adb -f 
+Execute       sc_get_clocks FCL1 
+Execute       sc_get_portdomain FCL1 
+INFO-FLOW: Model list for RTL component generation: ResizeStream.1 FCMac ResizeStream FCL1
+INFO-FLOW: Handling components in module [ResizeStream_1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+INFO-FLOW: Handling components in module [FCMac] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+INFO-FLOW: Found component FCL1_mux_646_8_1_1.
+INFO-FLOW: Append model FCL1_mux_646_8_1_1
+INFO-FLOW: Found component FCMac_weights27_mbkb.
+INFO-FLOW: Append model FCMac_weights27_mbkb
+INFO-FLOW: Found component FCMac_macRegistercud.
+INFO-FLOW: Append model FCMac_macRegistercud
+INFO-FLOW: Handling components in module [ResizeStream] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+INFO-FLOW: Handling components in module [FCL1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_FCMac_U0.
+INFO-FLOW: Append model start_for_FCMac_U0
+INFO-FLOW: Found component start_for_ResizeSdEe.
+INFO-FLOW: Append model start_for_ResizeSdEe
+INFO-FLOW: Found component FCL1_control_s_axi.
+INFO-FLOW: Append model FCL1_control_s_axi
+INFO-FLOW: Append model ResizeStream_1
+INFO-FLOW: Append model FCMac
+INFO-FLOW: Append model ResizeStream
+INFO-FLOW: Append model FCL1
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: FCL1_mux_646_8_1_1 FCMac_weights27_mbkb FCMac_macRegistercud fifo_w8_d2_A fifo_w8_d2_A start_for_FCMac_U0 start_for_ResizeSdEe FCL1_control_s_axi ResizeStream_1 FCMac ResizeStream FCL1
+INFO-FLOW: To file: write model FCL1_mux_646_8_1_1
+INFO-FLOW: To file: write model FCMac_weights27_mbkb
+INFO-FLOW: To file: write model FCMac_macRegistercud
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_FCMac_U0
+INFO-FLOW: To file: write model start_for_ResizeSdEe
+INFO-FLOW: To file: write model FCL1_control_s_axi
+INFO-FLOW: To file: write model ResizeStream_1
+INFO-FLOW: To file: write model FCMac
+INFO-FLOW: To file: write model ResizeStream
+INFO-FLOW: To file: write model FCL1
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'FCMac_weights27_mbkb_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'FCMac_macRegistercud_ram (RAM)' using distributed RAMs.
+Command       ap_source done; 0.17 sec.
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'inn_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outStr_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_FCMac_U0_U(start_for_FCMac_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_ResizeSdEe_U(start_for_ResizeSdEe)' using Shift Registers.
+Execute         source ./control.slave.tcl 
+Execute         is_m_axi_addr64 
+Execute       get_config_sdx -target 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl 
+Execute       sc_get_clocks FCL1 
+Execute       source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1949.598 ; gain = 1600.000 ; free physical = 18163 ; free virtual = 67496
+INFO: [SYSC 207-301] Generating SystemC RTL for FCL1.
+INFO: [VHDL 208-304] Generating VHDL RTL for FCL1.
+INFO: [VLOG 209-307] Generating Verilog RTL for FCL1.
+Command     autosyn done; 1.04 sec.
+Command   csynth_design done; 18.77 sec.
+Command ap_source done; 18.92 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/tukl/Amur/IndividualSyn/FC1/solution1 opened at Mon May 15 18:35:00 CST 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z045ffg900-2 
+Execute       add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z045 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 0.12 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCMac.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/FCL1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/FC1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 32.38 sec.
+Command ap_source done; 32.5 sec.
+Execute cleanup_all 

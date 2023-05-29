@@ -1,0 +1,180 @@
+
+
+================================================================
+== Vivado HLS Report for 'FCL1'
+================================================================
+* Date:           Mon May 15 18:27:41 2023
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        FC1
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z045ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.369|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+----------+
+    |    Latency    |    Interval   | Pipeline |
+    |  min  |  max  |  min  |  max  |   Type   |
+    +-------+-------+-------+-------+----------+
+    |  31356|  31356|  31356|  31356| dataflow |
+    +-------+-------+-------+-------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%inn_V_V = alloca i8, align 1" [FC1/Compute.cpp:83]   --->   Operation 9 'alloca' 'inn_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%outStr_V_V = alloca i8, align 1" [FC1/Compute.cpp:109]   --->   Operation 10 'alloca' 'outStr_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 11 [2/2] (0.00ns)   --->   "call fastcc void @ResizeStream.1(i64* %input1_V_V, i8* %inn_V_V)" [FC1/Compute.cpp:115]   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 12 [1/2] (0.00ns)   --->   "call fastcc void @ResizeStream.1(i64* %input1_V_V, i8* %inn_V_V)" [FC1/Compute.cpp:115]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 13 [2/2] (0.00ns)   --->   "call fastcc void @FCMac(i8* %inn_V_V, i8* %outStr_V_V)" [FC1/Compute.cpp:167]   --->   Operation 13 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 14 [1/2] (0.00ns)   --->   "call fastcc void @FCMac(i8* %inn_V_V, i8* %outStr_V_V)" [FC1/Compute.cpp:167]   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 15 [2/2] (0.00ns)   --->   "call fastcc void @ResizeStream(i8* %outStr_V_V, i64* %s4_out_V_V)" [FC1/Compute.cpp:170]   --->   Operation 15 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 16 [1/2] (0.00ns)   --->   "call fastcc void @ResizeStream(i8* %outStr_V_V, i64* %s4_out_V_V)" [FC1/Compute.cpp:170]   --->   Operation 16 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str4) nounwind" [FC1/Compute.cpp:117]   --->   Operation 17 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %input1_V_V), !map !81"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %s4_out_V_V), !map !85"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([5 x i8]* @FCL1_str) nounwind"   --->   Operation 20 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @inn_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str40, [1 x i8]* @p_str40, i32 2, i32 2, i8* %inn_V_V, i8* %inn_V_V)"   --->   Operation 21 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %inn_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str41, i32 0, i32 0, [1 x i8]* @p_str42, [1 x i8]* @p_str43, [1 x i8]* @p_str44, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str45, [1 x i8]* @p_str46)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @outStr_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str47, [1 x i8]* @p_str47, i32 2, i32 2, i8* %outStr_V_V, i8* %outStr_V_V)"   --->   Operation 23 'specchannel' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outStr_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str48, i32 0, i32 0, [1 x i8]* @p_str49, [1 x i8]* @p_str50, [1 x i8]* @p_str51, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str52, [1 x i8]* @p_str53)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %input1_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str4, [1 x i8]* @p_str4) nounwind" [FC1/Compute.cpp:29]   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %s4_out_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str4, [1 x i8]* @p_str4) nounwind" [FC1/Compute.cpp:30]   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str4, i32 0, i32 0, [8 x i8]* @p_str6, [1 x i8]* @p_str4, [1 x i8]* @p_str4, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str4, [1 x i8]* @p_str4) nounwind" [FC1/Compute.cpp:31]   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "ret void" [FC1/Compute.cpp:175]   --->   Operation 28 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

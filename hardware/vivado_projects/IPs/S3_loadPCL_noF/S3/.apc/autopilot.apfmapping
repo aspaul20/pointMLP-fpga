@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="weights.hpp" path="/home/tukl/Amur/IndividualSyn/S3/weights.hpp"/>
+    <originFiles name="weightMem-19.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-19.h"/>
+    <originFiles name="weightMem-18.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-18.h"/>
+    <originFiles name="weightMem-17.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-17.h"/>
+    <originFiles name="weightMem-16.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-16.h"/>
+    <originFiles name="weightMem-15.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-15.h"/>
+    <originFiles name="weightMem-14.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-14.h"/>
+    <originFiles name="weightMem-13.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-13.h"/>
+    <originFiles name="weightMem-12.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-12.h"/>
+    <originFiles name="weightMem-11.h" path="/home/tukl/Amur/IndividualSyn/S3/weightMem-11.h"/>
+    <originFiles name="grouperPE.hpp" path="/home/tukl/Amur/IndividualSyn/S3/grouperPE.hpp"/>
+    <originFiles name="conv1d.h" path="/home/tukl/Amur/IndividualSyn/S3/conv1d.h"/>
+    <originFiles name="bnn-library.h" path="/home/tukl/Amur/IndividualSyn/S3/bnn-library.h"/>
+    <originFiles name="biasMem-19.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-19.h"/>
+    <originFiles name="biasMem-18.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-18.h"/>
+    <originFiles name="biasMem-17.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-17.h"/>
+    <originFiles name="biasMem-16.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-16.h"/>
+    <originFiles name="biasMem-15.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-15.h"/>
+    <originFiles name="biasMem-14.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-14.h"/>
+    <originFiles name="biasMem-13.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-13.h"/>
+    <originFiles name="biasMem-12.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-12.h"/>
+    <originFiles name="biasMem-11.h" path="/home/tukl/Amur/IndividualSyn/S3/biasMem-11.h"/>
+    <originFiles name="Compute.cpp" path="/home/tukl/Amur/IndividualSyn/S3/Compute.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="point_cloud.txt" path="/home/tukl/Amur/IndividualSyn/S3/point_cloud.txt"/>
+    <originFiles name="output_POS.txt" path="/home/tukl/Amur/IndividualSyn/S3/output_POS.txt"/>
+    <originFiles name="outputS3.txt" path="/home/tukl/Amur/IndividualSyn/S3/outputS3.txt"/>
+    <originFiles name="my_tb.cpp" path="/home/tukl/Amur/IndividualSyn/S3/my_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

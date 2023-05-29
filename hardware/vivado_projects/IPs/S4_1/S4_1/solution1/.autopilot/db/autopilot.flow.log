@@ -1,0 +1,1495 @@
+INFO-FLOW: Workspace /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1 opened at Tue May 09 07:53:07 CST 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z045ffg900-2 
+Execute       add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z045 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 0.12 sec.
+Execute   set_part xc7z045ffg900-2 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z045 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'S4_1/Compute.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling S4_1/Compute.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted S4_1/Compute.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "S4_1/Compute.cpp"   --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp" 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E S4_1/Compute.cpp --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp
+Command       clang done; 0.91 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp"  -o "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from S4_1/Compute.cpp:1:
+In file included from S4_1/Compute.cpp:1:
+In file included from S4_1/bnn-library.h:2:
+In file included from /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int.h:63:
+/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int_syn.h:3690:512: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+template <int _AP_W, bool _AP_S> inline __attribute__((always_inline)) ap_int_base<_AP_W, _AP_S> operator << (const ap_int_base<_AP_W, _AP_S>& op, unsigned int op2) { ap_int_base<_AP_W, _AP_S> r; if (false) r.V = op2 >= 0 ? (op.V << op2) : (op.V >> (-op2)); else r.V = op.V << op2; return r; } template <int _AP_W, bool _AP_S> inline __attribute__((always_inline)) ap_int_base<_AP_W, _AP_S> operator >> (const ap_int_base<_AP_W, _AP_S>& op, unsigned int op2) { ap_int_base<_AP_W, _AP_S> r; if (false) r.V = op2 >= 0 ? (op.V >> op2) : (op.V << (-op2)); else r.V = op.V >> op2; return r; }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ~~~ ^  ~
+S4_1/conv1d.h:62:15: note: in instantiation of function template specialization 'operator>><32, false>' requested here
+      ei = ei >> OutWidth;
+              ^
+S4_1/Compute.cpp:98:3: note: in instantiation of function template specialization 'StreamingDataWidthConverter_Batch<32, 8, 32768>' requested here
+  StreamingDataWidthConverter_Batch<32, 8, 32768>(cnv_90PRL, cnv_91, 1);
+  ^
+In file included from S4_1/Compute.cpp:1:
+In file included from S4_1/Compute.cpp:1:
+In file included from S4_1/bnn-library.h:2:
+In file included from /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int.h:63:
+/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_int_syn.h:3690:512: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+template <int _AP_W, bool _AP_S> inline __attribute__((always_inline)) ap_int_base<_AP_W, _AP_S> operator << (const ap_int_base<_AP_W, _AP_S>& op, unsigned int op2) { ap_int_base<_AP_W, _AP_S> r; if (false) r.V = op2 >= 0 ? (op.V << op2) : (op.V >> (-op2)); else r.V = op.V << op2; return r; } template <int _AP_W, bool _AP_S> inline __attribute__((always_inline)) ap_int_base<_AP_W, _AP_S> operator >> (const ap_int_base<_AP_W, _AP_S>& op, unsigned int op2) { ap_int_base<_AP_W, _AP_S> r; if (false) r.V = op2 >= 0 ? (op.V >> op2) : (op.V << (-op2)); else r.V = op.V >> op2; return r; }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ~~~ ^  ~
+S4_1/conv1d.h:88:15: note: in instantiation of function template specialization 'operator>><8, false>' requested here
+      eo = eo >> InWidth;
+              ^
+S4_1/Compute.cpp:98:3: note: in instantiation of function template specialization 'StreamingDataWidthConverter_Batch<32, 8, 32768>' requested here
+  StreamingDataWidthConverter_Batch<32, 8, 32768>(cnv_90PRL, cnv_91, 1);
+  ^
+2 warnings generated.\n
+Command       clang done; 8.86 sec.
+INFO-FLOW: GCC PP time: 9 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp std=c++11 -directive=/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 20.4 sec.
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp std=c++11 -directive=/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/solution1.json 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/solution1.json -quiet -fix-errors /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 20.55 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/xilinx-dataflow-lawyer.Compute.pp.0.cpp.diag.yml /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0 -fstrict-dataflow > /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/xilinx-dataflow-lawyer.Compute.pp.0.cpp.out.log 2> /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/xilinx-dataflow-lawyer.Compute.pp.0.cpp.err.log 
+Command       ap_eval done; 13.28 sec.
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: S4_1/Compute.cpp:30:11
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp std=c++11 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pp.0.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 42.65 sec.
+INFO-FLOW: tidy-3.1 time 76 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.1.cpp std=c++11 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.1.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command       tidy_31 done; 26.71 sec.
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.1.cpp"   --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.2.cpp" 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.1.cpp --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.2.cpp
+Command       clang done; 0.89 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.2.cpp"  --std=c++11  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.bc" 
+INFO-FLOW: exec /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.pragma.2.cpp --std=c++11 -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot -I /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.bc
+Command       clang done; 8.9 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Compute.g.bc -hls-opt -except-internalize computeS4_1 -L/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.93 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 349.688 ; gain = 0.094 ; free physical = 15485 ; free virtual = 67796
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:02:24 ; elapsed = 00:02:27 . Memory (MB): peak = 349.688 ; gain = 0.094 ; free physical = 15485 ; free virtual = 67796
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.pp.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.62 sec.
+Execute         llvm-ld /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/lnx64/lib -lfloatconversion -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.91 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top computeS4_1 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.0.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-501] Unrolling loop 'loop_simd' (S4_1/conv1d.h:804) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&, FORWARD_REFERENCE const&)' completely.
+INFO: [XFORM 203-501] Unrolling loop 'loop_simd' (S4_1/conv1d.h:1258) in function 'void Relu1D<(unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1>(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&)' completely.
+INFO: [XFORM 203-501] Unrolling loop 'loop_simd' (S4_1/conv1d.h:804) in function 'void Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >(hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, hls::stream<ap_uint<(FORWARD_REFERENCE) * (FORWARD_REFERENCE)> >&, FORWARD_REFERENCE const&, FORWARD_REFERENCE const&)' completely.
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0>::quantization_adjust' into 'ap_fixed_base<8, 1, true, (ap_q_mode)1, (ap_o_mode)3, 0>::ap_fixed_base<16, 2, true, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+Command         transform done; 2407.83 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:05:13 ; elapsed = 00:42:37 . Memory (MB): peak = 58029.609 ; gain = 57680.016 ; free physical = 203 ; free virtual = 8978
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.1.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 2.99 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] S4_1/conv1d.h:870: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.37 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:05:13 ; elapsed = 00:42:41 . Memory (MB): peak = 58030.531 ; gain = 57680.938 ; free physical = 208 ; free virtual = 8987
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.g.1.bc to /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.1.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_synapseFold' (S4_1/conv1d.h:793) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_synapseFold' (S4_1/conv1d.h:793) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'loop_init' (S4_1/conv1d.h:785) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' completely.
+INFO: [XFORM 203-501] Unrolling loop 'loop_pe' (S4_1/conv1d.h:798) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1.1.2' (S4_1/conv1d.h:851) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' completely.
+INFO: [XFORM 203-501] Unrolling loop 'loop_init' (S4_1/conv1d.h:785) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' completely.
+INFO: [XFORM 203-501] Unrolling loop 'loop_pe' (S4_1/conv1d.h:798) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-2.1.1.2' (S4_1/conv1d.h:851) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' completely.
+INFO: [XFORM 203-102] Partitioning array 'inputBuf.V' (S4_1/conv1d.h:231) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'inputBuf.V' (S4_1/conv1d.h:231) in dimension 1 automatically.
+INFO: [XFORM 203-101] Partitioning array 'weights20.m_weights.V'  in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'bias20.m_weights.V'  accessed through non-constant indices on dimension 2 (S4_1/conv1d.h:857:48), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'bias20.m_weights.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'macRegisters.V' (S4_1/conv1d.h:781) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'weights21.m_weights.V'  in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'bias21.m_weights.V'  accessed through non-constant indices on dimension 2 (S4_1/conv1d.h:857:48), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'bias21.m_weights.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'macRegisters.V' (S4_1/conv1d.h:781) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'computeS4_1', detected/extracted 10 process function(s): 
+	 'ResizeStream<64u, 8u, 262144u>'
+	 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>'
+	 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >'
+	 'Relu1D<(unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1>73'
+	 'StreamingDataWidthConverter_Batch<32u, 8u, 32768u>74'
+	 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>'
+	 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >'
+	 'Relu1D<(unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1>'
+	 'StreamingDataWidthConverter_Batch<32u, 8u, 32768u>'
+	 'ResizeStream<8u, 64u, 131072u>'.
+Command         transform done; 1.96 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.61 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:05:15 ; elapsed = 00:42:43 . Memory (MB): peak = 58030.531 ; gain = 57680.938 ; free physical = 228 ; free virtual = 8964
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.2.bc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_neuronFold' (S4_1/conv1d.h:792:74) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_ofmChannels' (S4_1/conv1d.h:791:85) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_neuronFold' (S4_1/conv1d.h:792:74) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_ofmChannels' (S4_1/conv1d.h:791:85) in function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (S4_1/conv1d.h:244:26) in function 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (S4_1/conv1d.h:243:31) in function 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (S4_1/conv1d.h:244:26) in function 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (S4_1/conv1d.h:243:31) in function 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>'.
+WARNING: [XFORM 203-631] Renaming function 'StreamingDataWidthConverter_Batch<32u, 8u, 32768u>74' to 'StreamingDataWidthCo' (S4_1/conv1d.h:52:46)
+WARNING: [XFORM 203-631] Renaming function 'StreamingDataWidthConverter_Batch<32u, 8u, 32768u>' to 'StreamingDataWidthCo.1' (S4_1/conv1d.h:52:46)
+WARNING: [XFORM 203-631] Renaming function 'ResizeStream<8u, 64u, 131072u>' to 'ResizeStream' (S4_1/conv1d.h:19:37)
+WARNING: [XFORM 203-631] Renaming function 'ResizeStream<64u, 8u, 262144u>' to 'ResizeStream.1' (S4_1/conv1d.h:19:37)
+WARNING: [XFORM 203-631] Renaming function 'Relu1D<(unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1>73' to 'Relu1D73' (S4_1/conv1d.h:1250:50)
+WARNING: [XFORM 203-631] Renaming function 'Relu1D<(unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)32, (unsigned short)1, (unsigned short)32, (unsigned short)1>' to 'Relu1D' (S4_1/conv1d.h:1250:50)
+WARNING: [XFORM 203-631] Renaming function 'Conv1DMac_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 32768u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' to 'Conv1DMac_new' (S4_1/conv1d.h:791:74)
+WARNING: [XFORM 203-631] Renaming function 'Conv1DMac_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)0, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, (unsigned short)8, (unsigned short)1, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 16384u>, FixedPointWeights<1u, ap_fixed<8, 1, (ap_q_mode)1, (ap_o_mode)3, 0>, 4u, 64u> >' to 'Conv1DMac_new.1' (S4_1/conv1d.h:791:74)
+WARNING: [XFORM 203-631] Renaming function 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)512, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>' to 'Conv1DBuffer_new' (S4_1/conv1d.h:231:59)
+WARNING: [XFORM 203-631] Renaming function 'Conv1DBuffer_new<(unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)1, (unsigned short)256, (unsigned short)512, (unsigned short)4, (unsigned short)1, (unsigned short)8, (unsigned short)1>' to 'Conv1DBuffer_new.1' (S4_1/conv1d.h:231:59)
+Command         transform done; 2.18 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:05:15 ; elapsed = 00:42:46 . Memory (MB): peak = 58109.602 ; gain = 57760.008 ; free physical = 205 ; free virtual = 8892
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2418.98 sec.
+Command     elaborate done; 2565.6 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'computeS4_1' ...
+Execute       ap_set_top_model computeS4_1 
+WARNING: [SYN 201-103] Legalizing function name 'ResizeStream.1' to 'ResizeStream_1'.
+WARNING: [SYN 201-103] Legalizing function name 'Conv1DBuffer_new.1' to 'Conv1DBuffer_new_1'.
+WARNING: [SYN 201-103] Legalizing function name 'Conv1DMac_new.1' to 'Conv1DMac_new_1'.
+WARNING: [SYN 201-103] Legalizing function name 'StreamingDataWidthCo.1' to 'StreamingDataWidthCo_1'.
+Execute       get_model_list computeS4_1 -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model computeS4_1 
+Execute       preproc_iomode -model ResizeStream 
+Execute       preproc_iomode -model StreamingDataWidthCo.1 
+Execute       preproc_iomode -model Relu1D 
+Execute       preproc_iomode -model Conv1DMac_new.1 
+Execute       preproc_iomode -model Conv1DBuffer_new.1 
+Execute       preproc_iomode -model StreamingDataWidthCo 
+Execute       preproc_iomode -model Relu1D73 
+Execute       preproc_iomode -model Conv1DMac_new 
+Execute       preproc_iomode -model Conv1DBuffer_new 
+Execute       preproc_iomode -model ResizeStream.1 
+Execute       get_model_list computeS4_1 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1
+INFO-FLOW: Configuring Module : ResizeStream.1 ...
+Execute       set_default_model ResizeStream.1 
+Execute       apply_spec_resource_limit ResizeStream.1 
+INFO-FLOW: Configuring Module : Conv1DBuffer_new ...
+Execute       set_default_model Conv1DBuffer_new 
+Execute       apply_spec_resource_limit Conv1DBuffer_new 
+INFO-FLOW: Configuring Module : Conv1DMac_new ...
+Execute       set_default_model Conv1DMac_new 
+Execute       apply_spec_resource_limit Conv1DMac_new 
+INFO-FLOW: Configuring Module : Relu1D73 ...
+Execute       set_default_model Relu1D73 
+Execute       apply_spec_resource_limit Relu1D73 
+INFO-FLOW: Configuring Module : StreamingDataWidthCo ...
+Execute       set_default_model StreamingDataWidthCo 
+Execute       apply_spec_resource_limit StreamingDataWidthCo 
+INFO-FLOW: Configuring Module : Conv1DBuffer_new.1 ...
+Execute       set_default_model Conv1DBuffer_new.1 
+Execute       apply_spec_resource_limit Conv1DBuffer_new.1 
+INFO-FLOW: Configuring Module : Conv1DMac_new.1 ...
+Execute       set_default_model Conv1DMac_new.1 
+Execute       apply_spec_resource_limit Conv1DMac_new.1 
+INFO-FLOW: Configuring Module : Relu1D ...
+Execute       set_default_model Relu1D 
+Execute       apply_spec_resource_limit Relu1D 
+INFO-FLOW: Configuring Module : StreamingDataWidthCo.1 ...
+Execute       set_default_model StreamingDataWidthCo.1 
+Execute       apply_spec_resource_limit StreamingDataWidthCo.1 
+INFO-FLOW: Configuring Module : ResizeStream ...
+Execute       set_default_model ResizeStream 
+Execute       apply_spec_resource_limit ResizeStream 
+INFO-FLOW: Configuring Module : computeS4_1 ...
+Execute       set_default_model computeS4_1 
+Execute       apply_spec_resource_limit computeS4_1 
+INFO-FLOW: Model list for preprocess: ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1
+INFO-FLOW: Preprocessing Module: ResizeStream.1 ...
+Execute       set_default_model ResizeStream.1 
+Execute       cdfg_preprocess -model ResizeStream.1 
+Execute       rtl_gen_preprocess ResizeStream.1 
+INFO-FLOW: Preprocessing Module: Conv1DBuffer_new ...
+Execute       set_default_model Conv1DBuffer_new 
+Execute       cdfg_preprocess -model Conv1DBuffer_new 
+Execute       rtl_gen_preprocess Conv1DBuffer_new 
+INFO-FLOW: Preprocessing Module: Conv1DMac_new ...
+Execute       set_default_model Conv1DMac_new 
+Execute       cdfg_preprocess -model Conv1DMac_new 
+Execute       rtl_gen_preprocess Conv1DMac_new 
+INFO-FLOW: Preprocessing Module: Relu1D73 ...
+Execute       set_default_model Relu1D73 
+Execute       cdfg_preprocess -model Relu1D73 
+Execute       rtl_gen_preprocess Relu1D73 
+INFO-FLOW: Preprocessing Module: StreamingDataWidthCo ...
+Execute       set_default_model StreamingDataWidthCo 
+Execute       cdfg_preprocess -model StreamingDataWidthCo 
+Execute       rtl_gen_preprocess StreamingDataWidthCo 
+INFO-FLOW: Preprocessing Module: Conv1DBuffer_new.1 ...
+Execute       set_default_model Conv1DBuffer_new.1 
+Execute       cdfg_preprocess -model Conv1DBuffer_new.1 
+Execute       rtl_gen_preprocess Conv1DBuffer_new.1 
+INFO-FLOW: Preprocessing Module: Conv1DMac_new.1 ...
+Execute       set_default_model Conv1DMac_new.1 
+Execute       cdfg_preprocess -model Conv1DMac_new.1 
+Execute       rtl_gen_preprocess Conv1DMac_new.1 
+INFO-FLOW: Preprocessing Module: Relu1D ...
+Execute       set_default_model Relu1D 
+Execute       cdfg_preprocess -model Relu1D 
+Execute       rtl_gen_preprocess Relu1D 
+INFO-FLOW: Preprocessing Module: StreamingDataWidthCo.1 ...
+Execute       set_default_model StreamingDataWidthCo.1 
+Execute       cdfg_preprocess -model StreamingDataWidthCo.1 
+Execute       rtl_gen_preprocess StreamingDataWidthCo.1 
+INFO-FLOW: Preprocessing Module: ResizeStream ...
+Execute       set_default_model ResizeStream 
+Execute       cdfg_preprocess -model ResizeStream 
+Execute       rtl_gen_preprocess ResizeStream 
+INFO-FLOW: Preprocessing Module: computeS4_1 ...
+Execute       set_default_model computeS4_1 
+Execute       cdfg_preprocess -model computeS4_1 
+Execute       rtl_gen_preprocess computeS4_1 
+INFO-FLOW: Model list for synthesis: ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ResizeStream_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ResizeStream.1 
+Execute       schedule -model ResizeStream.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.73 sec.
+INFO: [HLS 200-111]  Elapsed time: 2570.44 seconds; current allocated memory: 3.182 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+Command       report done; 0.36 sec.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.sched.adb -f 
+INFO-FLOW: Finish scheduling ResizeStream.1.
+Execute       set_default_model ResizeStream.1 
+Execute       bind -model ResizeStream.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=ResizeStream.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 3.182 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.bind.adb -f 
+INFO-FLOW: Finish binding ResizeStream.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv1DBuffer_new' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv1DBuffer_new 
+Execute       schedule -model Conv1DBuffer_new 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 3.182 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.sched.adb -f 
+INFO-FLOW: Finish scheduling Conv1DBuffer_new.
+Execute       set_default_model Conv1DBuffer_new 
+Execute       bind -model Conv1DBuffer_new 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv1DBuffer_new
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 3.183 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.bind.adb -f 
+INFO-FLOW: Finish binding Conv1DBuffer_new.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv1DMac_new' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv1DMac_new 
+Execute       schedule -model Conv1DMac_new 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_ofmChannels_loop_neuronFold_loop_synapseFold'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.2 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 3.183 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.verbose.sched.rpt -verbose -f 
+Command       report done; 0.12 sec.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.sched.adb -f 
+Command       db_write done; 0.11 sec.
+INFO-FLOW: Finish scheduling Conv1DMac_new.
+Execute       set_default_model Conv1DMac_new 
+Execute       bind -model Conv1DMac_new 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv1DMac_new
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 3.184 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.verbose.bind.rpt -verbose -f 
+Command       report done; 0.16 sec.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.bind.adb -f 
+Command       db_write done; 0.11 sec.
+INFO-FLOW: Finish binding Conv1DMac_new.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Relu1D73' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Relu1D73 
+Execute       schedule -model Relu1D73 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_dim'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.11 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 3.184 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.sched.adb -f 
+INFO-FLOW: Finish scheduling Relu1D73.
+Execute       set_default_model Relu1D73 
+Execute       bind -model Relu1D73 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Relu1D73
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 3.184 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.bind.adb -f 
+INFO-FLOW: Finish binding Relu1D73.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingDataWidthCo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model StreamingDataWidthCo 
+Execute       schedule -model StreamingDataWidthCo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 3.185 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.sched.adb -f 
+INFO-FLOW: Finish scheduling StreamingDataWidthCo.
+Execute       set_default_model StreamingDataWidthCo 
+Execute       bind -model StreamingDataWidthCo 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=StreamingDataWidthCo
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 3.185 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.bind.adb -f 
+INFO-FLOW: Finish binding StreamingDataWidthCo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv1DBuffer_new_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv1DBuffer_new.1 
+Execute       schedule -model Conv1DBuffer_new.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.14 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 3.185 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.sched.adb -f 
+INFO-FLOW: Finish scheduling Conv1DBuffer_new.1.
+Execute       set_default_model Conv1DBuffer_new.1 
+Execute       bind -model Conv1DBuffer_new.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv1DBuffer_new.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 3.185 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.bind.adb -f 
+INFO-FLOW: Finish binding Conv1DBuffer_new.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv1DMac_new_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Conv1DMac_new.1 
+Execute       schedule -model Conv1DMac_new.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_ofmChannels_loop_neuronFold_loop_synapseFold'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.21 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 3.186 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.verbose.sched.rpt -verbose -f 
+Command       report done; 0.12 sec.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.sched.adb -f 
+Command       db_write done; 0.11 sec.
+INFO-FLOW: Finish scheduling Conv1DMac_new.1.
+Execute       set_default_model Conv1DMac_new.1 
+Execute       bind -model Conv1DMac_new.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Conv1DMac_new.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.verbose.bind.rpt -verbose -f 
+Command       report done; 0.16 sec.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.bind.adb -f 
+Command       db_write done; 0.11 sec.
+INFO-FLOW: Finish binding Conv1DMac_new.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Relu1D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Relu1D 
+Execute       schedule -model Relu1D 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_dim'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.sched.adb -f 
+INFO-FLOW: Finish scheduling Relu1D.
+Execute       set_default_model Relu1D 
+Execute       bind -model Relu1D 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Relu1D
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.bind.adb -f 
+INFO-FLOW: Finish binding Relu1D.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'StreamingDataWidthCo_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model StreamingDataWidthCo.1 
+Execute       schedule -model StreamingDataWidthCo.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.sched.adb -f 
+INFO-FLOW: Finish scheduling StreamingDataWidthCo.1.
+Execute       set_default_model StreamingDataWidthCo.1 
+Execute       bind -model StreamingDataWidthCo.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=StreamingDataWidthCo.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.bind.adb -f 
+INFO-FLOW: Finish binding StreamingDataWidthCo.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ResizeStream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model ResizeStream 
+Execute       schedule -model ResizeStream 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.sched.adb -f 
+INFO-FLOW: Finish scheduling ResizeStream.
+Execute       set_default_model ResizeStream 
+Execute       bind -model ResizeStream 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=ResizeStream
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 3.187 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.verbose.bind.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.bind.adb -f 
+INFO-FLOW: Finish binding ResizeStream.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'computeS4_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model computeS4_1 
+Execute       schedule -model computeS4_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 3.188 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.sched.adb -f 
+INFO-FLOW: Finish scheduling computeS4_1.
+Execute       set_default_model computeS4_1 
+Execute       bind -model computeS4_1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=computeS4_1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.35 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 3.188 GB.
+Execute       report -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.verbose.bind.rpt -verbose -f 
+Command       report done; 0.2 sec.
+Execute       db_write -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.bind.adb -f 
+INFO-FLOW: Finish binding computeS4_1.
+Execute       get_model_list computeS4_1 -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess ResizeStream.1 
+Execute       rtl_gen_preprocess Conv1DBuffer_new 
+Execute       rtl_gen_preprocess Conv1DMac_new 
+Execute       rtl_gen_preprocess Relu1D73 
+Execute       rtl_gen_preprocess StreamingDataWidthCo 
+Execute       rtl_gen_preprocess Conv1DBuffer_new.1 
+Execute       rtl_gen_preprocess Conv1DMac_new.1 
+Execute       rtl_gen_preprocess Relu1D 
+Execute       rtl_gen_preprocess StreamingDataWidthCo.1 
+Execute       rtl_gen_preprocess ResizeStream 
+Execute       rtl_gen_preprocess computeS4_1 
+INFO-FLOW: Model list for RTL generation: ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ResizeStream_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model ResizeStream.1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ResizeStream_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 3.189 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ResizeStream.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/ResizeStream_1 -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl ResizeStream.1 -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/ResizeStream_1 
+Execute       gen_rtl ResizeStream.1 -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/ResizeStream_1 
+Execute       gen_tb_info ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1 -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/ResizeStream_1_csynth.rpt -f 
+Execute       report -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/ResizeStream_1_csynth.xml -f -x 
+Execute       report -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.verbose.rpt -verbose -f 
+Execute       db_write -model ResizeStream.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv1DBuffer_new' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv1DBuffer_new -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Conv1DBuffer_new_inputBuf_0_V' to 'Conv1DBuffer_new_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv1DBuffer_new'.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 3.190 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv1DBuffer_new -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/Conv1DBuffer_new -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl Conv1DBuffer_new -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/Conv1DBuffer_new 
+Execute       gen_rtl Conv1DBuffer_new -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/Conv1DBuffer_new 
+Execute       gen_tb_info Conv1DBuffer_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model Conv1DBuffer_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DBuffer_new_csynth.rpt -f 
+Execute       report -model Conv1DBuffer_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DBuffer_new_csynth.xml -f -x 
+Execute       report -model Conv1DBuffer_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.verbose.rpt -verbose -f 
+Execute       db_write -model Conv1DBuffer_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv1DMac_new' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv1DMac_new -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_weights20_m_weights_3' to 'Conv1DMac_new_weicud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_weights20_m_weights_2' to 'Conv1DMac_new_weidEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_weights20_m_weights_1' to 'Conv1DMac_new_weieOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_weights20_m_weights_s' to 'Conv1DMac_new_weifYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'computeS4_1_mux_646_8_1_1' to 'computeS4_1_mux_6g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'computeS4_1_mux_6g8j': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv1DMac_new'.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 3.192 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv1DMac_new -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/Conv1DMac_new -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl Conv1DMac_new -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/Conv1DMac_new 
+Execute       gen_rtl Conv1DMac_new -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/Conv1DMac_new 
+Execute       gen_tb_info Conv1DMac_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model Conv1DMac_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DMac_new_csynth.rpt -f 
+Execute       report -model Conv1DMac_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DMac_new_csynth.xml -f -x 
+Execute       report -model Conv1DMac_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.verbose.rpt -verbose -f 
+Command       report done; 0.18 sec.
+Execute       db_write -model Conv1DMac_new -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.adb -f 
+Command       db_write done; 0.15 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Relu1D73' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Relu1D73 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Relu1D73'.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 3.195 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Relu1D73 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/Relu1D73 -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl Relu1D73 -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/Relu1D73 
+Execute       gen_rtl Relu1D73 -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/Relu1D73 
+Execute       gen_tb_info Relu1D73 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73 -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model Relu1D73 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Relu1D73_csynth.rpt -f 
+Execute       report -model Relu1D73 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Relu1D73_csynth.xml -f -x 
+Execute       report -model Relu1D73 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.verbose.rpt -verbose -f 
+Execute       db_write -model Relu1D73 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingDataWidthCo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model StreamingDataWidthCo -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingDataWidthCo'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 3.196 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl StreamingDataWidthCo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/StreamingDataWidthCo -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl StreamingDataWidthCo -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/StreamingDataWidthCo 
+Execute       gen_rtl StreamingDataWidthCo -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/StreamingDataWidthCo 
+Execute       gen_tb_info StreamingDataWidthCo -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model StreamingDataWidthCo -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/StreamingDataWidthCo_csynth.rpt -f 
+Execute       report -model StreamingDataWidthCo -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/StreamingDataWidthCo_csynth.xml -f -x 
+Execute       report -model StreamingDataWidthCo -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.verbose.rpt -verbose -f 
+Execute       db_write -model StreamingDataWidthCo -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv1DBuffer_new_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv1DBuffer_new.1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Conv1DBuffer_new_1_inputBuf_0_V' to 'Conv1DBuffer_new_hbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv1DBuffer_new_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 3.197 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv1DBuffer_new.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/Conv1DBuffer_new_1 -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl Conv1DBuffer_new.1 -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/Conv1DBuffer_new_1 
+Execute       gen_rtl Conv1DBuffer_new.1 -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/Conv1DBuffer_new_1 
+Execute       gen_tb_info Conv1DBuffer_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1 -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model Conv1DBuffer_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DBuffer_new_1_csynth.rpt -f 
+Execute       report -model Conv1DBuffer_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DBuffer_new_1_csynth.xml -f -x 
+Execute       report -model Conv1DBuffer_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.verbose.rpt -verbose -f 
+Execute       db_write -model Conv1DBuffer_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv1DMac_new_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Conv1DMac_new.1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_1_weights21_m_weights_3' to 'Conv1DMac_new_1_wibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_1_weights21_m_weights_2' to 'Conv1DMac_new_1_wjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_1_weights21_m_weights_1' to 'Conv1DMac_new_1_wkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv1DMac_new_1_weights21_m_weights_s' to 'Conv1DMac_new_1_wlbW' due to the length limit 20
+WARNING: [RTGEN 206-101] RTL name 'computeS4_1_mux_6g8j' is changed to 'computeS4_1_mux_6g8j_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'computeS4_1_mux_6g8j_x': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv1DMac_new_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 3.200 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Conv1DMac_new.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/Conv1DMac_new_1 -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl Conv1DMac_new.1 -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/Conv1DMac_new_1 
+Execute       gen_rtl Conv1DMac_new.1 -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/Conv1DMac_new_1 
+Execute       gen_tb_info Conv1DMac_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1 -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model Conv1DMac_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DMac_new_1_csynth.rpt -f 
+Execute       report -model Conv1DMac_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Conv1DMac_new_1_csynth.xml -f -x 
+Execute       report -model Conv1DMac_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.verbose.rpt -verbose -f 
+Command       report done; 0.18 sec.
+Execute       db_write -model Conv1DMac_new.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.adb -f 
+Command       db_write done; 0.17 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Relu1D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Relu1D -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Relu1D'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 3.203 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Relu1D -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/Relu1D -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl Relu1D -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/Relu1D 
+Execute       gen_rtl Relu1D -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/Relu1D 
+Execute       gen_tb_info Relu1D -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model Relu1D -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Relu1D_csynth.rpt -f 
+Execute       report -model Relu1D -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/Relu1D_csynth.xml -f -x 
+Execute       report -model Relu1D -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.verbose.rpt -verbose -f 
+Execute       db_write -model Relu1D -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'StreamingDataWidthCo_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model StreamingDataWidthCo.1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'StreamingDataWidthCo_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 3.203 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl StreamingDataWidthCo.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/StreamingDataWidthCo_1 -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl StreamingDataWidthCo.1 -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/StreamingDataWidthCo_1 
+Execute       gen_rtl StreamingDataWidthCo.1 -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/StreamingDataWidthCo_1 
+Execute       gen_tb_info StreamingDataWidthCo.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1 -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model StreamingDataWidthCo.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/StreamingDataWidthCo_1_csynth.rpt -f 
+Execute       report -model StreamingDataWidthCo.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/StreamingDataWidthCo_1_csynth.xml -f -x 
+Execute       report -model StreamingDataWidthCo.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.verbose.rpt -verbose -f 
+Execute       db_write -model StreamingDataWidthCo.1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ResizeStream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model ResizeStream -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ResizeStream'.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 3.204 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl ResizeStream -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/ResizeStream -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl ResizeStream -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/ResizeStream 
+Execute       gen_rtl ResizeStream -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/ResizeStream 
+Execute       gen_tb_info ResizeStream -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model ResizeStream -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/ResizeStream_csynth.rpt -f 
+Execute       report -model ResizeStream -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/ResizeStream_csynth.xml -f -x 
+Execute       report -model ResizeStream -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.verbose.rpt -verbose -f 
+Execute       db_write -model ResizeStream -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'computeS4_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model computeS4_1 -vendor xilinx -mg_file /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'computeS4_1/input1_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'computeS4_1/output1_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'computeS4_1' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [SYN 201-210] Renamed object name 'start_for_Conv1DBuffer_new_U0' to 'start_for_Conv1DBmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Conv1DMac_new_U0' to 'start_for_Conv1DMncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Relu1D73_U0' to 'start_for_Relu1D7ocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_StreamingDataWidthCo_U0' to 'start_for_StreamipcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Conv1DBuffer_new_1_U0' to 'start_for_Conv1DBqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Conv1DMac_new_1_U0' to 'start_for_Conv1DMrcU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_StreamingDataWidthCo_1_U0' to 'start_for_Streamisc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_ResizeStream_U0' to 'start_for_ResizeStde' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'computeS4_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 3.205 GB.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl computeS4_1 -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/systemc/computeS4_1 -synmodules ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1 
+Execute       gen_rtl computeS4_1 -istop -style xilinx -f -lang vhdl -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/vhdl/computeS4_1 
+Execute       gen_rtl computeS4_1 -istop -style xilinx -f -lang vlog -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/verilog/computeS4_1 
+Execute       export_constraint_db -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl -f -tool general 
+Execute       report -model computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.design.xml -verbose -f -dv 
+Command       report done; 0.19 sec.
+Execute       report -model computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1 -p /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db 
+Execute       report -model computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/computeS4_1_csynth.rpt -f 
+Execute       report -model computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/syn/report/computeS4_1_csynth.xml -f -x 
+Execute       report -model computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.verbose.rpt -verbose -f 
+Command       report done; 0.21 sec.
+Execute       db_write -model computeS4_1 -o /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.adb -f 
+Execute       sc_get_clocks computeS4_1 
+Execute       sc_get_portdomain computeS4_1 
+INFO-FLOW: Model list for RTL component generation: ResizeStream.1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new.1 Conv1DMac_new.1 Relu1D StreamingDataWidthCo.1 ResizeStream computeS4_1
+INFO-FLOW: Handling components in module [ResizeStream_1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+INFO-FLOW: Handling components in module [Conv1DBuffer_new] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+INFO-FLOW: Found component Conv1DBuffer_new_bkb.
+INFO-FLOW: Append model Conv1DBuffer_new_bkb
+INFO-FLOW: Handling components in module [Conv1DMac_new] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+INFO-FLOW: Found component computeS4_1_mux_6g8j.
+INFO-FLOW: Append model computeS4_1_mux_6g8j
+INFO-FLOW: Found component computeS4_1_mux_6g8j.
+INFO-FLOW: Append model computeS4_1_mux_6g8j
+INFO-FLOW: Found component computeS4_1_mux_6g8j.
+INFO-FLOW: Append model computeS4_1_mux_6g8j
+INFO-FLOW: Found component computeS4_1_mux_6g8j.
+INFO-FLOW: Append model computeS4_1_mux_6g8j
+INFO-FLOW: Found component Conv1DMac_new_weicud.
+INFO-FLOW: Append model Conv1DMac_new_weicud
+INFO-FLOW: Found component Conv1DMac_new_weidEe.
+INFO-FLOW: Append model Conv1DMac_new_weidEe
+INFO-FLOW: Found component Conv1DMac_new_weieOg.
+INFO-FLOW: Append model Conv1DMac_new_weieOg
+INFO-FLOW: Found component Conv1DMac_new_weifYi.
+INFO-FLOW: Append model Conv1DMac_new_weifYi
+INFO-FLOW: Handling components in module [Relu1D73] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+INFO-FLOW: Handling components in module [StreamingDataWidthCo] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+INFO-FLOW: Handling components in module [Conv1DBuffer_new_1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+INFO-FLOW: Found component Conv1DBuffer_new_hbi.
+INFO-FLOW: Append model Conv1DBuffer_new_hbi
+INFO-FLOW: Handling components in module [Conv1DMac_new_1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+INFO-FLOW: Found component computeS4_1_mux_6g8j_x.
+INFO-FLOW: Append model computeS4_1_mux_6g8j_x
+INFO-FLOW: Found component computeS4_1_mux_6g8j_x.
+INFO-FLOW: Append model computeS4_1_mux_6g8j_x
+INFO-FLOW: Found component computeS4_1_mux_6g8j_x.
+INFO-FLOW: Append model computeS4_1_mux_6g8j_x
+INFO-FLOW: Found component computeS4_1_mux_6g8j_x.
+INFO-FLOW: Append model computeS4_1_mux_6g8j_x
+INFO-FLOW: Found component Conv1DMac_new_1_wibs.
+INFO-FLOW: Append model Conv1DMac_new_1_wibs
+INFO-FLOW: Found component Conv1DMac_new_1_wjbC.
+INFO-FLOW: Append model Conv1DMac_new_1_wjbC
+INFO-FLOW: Found component Conv1DMac_new_1_wkbM.
+INFO-FLOW: Append model Conv1DMac_new_1_wkbM
+INFO-FLOW: Found component Conv1DMac_new_1_wlbW.
+INFO-FLOW: Append model Conv1DMac_new_1_wlbW
+INFO-FLOW: Handling components in module [Relu1D] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+INFO-FLOW: Handling components in module [StreamingDataWidthCo_1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+INFO-FLOW: Handling components in module [ResizeStream] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+INFO-FLOW: Handling components in module [computeS4_1] ... 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_Conv1DBmb6.
+INFO-FLOW: Append model start_for_Conv1DBmb6
+INFO-FLOW: Found component start_for_Conv1DMncg.
+INFO-FLOW: Append model start_for_Conv1DMncg
+INFO-FLOW: Found component start_for_Relu1D7ocq.
+INFO-FLOW: Append model start_for_Relu1D7ocq
+INFO-FLOW: Found component start_for_StreamipcA.
+INFO-FLOW: Append model start_for_StreamipcA
+INFO-FLOW: Found component start_for_Conv1DBqcK.
+INFO-FLOW: Append model start_for_Conv1DBqcK
+INFO-FLOW: Found component start_for_Conv1DMrcU.
+INFO-FLOW: Append model start_for_Conv1DMrcU
+INFO-FLOW: Found component start_for_Relu1D_U0.
+INFO-FLOW: Append model start_for_Relu1D_U0
+INFO-FLOW: Found component start_for_Streamisc4.
+INFO-FLOW: Append model start_for_Streamisc4
+INFO-FLOW: Found component start_for_ResizeStde.
+INFO-FLOW: Append model start_for_ResizeStde
+INFO-FLOW: Found component computeS4_1_control_s_axi.
+INFO-FLOW: Append model computeS4_1_control_s_axi
+INFO-FLOW: Append model ResizeStream_1
+INFO-FLOW: Append model Conv1DBuffer_new
+INFO-FLOW: Append model Conv1DMac_new
+INFO-FLOW: Append model Relu1D73
+INFO-FLOW: Append model StreamingDataWidthCo
+INFO-FLOW: Append model Conv1DBuffer_new_1
+INFO-FLOW: Append model Conv1DMac_new_1
+INFO-FLOW: Append model Relu1D
+INFO-FLOW: Append model StreamingDataWidthCo_1
+INFO-FLOW: Append model ResizeStream
+INFO-FLOW: Append model computeS4_1
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: Conv1DBuffer_new_bkb computeS4_1_mux_6g8j computeS4_1_mux_6g8j computeS4_1_mux_6g8j computeS4_1_mux_6g8j Conv1DMac_new_weicud Conv1DMac_new_weidEe Conv1DMac_new_weieOg Conv1DMac_new_weifYi Conv1DBuffer_new_hbi computeS4_1_mux_6g8j_x computeS4_1_mux_6g8j_x computeS4_1_mux_6g8j_x computeS4_1_mux_6g8j_x Conv1DMac_new_1_wibs Conv1DMac_new_1_wjbC Conv1DMac_new_1_wkbM Conv1DMac_new_1_wlbW fifo_w8_d2_A fifo_w8_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w8_d2_A start_for_Conv1DBmb6 start_for_Conv1DMncg start_for_Relu1D7ocq start_for_StreamipcA start_for_Conv1DBqcK start_for_Conv1DMrcU start_for_Relu1D_U0 start_for_Streamisc4 start_for_ResizeStde computeS4_1_control_s_axi ResizeStream_1 Conv1DBuffer_new Conv1DMac_new Relu1D73 StreamingDataWidthCo Conv1DBuffer_new_1 Conv1DMac_new_1 Relu1D StreamingDataWidthCo_1 ResizeStream computeS4_1
+INFO-FLOW: To file: write model Conv1DBuffer_new_bkb
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j
+INFO-FLOW: To file: write model Conv1DMac_new_weicud
+INFO-FLOW: To file: write model Conv1DMac_new_weidEe
+INFO-FLOW: To file: write model Conv1DMac_new_weieOg
+INFO-FLOW: To file: write model Conv1DMac_new_weifYi
+INFO-FLOW: To file: write model Conv1DBuffer_new_hbi
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j_x
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j_x
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j_x
+INFO-FLOW: To file: write model computeS4_1_mux_6g8j_x
+INFO-FLOW: To file: write model Conv1DMac_new_1_wibs
+INFO-FLOW: To file: write model Conv1DMac_new_1_wjbC
+INFO-FLOW: To file: write model Conv1DMac_new_1_wkbM
+INFO-FLOW: To file: write model Conv1DMac_new_1_wlbW
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_Conv1DBmb6
+INFO-FLOW: To file: write model start_for_Conv1DMncg
+INFO-FLOW: To file: write model start_for_Relu1D7ocq
+INFO-FLOW: To file: write model start_for_StreamipcA
+INFO-FLOW: To file: write model start_for_Conv1DBqcK
+INFO-FLOW: To file: write model start_for_Conv1DMrcU
+INFO-FLOW: To file: write model start_for_Relu1D_U0
+INFO-FLOW: To file: write model start_for_Streamisc4
+INFO-FLOW: To file: write model start_for_ResizeStde
+INFO-FLOW: To file: write model computeS4_1_control_s_axi
+INFO-FLOW: To file: write model ResizeStream_1
+INFO-FLOW: To file: write model Conv1DBuffer_new
+INFO-FLOW: To file: write model Conv1DMac_new
+INFO-FLOW: To file: write model Relu1D73
+INFO-FLOW: To file: write model StreamingDataWidthCo
+INFO-FLOW: To file: write model Conv1DBuffer_new_1
+INFO-FLOW: To file: write model Conv1DMac_new_1
+INFO-FLOW: To file: write model Relu1D
+INFO-FLOW: To file: write model StreamingDataWidthCo_1
+INFO-FLOW: To file: write model ResizeStream
+INFO-FLOW: To file: write model computeS4_1
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.21 sec.
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.44 sec.
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.47 sec.
+Command       ap_source done; 0.47 sec.
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Conv1DBuffer_new_bkb_ram (RAM)' using block RAMs.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_weicud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_weidEe_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_weieOg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_weifYi_rom' using auto ROMs.
+Command       ap_source done; 2.17 sec.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Conv1DBuffer_new_hbi_ram (RAM)' using block RAMs.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_1_wibs_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_1_wjbC_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_1_wkbM_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'Conv1DMac_new_1_wlbW_rom' using auto ROMs.
+Command       ap_source done; 1.55 sec.
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_87_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_88_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_89PRL_V_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_90PRL_V_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_91_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_92_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_93PRL_V_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'cnv_94PRL_V_V_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'outStr_V_V_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv1DBmb6_U(start_for_Conv1DBmb6)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv1DMncg_U(start_for_Conv1DMncg)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Relu1D7ocq_U(start_for_Relu1D7ocq)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_StreamipcA_U(start_for_StreamipcA)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv1DBqcK_U(start_for_Conv1DBqcK)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Conv1DMrcU_U(start_for_Conv1DMrcU)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Relu1D_U0_U(start_for_Relu1D_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Streamisc4_U(start_for_Streamisc4)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_ResizeStde_U(start_for_ResizeStde)' using Shift Registers.
+Execute         source ./control.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.28 sec.
+Execute       get_config_sdx -target 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl 
+Execute       sc_get_clocks computeS4_1 
+Execute       source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:05:30 ; elapsed = 00:43:08 . Memory (MB): peak = 58109.602 ; gain = 57760.008 ; free physical = 215 ; free virtual = 8874
+INFO: [SYSC 207-301] Generating SystemC RTL for computeS4_1.
+INFO: [VHDL 208-304] Generating VHDL RTL for computeS4_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for computeS4_1.
+Command     autosyn done; 21.86 sec.
+Command   csynth_design done; 2587.47 sec.
+Command ap_source done; 2587.62 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1 opened at Tue May 09 09:34:06 CST 2023
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.12 sec.
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.21 sec.
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.22 sec.
+Command     ap_source done; 0.23 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z045ffg900-2 
+Execute       add_library xilinx/zynq/zynq:xc7z045:ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z045 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z045ffg900-2'
+Execute       get_default_platform 
+Command     set_part done; 0.15 sec.
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 54650}  {LUT 218600}    {FF 437200} {DSP48E 900}   {BRAM 1090}  
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 0.59 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D73.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DBuffer_new_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Conv1DMac_new_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/Relu1D.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/StreamingDataWidthCo_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/ResizeStream.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.compgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.rtl_wrap.cfg.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.constraint.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/computeS4_1.tbgen.tcl 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/tukl/Amur/IndividualSyn/S4/S4_1/S4_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Execute     source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /media/tukl/ee279b7d-bb8a-4a20-8bf9-90b2c542efcc/opt/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command   export_design done; 36.86 sec.
+Command ap_source done; 37.45 sec.
+Execute cleanup_all 

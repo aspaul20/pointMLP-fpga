@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="weights.hpp" path="/home/tukl/Amur/IndividualSyn/S2/weights.hpp"/>
+    <originFiles name="weightMem-9.h" path="/home/tukl/Amur/IndividualSyn/S2/weightMem-9.h"/>
+    <originFiles name="weightMem-8.h" path="/home/tukl/Amur/IndividualSyn/S2/weightMem-8.h"/>
+    <originFiles name="weightMem-7.h" path="/home/tukl/Amur/IndividualSyn/S2/weightMem-7.h"/>
+    <originFiles name="weightMem-6.h" path="/home/tukl/Amur/IndividualSyn/S2/weightMem-6.h"/>
+    <originFiles name="weightMem-10.h" path="/home/tukl/Amur/IndividualSyn/S2/weightMem-10.h"/>
+    <originFiles name="grouperPE.hpp" path="/home/tukl/Amur/IndividualSyn/S2/grouperPE.hpp"/>
+    <originFiles name="conv1d.h" path="/home/tukl/Amur/IndividualSyn/S2/conv1d.h"/>
+    <originFiles name="config.h" path="/home/tukl/Amur/IndividualSyn/S2/config.h"/>
+    <originFiles name="bnn-library.h" path="/home/tukl/Amur/IndividualSyn/S2/bnn-library.h"/>
+    <originFiles name="biasMem-9.h" path="/home/tukl/Amur/IndividualSyn/S2/biasMem-9.h"/>
+    <originFiles name="biasMem-8.h" path="/home/tukl/Amur/IndividualSyn/S2/biasMem-8.h"/>
+    <originFiles name="biasMem-7.h" path="/home/tukl/Amur/IndividualSyn/S2/biasMem-7.h"/>
+    <originFiles name="biasMem-6.h" path="/home/tukl/Amur/IndividualSyn/S2/biasMem-6.h"/>
+    <originFiles name="biasMem-10.h" path="/home/tukl/Amur/IndividualSyn/S2/biasMem-10.h"/>
+    <originFiles name="Compute.cpp" path="/home/tukl/Amur/IndividualSyn/S2/Compute.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="point_cloud.txt" path="/home/tukl/Amur/IndividualSyn/S2/point_cloud.txt"/>
+    <originFiles name="output_POS.txt" path="/home/tukl/Amur/IndividualSyn/S2/output_POS.txt"/>
+    <originFiles name="output.txt" path="/home/tukl/Amur/IndividualSyn/S2/output.txt"/>
+    <originFiles name="my_tb.cpp" path="/home/tukl/Amur/IndividualSyn/S2/my_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

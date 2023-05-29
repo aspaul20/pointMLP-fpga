@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'computeS4_1'" level="0">
+<item name = "Date">Tue May  9 08:36:05 2023
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">S4_1</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z045ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.198, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">25689612, 25689612, 16777733, 16777733, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Conv1DMac_new_fu_256">Conv1DMac_new, 16777221, 16777221, 16777221, 16777221, none</column>
+<column name="grp_Conv1DMac_new_1_fu_270">Conv1DMac_new_1, 8388613, 8388613, 8388613, 8388613, none</column>
+<column name="grp_Conv1DBuffer_new_fu_284">Conv1DBuffer_new, 16777732, 16777732, 16777732, 16777732, none</column>
+<column name="grp_Conv1DBuffer_new_1_fu_290">Conv1DBuffer_new_1, 8388868, 8388868, 8388868, 8388868, none</column>
+<column name="grp_StreamingDataWidthCo_fu_296">StreamingDataWidthCo, 131074, 131074, 131074, 131074, none</column>
+<column name="grp_StreamingDataWidthCo_1_fu_302">StreamingDataWidthCo_1, 131074, 131074, 131074, 131074, none</column>
+<column name="grp_ResizeStream_fu_308">ResizeStream, 262145, 262145, 262145, 262145, none</column>
+<column name="grp_Relu1D73_fu_315">Relu1D73, 32770, 32770, 32770, 32770, none</column>
+<column name="grp_Relu1D_fu_321">Relu1D, 32770, 32770, 32770, 32770, none</column>
+<column name="grp_ResizeStream_1_fu_327">ResizeStream_1, 524289, 524289, 524289, 524289, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
