@@ -1,0 +1,3 @@
+*.pth 
+/home/amur/Amur/pointMLP-fpga/software/classification_ModelNet40/data
+/home/amur/Amur/pointMLP-fpga/software/classification_ModelNet40/weights/npzs

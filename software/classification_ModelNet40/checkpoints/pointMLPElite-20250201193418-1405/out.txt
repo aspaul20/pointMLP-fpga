@@ -1,0 +1,39 @@
+args: Namespace(batch_size=64, checkpoint='checkpoints/pointMLPElite-20250201193418-1405', epoch=1000, learning_rate=0.1, min_lr=0.005, model='pointMLPElite', msg=None, num_points=512, seed=1405, weight_decay=0.0002, workers=8)
+==> Building model..
+==> Preparing data..
+Epoch(1/1000) Learning Rate 0.1:
+Training loss:3.092 acc_avg:13.765% acc:18.969% time:290s
+Testing loss:2.771 acc_avg:24.967% acc:24.393% time:6s [best test acc: 24.393%] 
+
+
+Epoch(2/1000) Learning Rate 0.09999976559708827:
+Training loss:2.812 acc_avg:18.767% acc:24.491% time:95s
+Testing loss:2.721 acc_avg:19.739% acc:27.689% time:6s [best test acc: 27.689%] 
+
+
+Epoch(3/1000) Learning Rate 0.09999906239066651:
+Training loss:2.727 acc_avg:20.51% acc:26.791% time:43s
+Testing loss:2.674 acc_avg:24.82% acc:29.181% time:6s [best test acc: 29.181%] 
+
+
+Epoch(4/1000) Learning Rate 0.09999789038767512:
+Training loss:2.703 acc_avg:20.884% acc:27.3% time:43s
+Testing loss:2.641 acc_avg:25.558% acc:30.118% time:6s [best test acc: 30.118%] 
+
+
+Epoch(5/1000) Learning Rate 0.09999624959968127:
+Training loss:2.681 acc_avg:22.262% acc:28.854% time:44s
+Testing loss:2.624 acc_avg:26.301% acc:33.206% time:7s [best test acc: 33.206%] 
+
+
+Epoch(6/1000) Learning Rate 0.09999414004287889:
+Training loss:2.673 acc_avg:23.042% acc:29.38% time:57s
+Testing loss:2.59 acc_avg:26.965% acc:32.512% time:8s [best test acc: 33.206%] 
+
+
+Epoch(7/1000) Learning Rate 0.09999156173808844:
+Training loss:2.663 acc_avg:22.576% acc:29.275% time:45s
+Testing loss:2.544 acc_avg:30.074% acc:35.704% time:6s [best test acc: 35.704%] 
+
+
+Epoch(8/1000) Learning Rate 0.09998851471075676:

@@ -1,0 +1,1 @@
+Epoch-Num	Learning-Rate	Train-Loss	Train-acc-B	Train-acc	Valid-Loss	Valid-acc-B	Valid-acc	
