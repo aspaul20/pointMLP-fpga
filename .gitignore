@@ -1,0 +1,8 @@
+*.h5 
+checkpoints
+data
+main_split
+weights
+*.pth
+*.npz
+__MACOSX
