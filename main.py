@@ -15,7 +15,7 @@ import torch.utils.data.distributed
 from torch.utils.data import DataLoader
 import models as models
 from utils import Logger, mkdir_p, progress_bar, save_model, save_args, cal_loss
-# from data import ModelNet40
+from data import ModelNet40
 from scanobjectnn import ScanObjectNN 
 from torch.optim.lr_scheduler import CosineAnnealingLR
 import sklearn.metrics as metrics
@@ -124,9 +124,13 @@ def main():
 
     torch.use_deterministic_algorithms(True, warn_only=True)
     printf('==> Preparing data..')
-    train_loader = DataLoader(ScanObjectNN(partition='training', num_points=args.num_points), num_workers=args.workers,
+    # train_loader = DataLoader(ScanObjectNN(partition='training', num_points=args.num_points), num_workers=args.workers,
+    #                           batch_size=args.batch_size, shuffle=True, drop_last=True)
+    # test_loader = DataLoader(ScanObjectNN(partition='test', num_points=args.num_points), num_workers=args.workers,
+    #                          batch_size=args.batch_size // 2, shuffle=False, drop_last=False)
+    train_loader = DataLoader(ModelNet40(partition='train', num_points=args.num_points), num_workers=args.workers,
                               batch_size=args.batch_size, shuffle=True, drop_last=True)
-    test_loader = DataLoader(ScanObjectNN(partition='test', num_points=args.num_points), num_workers=args.workers,
+    test_loader = DataLoader(ModelNet40(partition='test', num_points=args.num_points), num_workers=args.workers,
                              batch_size=args.batch_size // 2, shuffle=False, drop_last=False)
     #######rem
     # print('Saving weights...')

@@ -139,10 +139,32 @@ def uniform_random_sampling(xyz, npoint):
     """
     device = xyz.device
     B, N, C = xyz.shape
-    centroids = torch.stack([torch.randperm(npoint, dtype=torch.long, device=device)[:npoint] for _ in range(B)])
+    # centroids = torch.stack([torch.randperm(npoint, dtype=torch.long, device=device)[:npoint] for _ in range(B)])
+    centroids = torch.stack([torch.randperm(N, dtype=torch.long, device=device)[:npoint] for _ in range(B)])
     # centroids = (torch.randint(0, npoint, (B, npoint), dtype=torch.long)).to(device)
     return centroids
 
+def farthest_point_sample(xyz, npoint):
+    """
+    Input:
+        xyz: pointcloud data, [B, N, 3]
+        npoint: number of samples
+    Return:
+        centroids: sampled pointcloud index, [B, npoint]
+    """
+    device = xyz.device
+    B, N, C = xyz.shape
+    centroids = torch.zeros(B, npoint, dtype=torch.long).to(device)
+    distance = torch.ones(B, N).to(device) * 1e10
+    farthest = torch.randint(0, N, (B,), dtype=torch.long).to(device)
+    batch_indices = torch.arange(B, dtype=torch.long).to(device)
+    for i in range(npoint):
+        centroids[:, i] = farthest
+        centroid = xyz[batch_indices, farthest, :].view(B, 1, 3)
+        dist = torch.sum((xyz - centroid) ** 2, -1)
+        distance = torch.min(distance, dist)
+        farthest = torch.max(distance, -1)[1]
+    return centroids
 
 def query_ball_point(radius, nsample, xyz, new_xyz):
     """
@@ -211,7 +233,8 @@ class LocalGrouper(nn.Module):
 
         # fps_idx = torch.multinomial(torch.linspace(0, N - 1, steps=N).repeat(B, 1).to(xyz.device), num_samples=self.groups, replacement=False).long()
         fps_idx = uniform_random_sampling(xyz, self.groups).long()
-        #fps_idx = pointnet2_utils.furthest_point_sample(xyz, self.groups).long()  # [B, npoint]
+        # fps_idx = pointnet2_utils.furthest_point_sample(xyz, self.groups).long()  # [B, npoint]
+        # fps_idx = farthest_point_sample(xyz, self.groups).long()
         new_xyz = index_points(xyz, fps_idx)  # [B, npoint, 3]
         new_points = index_points(points, fps_idx)  # [B, npoint, d]
 
@@ -587,7 +610,7 @@ def pointMLP(num_classes=40, **kwargs) -> Model:
                    k_neighbors=[24, 24, 24, 24], reducers=[2, 2, 2, 2], **kwargs)
 
 
-def pointMLPElite(num_classes=15, **kwargs) -> Model:
+def pointMLPElite(num_classes=40, **kwargs) -> Model:
     return Model(points=512, class_num=num_classes, embed_dim=32, groups=1, res_expansion=1.0,
                    activation="relu", bias=True, use_xyz=False, normalize=None,
                    dim_expansion=[2, 2, 2, 1], pre_blocks=[1, 1, 2, 1], pos_blocks=[1, 1, 2, 1],
