@@ -107,7 +107,7 @@ def benchmark_model(model_fn, batch_size=4, num_warmup=10, num_iters=100):
 
     print(f"\n{model_fn.__name__} Results:")
     print(f"--- FLOPs & Parameters ---")
-    print(f"Total FLOPs: {total_flops/10e9:.2f}")
+    print(f"Total FLOPs: {total_flops/10e9:.5f} GOPs")
     # print(f"Parameters:\n{param_count}")
 
     print(f"\n--- GPU Inference ---")
@@ -125,3 +125,4 @@ def benchmark_model(model_fn, batch_size=4, num_warmup=10, num_iters=100):
     print(f"CPU Power: {dynamic_cpu_power:.2f} W")
 
 benchmark_model(pointMLPElite_opt, batch_size=32)
+benchmark_model(pointMLPElite, batch_size=32)
