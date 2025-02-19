@@ -37,7 +37,7 @@ def benchmark_model(model_fn, batch_size=4, num_warmup=10, num_iters=100):
     # ---------------------------
     model_flops = model_fn()
     flops = FlopCountAnalysis(model_flops, x)
-    total_flops = flops.total()
+    total_flops = flops.total() / batch_size
     # param_count = parameter_count_table(model_flops)
 
     # ---------------------------
