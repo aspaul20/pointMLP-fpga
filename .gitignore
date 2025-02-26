@@ -6,3 +6,4 @@ weights
 *.pth
 *.npz
 __MACOSX
+*.png

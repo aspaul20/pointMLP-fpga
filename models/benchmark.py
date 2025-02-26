@@ -124,5 +124,6 @@ def benchmark_model(model_fn, batch_size=4, num_warmup=10, num_iters=100):
     print(f"Avg CPU Power: {avg_cpu_power:.2f} W")
     print(f"CPU Power: {dynamic_cpu_power:.2f} W")
 
+# benchmark_model(pointMLPElite, batch_size=32)
+# time.sleep(5)
 benchmark_model(pointMLPElite_opt, batch_size=32)
-benchmark_model(pointMLPElite, batch_size=32)
